@@ -30,6 +30,7 @@ I'm constantly improving, focusing on these areas to grow as a Full-Stack Engine
 - High academic performance at Univates (Impulsiona Scholarship holder).
 
 ---
+Although I don't have many valuable projects published here on GitHub yet, that's mainly because I’m taking six courses at university while working ten hours a day, plus commuting. However, I intend to change that in the coming months.
 
 If you liked my profile and want to collaborate or have an opportunity in Data Science, Cloud, or Software Development, feel free to contact me!
 
