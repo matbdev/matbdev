@@ -18,8 +18,7 @@ Working in a corporate environment (Tramontina), I'm gaining valuable experience
 
 I'm constantly improving, focusing on these areas to grow as a Full-Stack Engineer and Data Scientist:
 
-- **Modern Web Development:** Deepening knowledge in Node.js and React for Full-Stack development.
-- **Game Dev:** Starting my journey with the Godot engine.
+- **Modern Web Development:** Deepening knowledge in TypeScript, Node.js and Next.js for Full-Stack development.
 - **Security:** Learning about DevSecOps practices and tools.
 - **Languages:** Strengthening my foundations in Java (at university).
 
@@ -27,7 +26,7 @@ I'm constantly improving, focusing on these areas to grow as a Full-Stack Engine
 
 ## Highlights and Recognition
 
-- Local Winner of the NASA Space Apps Challenge with the project "AirMood".
+- Local Winner and Global Nominee of the NASA Space Apps Challenge with the project "AirMood".
 - High academic performance at Univates (Impulsiona Scholarship holder).
 
 ---
