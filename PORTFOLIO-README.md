@@ -38,6 +38,9 @@ Depois de editar os YAMLs, execute `npm run build:data` e inclua os READMEs atua
 commit. `npm test` verifica se os arquivos continuam sincronizados. O gerador não publica nem
 faz commits automaticamente. Os READMEs de perfil não devem ser editados manualmente.
 
+O cabeçalho inclui o Tux animado do portfólio, com alternativa estática para movimento reduzido.
+Veja a [origem dos assets e os comandos de geração](docs/profile-mascot.md).
+
 ## SEO e leitura por agentes
 
 - `/en/` e `/pt-BR/` têm HTML completo antes de executar JavaScript. `/` apresenta a versão padrão em inglês, com canonical para `/en/`.

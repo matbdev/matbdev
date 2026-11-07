@@ -38,6 +38,9 @@ After editing YAML, run `npm run build:data` and include the updated READMEs in 
 `npm test` checks that these files remain synchronized. The generator does not publish or create
 commits automatically. Do not edit the profile READMEs manually.
 
+The header includes the portfolio’s animated Tux, with a static alternative for reduced motion.
+See the [asset sources and generation commands](docs/profile-mascot.md) (in Portuguese).
+
 ## SEO and agent discovery
 
 - `/en/` and `/pt-BR/` contain complete HTML before JavaScript runs. `/` serves the default English version, with a canonical URL pointing to `/en/`.
