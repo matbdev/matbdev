@@ -4,7 +4,6 @@ import { ArrowUp } from 'lucide-vue-next'
 import contactData from '@/data/contact.json'
 import { heroProfile } from '@/data/heroProfile'
 import { isPt } from '@/state/locale'
-import { localePath } from '@/data/seo'
 
 const currentYear = new Date().getFullYear()
 
@@ -26,11 +25,6 @@ function scrollToTop() {
       <span class="footer-bar__handle">@{{ heroProfile.handle }}</span>
     </p>
 
-    <nav class="footer-bar__languages" :aria-label="isPt ? 'Idiomas' : 'Languages'">
-      <a :href="localePath('en')" hreflang="en" lang="en">English</a>
-      <a :href="localePath('pt-BR')" hreflang="pt-BR" lang="pt-BR">Português</a>
-    </nav>
-
     <button type="button" class="footer-bar__top-btn" @click="scrollToTop">
       <span class="footer-bar__top-label">
         {{ backToTopLabel }}
@@ -48,17 +42,6 @@ function scrollToTop() {
   align-items: center;
   justify-content: space-between;
   gap: $space-4;
-
-  &__languages {
-    display: flex;
-    gap: $space-4;
-    font-size: 0.72rem;
-
-    a:hover,
-    a:focus-visible {
-      color: $color-interaction;
-    }
-  }
 
   &__copyright {
     font-size: 0.72rem;
