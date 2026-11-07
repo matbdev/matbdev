@@ -27,6 +27,12 @@
     "name": "Mateus Carniel Brambilla",
     "shortName": "Mateus Brambilla",
     "handle": "matbdev",
+    "readmeMascot": {
+      "animatedSrc": "public/assets/profile/tux-idle.gif",
+      "staticSrc": "public/assets/profile/tux-static.png",
+      "width": 80,
+      "height": 96
+    },
     "role": "Data & Software Engineer",
     "email": "mateus@matbdev.com",
     "socials": [
@@ -79,6 +85,7 @@
     "content": {
       "en": {
         "readme": {
+          "mascotAlt": "Tux, the portfolio penguin",
           "languageLink": "Ler em português",
           "portfolioLink": "Explore my portfolio",
           "experienceHeading": "Experience",
@@ -110,6 +117,7 @@
       },
       "pt-BR": {
         "readme": {
+          "mascotAlt": "Tux, o pinguim do portfólio",
           "languageLink": "Read in English",
           "portfolioLink": "Conheça meu portfólio",
           "experienceHeading": "Experiência",

@@ -2,6 +2,11 @@
 
 [Read in English](README-en.md)
 
+<picture>
+  <source media="(prefers-reduced-motion: no-preference)" srcset="public/assets/profile/tux-idle.gif">
+  <img align="right" src="public/assets/profile/tux-static.png" width="80" height="96" alt="Tux, o pinguim do portfólio">
+</picture>
+
 # Mateus Carniel Brambilla
 
 Sou desenvolvedor e atuo com engenharia de dados, sistemas backend e IA aplicada. Transformando problemas complexos em soluções úteis e confiáveis.

@@ -23,6 +23,20 @@ test('profile READMEs use localized facts, credentials and portfolio links', () 
   }
 })
 
+test('profile mascot animates only when motion is allowed and has a localized static fallback', async () => {
+  for (const locale of ['en', 'pt-BR'] as const) {
+    const output = renderProfileReadme(data, locale)
+    assert.ok(output.includes('media="(prefers-reduced-motion: no-preference)"'))
+    assert.ok(output.includes(`srcset="${data.profile.readmeMascot.animatedSrc}"`))
+    assert.ok(output.includes(`src="${data.profile.readmeMascot.staticSrc}"`))
+    assert.ok(output.includes(`alt="${data.profile.content[locale].readme.mascotAlt}"`))
+    assert.ok(output.indexOf('<picture>') < output.indexOf('# ' + data.profile.name))
+  }
+  for (const path of [data.profile.readmeMascot.animatedSrc, data.profile.readmeMascot.staticSrc]) {
+    assert.ok((await readFile(new URL(`../${path}`, import.meta.url))).byteLength > 0)
+  }
+})
+
 test('selection follows metadata flags and preserves source order', () => {
   const fixture = structuredClone(data)
   const snapshot = JSON.stringify(fixture)

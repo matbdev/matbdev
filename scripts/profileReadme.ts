@@ -16,6 +16,10 @@ function inline(text: string) {
     .replace(/[\\`*_[\]]/g, '\\$&')
 }
 
+function attribute(text: string) {
+  return inline(text).replace(/"/g, '&quot;')
+}
+
 function link(text: string, url: string) {
   return `[${inline(text)}](${url.replace(/\(/g, '%28').replace(/\)/g, '%29')})`
 }
@@ -26,10 +30,16 @@ export function renderProfileReadme(data: ProfileReadmeData, locale: ProfileRead
   const copy = content.readme
   const otherLocale = locale === 'en' ? 'pt-BR' : 'en'
   const portfolioUrl = `${data.url}/${locale}/`
+  const mascot = profile.readmeMascot
   const lines = [
     '<!-- Generated from metadata/*.yml by npm run build:data. Do not edit manually. -->',
     '',
     link(copy.languageLink, readmeFiles[otherLocale]),
+    '',
+    '<picture>',
+    `  <source media="(prefers-reduced-motion: no-preference)" srcset="${attribute(mascot.animatedSrc)}">`,
+    `  <img align="right" src="${attribute(mascot.staticSrc)}" width="${mascot.width}" height="${mascot.height}" alt="${attribute(copy.mascotAlt)}">`,
+    '</picture>',
     '',
     `# ${inline(profile.name)}`,
     '',
