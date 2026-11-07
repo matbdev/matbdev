@@ -1,0 +1,1931 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-29",
+  "defaultLocale": "en",
+  "locales": [
+    "en",
+    "pt-BR"
+  ],
+  "assetsBaseUrl": "/",
+  "url": "https://matbdev.com",
+  "seo": {
+    "image": "/og-preview.png",
+    "content": {
+      "en": {
+        "title": "Mateus Carniel Brambilla — Data & Software Engineer",
+        "description": "Software, data engineering and applied AI. Explore the work, experience and projects of Mateus Carniel Brambilla, based in Brazil.",
+        "imageAlt": "Portfolio of Mateus Carniel Brambilla, Data & Software Engineer."
+      },
+      "pt-BR": {
+        "title": "Mateus Carniel Brambilla — Engenheiro de Dados e Software",
+        "description": "Engenharia de software, dados e IA aplicada. Explore a trajetória, projetos e experiência de Mateus Carniel Brambilla, no Brasil.",
+        "imageAlt": "Portfólio de Mateus Carniel Brambilla, engenheiro de dados e software."
+      }
+    }
+  },
+  "profile": {
+    "name": "Mateus Carniel Brambilla",
+    "shortName": "Mateus Brambilla",
+    "handle": "matbdev",
+    "role": "Data & Software Engineer",
+    "email": "mateus@matbdev.com",
+    "socials": [
+      {
+        "name": "GitHub",
+        "icon": "github",
+        "href": "https://github.com/matbdev"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "linkedin",
+        "href": "https://www.linkedin.com/in/mateus-carniel-brambilla/"
+      },
+      {
+        "name": "Credly",
+        "icon": "award",
+        "href": "https://www.credly.com/users/mateus-carniel-brambilla.0c10944d"
+      },
+      {
+        "name": "Instagram",
+        "icon": "instagram",
+        "href": "https://www.instagram.com/mateuscbrambilla/"
+      }
+    ],
+    "portrait": {
+      "src": "/assets/images/mateus-enhanced.webp",
+      "originalSrc": "/assets/images/mateus-github.jpg",
+      "width": 1254,
+      "height": 1254,
+      "enhanced": true,
+      "alt": {
+        "en": "Mateus Carniel Brambilla — enhanced version of his GitHub portrait",
+        "pt-BR": "Mateus Carniel Brambilla — versão aprimorada do retrato do GitHub"
+      },
+      "caption": {
+        "en": "GitHub · enhanced",
+        "pt-BR": "GitHub · aprimorada"
+      }
+    },
+    "languages": [
+      {
+        "code": "pt-BR",
+        "level": "native"
+      },
+      {
+        "code": "en",
+        "level": "B2"
+      }
+    ],
+    "content": {
+      "en": {
+        "readme": {
+          "languageLink": "Ler em português",
+          "portfolioLink": "Explore my portfolio",
+          "experienceHeading": "Experience",
+          "projectsHeading": "Selected projects",
+          "toolsHeading": "Tools in context",
+          "educationHeading": "Education",
+          "credentialsHeading": "Certifications",
+          "aboutHeading": "Beyond work",
+          "contactHeading": "Contact",
+          "repositoryLink": "Portfolio source and development guide"
+        },
+        "location": "Rio Grande do Sul, Brazil",
+        "introduction": "I’m a developer working across data engineering, backend systems and applied AI. Turning complex problems into useful, reliable solutions.",
+        "currentRole": "Developer at Tramontina",
+        "educationSummary": "Software Engineering · Univates",
+        "aboutTitle": "Curiosity is the common thread.",
+        "biography": [
+          "I’m Mateus, a developer based in Rio Grande do Sul, Brazil, and a Software Engineering student at Univates, with graduation expected in December 2028.",
+          "I enjoy working where software meets data: understanding a problem, connecting the pieces and making the result useful. My interests also extend to cloud infrastructure, open source and Earth observation.",
+          "Away from the keyboard, I like LEGO Architecture, games and learning how things fit together."
+        ],
+        "interests": [
+          "Open source",
+          "Cloud & infrastructure",
+          "Earth observation",
+          "LEGO Architecture"
+        ],
+        "skillsNote": "Professional practice, project experience and topics I’m developing."
+      },
+      "pt-BR": {
+        "readme": {
+          "languageLink": "Read in English",
+          "portfolioLink": "Conheça meu portfólio",
+          "experienceHeading": "Experiência",
+          "projectsHeading": "Projetos em destaque",
+          "toolsHeading": "Ferramentas em contexto",
+          "educationHeading": "Formação",
+          "credentialsHeading": "Certificações",
+          "aboutHeading": "Além do trabalho",
+          "contactHeading": "Contato",
+          "repositoryLink": "Código do portfólio e guia de desenvolvimento"
+        },
+        "location": "Rio Grande do Sul, Brasil",
+        "introduction": "Sou desenvolvedor e atuo com engenharia de dados, sistemas backend e IA aplicada. Transformando problemas complexos em soluções úteis e confiáveis.",
+        "currentRole": "Desenvolvedor na Tramontina",
+        "educationSummary": "Engenharia de Software · Univates",
+        "aboutTitle": "A curiosidade conecta tudo.",
+        "biography": [
+          "Sou Mateus, desenvolvedor no Rio Grande do Sul e estudante de Engenharia de Software na Univates, com conclusão prevista para dezembro de 2028.",
+          "Gosto de trabalhar onde software e dados se encontram: entender um problema, conectar as peças e tornar o resultado útil. Também me interesso por infraestrutura em nuvem, código aberto e observação da Terra.",
+          "Fora do teclado, gosto de LEGO Architecture, jogos e de descobrir como as coisas se encaixam."
+        ],
+        "interests": [
+          "Código aberto",
+          "Nuvem e infraestrutura",
+          "Observação da Terra",
+          "LEGO Architecture"
+        ],
+        "skillsNote": "Prática profissional, experiência em projetos e temas que estou desenvolvendo."
+      }
+    }
+  },
+  "navigation": {
+    "content": {
+      "en": {
+        "label": "Main navigation",
+        "skills": "Skills",
+        "projects": "Projects",
+        "experience": "Experience",
+        "about": "About",
+        "education": "Education",
+        "resumes": "Résumé",
+        "contact": "Let’s talk"
+      },
+      "pt-BR": {
+        "label": "Navegação principal",
+        "skills": "Habilidades",
+        "projects": "Projetos",
+        "experience": "Experiência",
+        "about": "Sobre",
+        "education": "Educação",
+        "resumes": "Currículo",
+        "contact": "Vamos conversar"
+      }
+    }
+  },
+  "sections": {
+    "projects": {
+      "content": {
+        "en": {
+          "title": "Selected work",
+          "introduction": "Different problems. The same curiosity to understand, build and improve.",
+          "viewAll": "View all on GitHub",
+          "githubUrl": "https://github.com/matbdev"
+        },
+        "pt-BR": {
+          "title": "Projetos em destaque",
+          "introduction": "Problemas diferentes. A mesma curiosidade para entender, construir e melhorar.",
+          "viewAll": "Ver todos no GitHub",
+          "githubUrl": "https://github.com/matbdev"
+        }
+      }
+    },
+    "skills": {
+      "content": {
+        "en": {
+          "title": "Tools, in context",
+          "introduction": "Every skill here is tied to real work. Pick one to see where it made a difference."
+        },
+        "pt-BR": {
+          "title": "Ferramentas, com contexto",
+          "introduction": "Cada habilidade aqui está ligada a um trabalho real. Escolha uma para ver onde ela fez diferença."
+        }
+      }
+    },
+    "experience": {
+      "content": {
+        "en": {
+          "title": "Built through practice.",
+          "introduction": "From industrial processes to software and data, learning by solving real problems."
+        },
+        "pt-BR": {
+          "title": "Construído na prática.",
+          "introduction": "De processos industriais a software e dados, aprendendo ao resolver problemas reais."
+        }
+      }
+    },
+    "learning": {
+      "content": {
+        "en": {
+          "title": "Learning, with intention.",
+          "introduction": "Academic education, verifiable credentials and continued study."
+        },
+        "pt-BR": {
+          "title": "Aprendizado com propósito.",
+          "introduction": "Formação acadêmica, credenciais verificáveis e estudos complementares."
+        }
+      }
+    },
+    "resumes": {
+      "content": {
+        "en": {
+          "title": "The right résumé for the conversation",
+          "introduction": "Choose a focus and a language. Both versions tell the same story, through a different lens.",
+          "note": "The document language is independent of the website language."
+        },
+        "pt-BR": {
+          "title": "O currículo certo para a conversa",
+          "introduction": "Escolha uma área e um idioma. As duas versões contam a mesma trajetória, com enfoques diferentes.",
+          "note": "O idioma do documento é independente do idioma do site."
+        }
+      }
+    },
+    "contact": {
+      "content": {
+        "en": {
+          "title": "Let’s build something useful",
+          "introduction": "Have a role, a project or an interesting problem in mind? I’d be glad to hear about it."
+        },
+        "pt-BR": {
+          "title": "Vamos construir algo útil",
+          "introduction": "Tem uma oportunidade, um projeto ou um problema interessante em mente? Vou gostar de conversar."
+        }
+      }
+    }
+  },
+  "disciplines": [
+    {
+      "id": "data",
+      "technologies": [
+        "PySpark",
+        "SQL",
+        "Databricks",
+        "Delta Lake"
+      ],
+      "projectCategory": "data",
+      "resumeDiscipline": "data",
+      "content": {
+        "en": {
+          "label": "Data engineering",
+          "title": "Pipelines, context & applied AI.",
+          "description": "Production work with Databricks and data pipelines, plus geospatial projects."
+        },
+        "pt-BR": {
+          "label": "Engenharia de dados",
+          "title": "Pipelines, contexto e IA aplicada.",
+          "description": "Atuação em produção com Databricks e pipelines, além de projetos geoespaciais."
+        }
+      },
+      "featuredProjectsResolved": []
+    },
+    {
+      "id": "software",
+      "alias": "web",
+      "technologies": [
+        "Python",
+        "Flask",
+        "TypeScript",
+        "Docker"
+      ],
+      "projectCategory": "software",
+      "resumeDiscipline": "software",
+      "content": {
+        "en": {
+          "label": "Software engineering",
+          "title": "Backend, APIs & delivery.",
+          "description": "Business rules, system integrations and containerized applications."
+        },
+        "pt-BR": {
+          "label": "Engenharia de software",
+          "title": "Backend, APIs e entrega.",
+          "description": "Regras de negócio, integrações entre sistemas e aplicações em containers."
+        }
+      },
+      "featuredProjectsResolved": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "deadlock",
+      "name": "Deadlock",
+      "links": {
+        "github": "https://github.com/univates-deadlock",
+        "portfolio": "https://deadlock.matbdev.com"
+      },
+      "content": {
+        "en": {
+          "title": "Built with Deadlock",
+          "description": "I structured our GitHub organization and team portfolio to connect repositories, people and the project’s entry points."
+        },
+        "pt-BR": {
+          "title": "Desenvolvido com a Deadlock",
+          "description": "Estruturei nossa organização no GitHub e o portfólio da equipe para conectar repositórios, pessoas e os pontos de acesso ao projeto."
+        }
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "crongoal",
+      "categories": [
+        "software",
+        "system"
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Prisma",
+        "JWT/OAuth2"
+      ],
+      "featured": true,
+      "highlight": true,
+      "order": 1,
+      "links": {
+        "repository": "https://github.com/matbdev/dai-crongoal-backend"
+      },
+      "media": {
+        "type": "image",
+        "src": "/assets/images/crongoal-dashboard.webp",
+        "width": 1804,
+        "height": 970,
+        "alt": {
+          "en": "Actual CronGoal dashboard screenshot from the project repository",
+          "pt-BR": "Captura real do dashboard CronGoal disponível no repositório"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "CronGoal",
+          "subtitle": "A backend for getting things done.",
+          "context": "Personal / academic project",
+          "badge": "Backend engineering",
+          "description": "A productivity API with authentication, authorization and a layered TypeScript backend.",
+          "problem": "Support a productivity application with consistent API validation and access control.",
+          "contribution": "Implemented an Express API with PostgreSQL/Prisma, JWT and Google OAuth2, Zod validation, role-based access and security middleware.",
+          "detailContext": "Personal and academic project focused on backend engineering.",
+          "diagram": [
+            "REST API",
+            "Services",
+            "PostgreSQL"
+          ]
+        },
+        "pt-BR": {
+          "title": "CronGoal",
+          "subtitle": "Um backend para tirar planos do papel.",
+          "context": "Projeto pessoal / acadêmico",
+          "badge": "Engenharia de backend",
+          "description": "Uma API de produtividade com autenticação, autorização e backend TypeScript organizado em camadas.",
+          "problem": "Sustentar uma aplicação de produtividade com validação consistente e controle de acesso.",
+          "contribution": "Implementei uma API Express com PostgreSQL/Prisma, JWT e Google OAuth2, validação com Zod, papéis de acesso e middlewares de segurança.",
+          "detailContext": "Projeto pessoal e acadêmico com foco em engenharia de backend.",
+          "diagram": [
+            "API REST",
+            "Serviços",
+            "PostgreSQL"
+          ]
+        }
+      }
+    },
+    {
+      "id": "airmood",
+      "categories": [
+        "data",
+        "ai"
+      ],
+      "technologies": [
+        "Python",
+        "Streamlit",
+        "NASA Earthdata",
+        "Geospatial"
+      ],
+      "featured": true,
+      "highlight": true,
+      "order": 2,
+      "links": {
+        "repository": "https://github.com/matbdev/nasa-space-apps-airmood"
+      },
+      "media": {
+        "type": "concept",
+        "variant": "airmood-identity",
+        "label": {
+          "en": "Conceptual project identity",
+          "pt-BR": "Identidade conceitual do projeto"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "AirMood",
+          "subtitle": "Earth observation, closer to people.",
+          "context": "NASA Space Apps Challenge · 2025",
+          "badge": "Local winner · Global Nominee",
+          "description": "A voice-enabled assistant connecting air quality, weather and satellite data to everyday decisions.",
+          "problem": "Make complex environmental data easier to access and interpret.",
+          "contribution": "Developed the application end to end and led Tropa do Booleano. Integrated NASA Earthdata/TEMPO and weather data in a Python application with a voice interface.",
+          "detailContext": "Hackathon project. Local winner in Lajeado and Global Nominee in 2025.",
+          "diagram": [
+            "Earthdata",
+            "AirMood",
+            "People"
+          ]
+        },
+        "pt-BR": {
+          "title": "AirMood",
+          "subtitle": "Observação da Terra, mais perto das pessoas.",
+          "context": "NASA Space Apps Challenge · 2025",
+          "badge": "Campeão local · Global Nominee",
+          "description": "Um assistente com interface de voz que conecta qualidade do ar, clima e dados de satélite a decisões do dia a dia.",
+          "problem": "Tornar dados ambientais complexos mais acessíveis e fáceis de interpretar.",
+          "contribution": "Desenvolvi a aplicação de ponta a ponta e liderei a Tropa do Booleano. Integrei NASA Earthdata/TEMPO e dados meteorológicos em uma aplicação Python com interface de voz.",
+          "detailContext": "Projeto de hackathon. Campeão local em Lajeado e Global Nominee em 2025.",
+          "diagram": [
+            "Earthdata",
+            "AirMood",
+            "Pessoas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "waterscript",
+      "categories": [
+        "data",
+        "ai"
+      ],
+      "technologies": [
+        "Python",
+        "Snowflake",
+        "XGBoost",
+        "Geospatial"
+      ],
+      "featured": true,
+      "highlight": true,
+      "order": 3,
+      "links": {
+        "repository": "https://github.com/matbdev/waterscript-ey-data-science-challenge"
+      },
+      "media": {
+        "type": "concept",
+        "variant": "water-flow",
+        "sources": [
+          "Landsat",
+          "TerraClimate"
+        ],
+        "label": {
+          "en": "Conceptual workflow",
+          "pt-BR": "Fluxo conceitual"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "WaterScript",
+          "subtitle": "A broader picture of water quality.",
+          "context": "EY AI & Data Challenge · 2026",
+          "badge": "Data & machine learning project",
+          "description": "A multimodal pipeline combining water samples, Landsat imagery and climate data for water-quality modeling.",
+          "problem": "Predict water-quality parameters at locations outside the training regions.",
+          "contribution": "Built data ingestion and geospatial features with Python and Snowpark, then explored XGBoost/Optuna modeling with location-based GroupKFold validation.",
+          "detailContext": "Built for the EY AI & Data Challenge 2026, exploring geospatial data engineering and modeling.",
+          "diagram": [
+            "Landsat + climate",
+            "Features",
+            "Model"
+          ]
+        },
+        "pt-BR": {
+          "title": "WaterScript",
+          "subtitle": "Uma visão mais ampla da qualidade da água.",
+          "context": "EY AI & Data Challenge · 2026",
+          "badge": "Projeto de dados e machine learning",
+          "description": "Pipeline multimodal que combina amostras de água, imagens Landsat e dados climáticos para modelar qualidade da água.",
+          "problem": "Prever parâmetros da qualidade da água em locais fora das regiões de treinamento.",
+          "contribution": "Construí a ingestão e os atributos geoespaciais com Python e Snowpark e explorei modelos XGBoost/Optuna com validação GroupKFold por localização.",
+          "detailContext": "Desenvolvido para o EY AI & Data Challenge 2026, explorando engenharia de dados geoespaciais e modelagem.",
+          "diagram": [
+            "Landsat + clima",
+            "Atributos",
+            "Modelo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "techpro",
+      "categories": [
+        "software",
+        "system",
+        "web"
+      ],
+      "technologies": [
+        "Docker",
+        "TypeScript",
+        "Caddy",
+        "GitHub Actions"
+      ],
+      "featured": true,
+      "highlight": false,
+      "order": 4,
+      "links": {
+        "repository": "https://github.com/univates-deadlock/techpro-app"
+      },
+      "organizationId": "deadlock",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/deadlock-techpro-website.webp",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "en": "Actual TechPro institutional website screenshot from the Deadlock portfolio repository",
+          "pt-BR": "Captura real do site institucional TechPro, disponível no repositório do portfólio da Deadlock"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "TechPro",
+          "subtitle": "Software for a real service workflow.",
+          "context": "Univates · Team Deadlock · 2026",
+          "badge": "Collaborative academic project",
+          "description": "A collaborative ecosystem for TechPro: an internal system, an institutional website and a portfolio for the Deadlock team.",
+          "problem": "Bring the client’s operational needs into a navigable web application.",
+          "contribution": "I structured the Deadlock GitHub organization and team portal, and contributed deployment, Docker containerization, central Caddy routing, permissions and automated tests. The delivery spans the application, institutional website and team portfolio.",
+          "detailContext": "Academic project for a real client, built collaboratively with the Deadlock team.",
+          "diagram": [
+            "GitHub Actions",
+            "Docker",
+            "Caddy"
+          ]
+        },
+        "pt-BR": {
+          "title": "TechPro",
+          "subtitle": "Software para um fluxo real de serviços.",
+          "context": "Univates · Equipe Deadlock · 2026",
+          "badge": "Projeto acadêmico em equipe",
+          "description": "Um ecossistema colaborativo para a TechPro: sistema interno, site institucional e portfólio da equipe Deadlock.",
+          "problem": "Transformar necessidades operacionais do cliente em uma aplicação web navegável.",
+          "contribution": "Estruturei a organização Deadlock no GitHub e o portal da equipe, além de contribuir com deploy, containerização Docker, roteamento pelo Caddy central, permissões e testes automatizados. A entrega conecta aplicação, site institucional e portfólio da equipe.",
+          "detailContext": "Projeto acadêmico para um cliente real, desenvolvido em colaboração com a equipe Deadlock.",
+          "diagram": [
+            "GitHub Actions",
+            "Docker",
+            "Caddy"
+          ]
+        }
+      }
+    },
+    {
+      "id": "deadlock-portal",
+      "categories": [
+        "software",
+        "web"
+      ],
+      "technologies": [
+        "TypeScript",
+        "Docker",
+        "Caddy",
+        "GitHub Actions"
+      ],
+      "featured": true,
+      "highlight": false,
+      "order": 5,
+      "links": {
+        "repository": "https://github.com/univates-deadlock/deadlock-portal",
+        "website": "https://deadlock.matbdev.com"
+      },
+      "organizationId": "deadlock",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/deadlock-techpro-website.webp",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "en": "Deadlock team portal screenshot",
+          "pt-BR": "Captura de tela do portal da equipe Deadlock"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "Deadlock Portal",
+          "subtitle": "Team portal and project showcase.",
+          "context": "Univates · Team Deadlock · 2026",
+          "badge": "Collaborative web portal",
+          "description": "An entry point and showcase for the Deadlock team, integrating projects, members and documentation.",
+          "problem": "Centralize team projects and streamline navigation between services and repositories.",
+          "contribution": "Structured the Deadlock GitHub organization, team portal architecture, deployment pipeline and domain routing.",
+          "detailContext": "Collaborative team portal connecting the group's repositories and client deliveries.",
+          "diagram": [
+            "Repositories",
+            "Caddy Routing",
+            "Team Portal"
+          ]
+        },
+        "pt-BR": {
+          "title": "Deadlock Portal",
+          "subtitle": "Portal da equipe e vitrine de projetos.",
+          "context": "Univates · Equipe Deadlock · 2026",
+          "badge": "Portal web colaborativo",
+          "description": "Ponto de entrada e vitrine para a equipe Deadlock, integrando projetos, membros e documentação.",
+          "problem": "Centralizar os projetos da equipe e facilitar a navegação entre serviços e repositórios.",
+          "contribution": "Estruturei a organização Deadlock no GitHub, arquitetura do portal da equipe, pipeline de deploy e roteamento de domínio.",
+          "detailContext": "Portal colaborativo da equipe conectando os repositórios do grupo e entregas aos clientes.",
+          "diagram": [
+            "Repositórios",
+            "Roteamento Caddy",
+            "Portal da Equipe"
+          ]
+        }
+      }
+    }
+  ],
+  "experience": [
+    {
+      "id": "developer",
+      "company": "Tramontina Multi S.A.",
+      "startDate": "2025-11",
+      "endDate": null,
+      "current": true,
+      "order": 1,
+      "technologies": [
+        "Python",
+        "PySpark",
+        "SQL",
+        "Databricks",
+        "Delta Lake",
+        "Unity Catalog",
+        "Flask",
+        "Docker"
+      ],
+      "content": {
+        "en": {
+          "title": "Developer · Backend & Data Engineering",
+          "period": "Nov 2025 — Present",
+          "summary": "Production data pipelines, backend integrations and tooling for the Databricks ecosystem.",
+          "details": [
+            {
+              "id": "data-pipelines",
+              "title": "Data pipelines",
+              "text": "Built and maintained 20+ batch jobs with PySpark, SQL, Delta Lake and Unity Catalog. Migrated an approximately 20-notebook pipeline to serverless Lakeflow/DLT, reducing runtime from about 30 to 8 minutes."
+            },
+            {
+              "id": "backend-iot",
+              "title": "Backend & IoT",
+              "text": "Built and deployed a Flask/Pydantic service to process RFID readings, apply business rules and update MongoDB and SQL Server, running in Docker on a VM."
+            },
+            {
+              "id": "platform-ai",
+              "title": "Platform & applied AI",
+              "text": "Built Python tooling for versioning and promoting Genie metadata. Reduced LLM output cost by 75% in a cataloging pipeline and added primary/fallback model routing."
+            }
+          ],
+          "note": "Selected contributions from my current role."
+        },
+        "pt-BR": {
+          "title": "Desenvolvedor · Backend e Engenharia de Dados",
+          "period": "Nov 2025 — Atual",
+          "summary": "Pipelines de dados em produção, integrações backend e ferramentas para o ecossistema Databricks.",
+          "details": [
+            {
+              "id": "data-pipelines",
+              "title": "Pipelines de dados",
+              "text": "Construção e manutenção de mais de 20 jobs batch com PySpark, SQL, Delta Lake e Unity Catalog. Migração de um pipeline de aproximadamente 20 notebooks para Lakeflow/DLT serverless, reduzindo a execução de cerca de 30 para 8 minutos."
+            },
+            {
+              "id": "backend-iot",
+              "title": "Backend e IoT",
+              "text": "Desenvolvimento e deploy de um serviço Flask/Pydantic para processar leituras RFID, aplicar regras de negócio e atualizar MongoDB e SQL Server, executando em Docker em uma VM."
+            },
+            {
+              "id": "platform-ai",
+              "title": "Plataforma e IA aplicada",
+              "text": "Desenvolvimento de ferramentas Python para versionar e promover metadados do Genie. Redução de 75% no custo de saída de LLM em um pipeline de catalogação e implementação de modelos principal e fallback."
+            }
+          ],
+          "note": "Algumas contribuições no meu cargo atual."
+        }
+      }
+    },
+    {
+      "id": "trainee",
+      "company": "Tramontina Multi S.A.",
+      "startDate": "2025-04",
+      "endDate": "2025-11",
+      "current": false,
+      "order": 2,
+      "content": {
+        "en": {
+          "title": "Industrial Processes Trainee",
+          "period": "Apr — Nov 2025",
+          "summary": "Practical foundations in Python, PySpark, Databricks and industrial data.",
+          "description": "Worked with notebooks, Bronze/Silver data layers, analysis and Git. Explored Prophet and LSTM time-series proofs of concept during the transition to a development role."
+        },
+        "pt-BR": {
+          "title": "Aprendiz de Processos Industriais",
+          "period": "Abr — Nov 2025",
+          "summary": "Fundamentos práticos em Python, PySpark, Databricks e dados industriais.",
+          "description": "Trabalho com notebooks, camadas Bronze/Silver, análise de dados e Git. Exploração de provas de conceito com Prophet e LSTM para séries temporais durante a transição para desenvolvimento."
+        }
+      }
+    }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "id": "all",
+        "content": {
+          "en": {
+            "label": "All tools"
+          },
+          "pt-BR": {
+            "label": "Todas"
+          }
+        }
+      },
+      {
+        "id": "data",
+        "content": {
+          "en": {
+            "label": "Data & AI"
+          },
+          "pt-BR": {
+            "label": "Dados & IA"
+          }
+        }
+      },
+      {
+        "id": "system",
+        "content": {
+          "en": {
+            "label": "Backend"
+          },
+          "pt-BR": {
+            "label": "Backend"
+          }
+        }
+      },
+      {
+        "id": "web",
+        "content": {
+          "en": {
+            "label": "Web"
+          },
+          "pt-BR": {
+            "label": "Web"
+          }
+        }
+      },
+      {
+        "id": "certifications",
+        "content": {
+          "en": {
+            "label": "Certifications"
+          },
+          "pt-BR": {
+            "label": "Certificações"
+          }
+        }
+      }
+    ],
+    "contexts": [
+      {
+        "id": "professional",
+        "icon": "briefcase",
+        "content": {
+          "en": {
+            "label": "Professional experience"
+          },
+          "pt-BR": {
+            "label": "Experiência profissional"
+          }
+        }
+      },
+      {
+        "id": "projects",
+        "icon": "folder",
+        "content": {
+          "en": {
+            "label": "Project experience"
+          },
+          "pt-BR": {
+            "label": "Experiência em projetos"
+          }
+        }
+      },
+      {
+        "id": "learning",
+        "icon": "sprout",
+        "content": {
+          "en": {
+            "label": "Exploring & learning",
+            "description": "Apache Airflow 3, geospatial modeling, agent orchestration"
+          },
+          "pt-BR": {
+            "label": "Explorando e estudando",
+            "description": "Apache Airflow 3, modelagem geoespacial, orquestração de agentes"
+          }
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "python",
+        "name": "Python",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data",
+          "system"
+        ],
+        "synapses": [
+          "pyspark",
+          "sql",
+          "docker",
+          "airflow"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "pipeline.py",
+          "code": "from pydantic import BaseModel, Field\n\nclass TelemetryEvent(BaseModel):\n    device_id: str\n    timestamp: int = Field(gt=0)\n    metrics: dict[str, float]\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "airmood"
+          },
+          {
+            "kind": "project",
+            "id": "waterscript"
+          },
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "backend-iot"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "My main language — production data pipelines, a Flask service at work and the AirMood assistant."
+          },
+          "pt-BR": {
+            "usage": "Minha linguagem principal — pipelines de dados em produção, um serviço Flask no trabalho e o assistente AirMood."
+          }
+        }
+      },
+      {
+        "id": "pyspark",
+        "name": "PySpark",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "delta-lake",
+          "databricks",
+          "sql",
+          "airflow"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "lakehouse_etl.py",
+          "code": "(df.writeStream\n   .format(\"delta\")\n   .outputMode(\"append\")\n   .option(\"checkpointLocation\", \"/_chk/events\")\n   .toTable(\"bronze.raw_telemetry\"))\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Production batch jobs on Databricks, built and maintained day to day."
+          },
+          "pt-BR": {
+            "usage": "Jobs batch em produção no Databricks, construídos e mantidos no dia a dia."
+          }
+        }
+      },
+      {
+        "id": "sql",
+        "name": "SQL",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data",
+          "system"
+        ],
+        "synapses": [
+          "postgresql",
+          "snowflake",
+          "pyspark",
+          "databricks"
+        ],
+        "snippet": {
+          "language": "sql",
+          "file": "analytics.sql",
+          "code": "WITH ranked AS (\n  SELECT *, ROW_NUMBER() OVER(\n    PARTITION BY user_id ORDER BY created_at DESC\n  ) AS rank_idx FROM telemetry_events\n)\nSELECT * FROM ranked WHERE rank_idx = 1;\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Transformations across production pipelines, plus the HackerRank SQL (Advanced) skills assessment."
+          },
+          "pt-BR": {
+            "usage": "Transformações em pipelines de produção, além da avaliação SQL (Advanced) do HackerRank."
+          }
+        }
+      },
+      {
+        "id": "databricks",
+        "name": "Databricks",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "pyspark",
+          "delta-lake",
+          "unity-catalog",
+          "airflow"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "dlt_pipeline.py",
+          "code": "import dlt\n\n@dlt.table(comment=\"Silver cleaned sensor records\")\n@dlt.expect_or_drop(\"valid_timestamp\", \"ts IS NOT NULL\")\ndef silver_sensors():\n    return dlt.read_stream(\"bronze_sensors\")\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "platform-ai"
+          },
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Lakeflow/DLT serverless pipelines and Python tooling for Genie metadata."
+          },
+          "pt-BR": {
+            "usage": "Pipelines Lakeflow/DLT serverless e ferramentas Python para metadados do Genie."
+          }
+        }
+      },
+      {
+        "id": "delta-lake",
+        "name": "Delta Lake",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "databricks",
+          "pyspark",
+          "unity-catalog",
+          "snowflake"
+        ],
+        "snippet": {
+          "language": "sql",
+          "file": "maintenance.sql",
+          "code": "OPTIMIZE gold.user_kpis\nZORDER BY (organization_id, report_date);\n\nVACUUM gold.user_kpis RETAIN 168 HOURS;\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Table format behind the 20+ batch jobs I build and maintain."
+          },
+          "pt-BR": {
+            "usage": "Formato de tabela por trás dos mais de 20 jobs batch que construo e mantenho."
+          }
+        }
+      },
+      {
+        "id": "unity-catalog",
+        "name": "Unity Catalog",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "databricks",
+          "delta-lake",
+          "sql",
+          "google-cloud"
+        ],
+        "snippet": {
+          "language": "sql",
+          "file": "governance.sql",
+          "code": "CREATE CATALOG IF NOT EXISTS prod_lakehouse;\nGRANT USE CATALOG ON CATALOG prod_lakehouse TO `data-engineers`;\nGRANT SELECT ON SCHEMA prod_lakehouse.gold TO `analysts`;\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Governance and cataloging for the tables used in production pipelines."
+          },
+          "pt-BR": {
+            "usage": "Governança e catálogo das tabelas usadas nos pipelines em produção."
+          }
+        }
+      },
+      {
+        "id": "flask",
+        "name": "Flask",
+        "context": "professional",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "python",
+          "docker",
+          "caddy",
+          "postgresql"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "api.py",
+          "code": "@app.post(\"/api/v1/telemetry\")\ndef ingest_telemetry():\n    payload = IngestSchema.model_validate(request.get_json())\n    event_bus.publish(payload)\n    return jsonify(status=\"queued\"), 202\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "backend-iot"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "A Flask/Pydantic service that processes RFID readings and applies business rules in production."
+          },
+          "pt-BR": {
+            "usage": "Serviço Flask/Pydantic que processa leituras RFID e aplica regras de negócio em produção."
+          }
+        }
+      },
+      {
+        "id": "docker",
+        "name": "Docker",
+        "context": "professional",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "python",
+          "caddy",
+          "typescript",
+          "postgresql"
+        ],
+        "snippet": {
+          "language": "dockerfile",
+          "file": "Dockerfile",
+          "code": "FROM python:3.12-slim AS runtime\nWORKDIR /app\nCOPY --from=builder /wheels /wheels\nRUN pip install --no-index --find-links=/wheels service\nCMD [\"uvicorn\", \"app.main:api\", \"--host\", \"0.0.0.0\"]\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "techpro"
+          },
+          {
+            "kind": "project",
+            "id": "deadlock-portal"
+          },
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "backend-iot"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Containerized delivery for TechPro, Deadlock Portal and a Flask service running on a VM."
+          },
+          "pt-BR": {
+            "usage": "Entrega containerizada na TechPro, Deadlock Portal e um serviço Flask rodando em uma VM."
+          }
+        }
+      },
+      {
+        "id": "typescript",
+        "name": "TypeScript",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "nodejs",
+          "express",
+          "prisma",
+          "docker"
+        ],
+        "snippet": {
+          "language": "typescript",
+          "file": "result.ts",
+          "code": "export type Result<T, E = Error> =\n  | { ok: true; value: T }\n  | { ok: false; error: E };\n\nexport const ok = <T>(val: T): Result<T> => ({ ok: true, value: val });\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          },
+          {
+            "kind": "project",
+            "id": "deadlock-portal"
+          },
+          {
+            "kind": "project",
+            "id": "techpro"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "The layered CronGoal backend, the Deadlock team portal and TechPro."
+          },
+          "pt-BR": {
+            "usage": "O backend em camadas do CronGoal, o portal da equipe Deadlock e TechPro."
+          }
+        }
+      },
+      {
+        "id": "caddy",
+        "name": "Caddy",
+        "context": "projects",
+        "category": "web",
+        "categories": [
+          "web",
+          "system"
+        ],
+        "synapses": [
+          "docker",
+          "typescript",
+          "flask"
+        ],
+        "snippet": {
+          "language": "caddyfile",
+          "file": "Caddyfile",
+          "code": "app.mateusbrambilla.dev {\n  encode zstd gzip\n  reverse_proxy api:8080 {\n    header_up Host {host}\n  }\n}\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "deadlock-portal"
+          },
+          {
+            "kind": "project",
+            "id": "techpro"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Reverse proxy, automatic SSL certificates and subdomain routing for web services."
+          },
+          "pt-BR": {
+            "usage": "Proxy reverso, certificados SSL automáticos e roteamento de subdomínios nos portais web."
+          }
+        }
+      },
+      {
+        "id": "nodejs",
+        "name": "Node.js",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "typescript",
+          "express",
+          "prisma",
+          "jwt-oauth2"
+        ],
+        "snippet": {
+          "language": "typescript",
+          "file": "server.ts",
+          "code": "import { createServer } from 'node:http';\nimport { app } from './app';\n\nconst server = createServer(app);\nserver.listen(3000, () => console.log('Ready on :3000'));\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Runtime behind the CronGoal REST API."
+          },
+          "pt-BR": {
+            "usage": "Runtime por trás da API REST do CronGoal."
+          }
+        }
+      },
+      {
+        "id": "express",
+        "name": "Express",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "typescript",
+          "prisma",
+          "jwt-oauth2",
+          "nodejs"
+        ],
+        "snippet": {
+          "language": "typescript",
+          "file": "routes.ts",
+          "code": "router.use('/goals', authMiddleware, goalController.router);\nrouter.use(errorHandler({ log: process.env.NODE_ENV !== 'production' }));\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "REST API with security middleware, Zod validation and role-based access."
+          },
+          "pt-BR": {
+            "usage": "API REST com middlewares de segurança, validação com Zod e papéis de acesso."
+          }
+        }
+      },
+      {
+        "id": "postgresql",
+        "name": "PostgreSQL",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system",
+          "data"
+        ],
+        "synapses": [
+          "prisma",
+          "sql",
+          "docker",
+          "typescript"
+        ],
+        "snippet": {
+          "language": "sql",
+          "file": "schema.sql",
+          "code": "CREATE TABLE goals (\n  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n  user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,\n  title VARCHAR(120) NOT NULL,\n  created_at TIMESTAMPTZ DEFAULT NOW()\n);\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Relational storage for CronGoal, modeled through Prisma."
+          },
+          "pt-BR": {
+            "usage": "Armazenamento relacional do CronGoal, modelado com Prisma."
+          }
+        }
+      },
+      {
+        "id": "prisma",
+        "name": "Prisma",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system"
+        ],
+        "synapses": [
+          "postgresql",
+          "typescript",
+          "nodejs",
+          "express"
+        ],
+        "snippet": {
+          "language": "prisma",
+          "file": "schema.prisma",
+          "code": "model Goal {\n  id        String   @id @default(uuid())\n  title     String\n  author    User     @relation(fields: [userId], references: [id])\n  userId    String\n  createdAt DateTime @default(now())\n}\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "ORM and schema layer for the CronGoal database."
+          },
+          "pt-BR": {
+            "usage": "ORM e camada de schema do banco do CronGoal."
+          }
+        }
+      },
+      {
+        "id": "jwt-oauth2",
+        "name": "JWT/OAuth2",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system"
+        ],
+        "synapses": [
+          "express",
+          "typescript",
+          "postgresql",
+          "nodejs"
+        ],
+        "snippet": {
+          "language": "typescript",
+          "file": "auth.ts",
+          "code": "const token = jwt.sign(\n  { sub: user.id, email: user.email, role: user.role },\n  process.env.JWT_SECRET!,\n  { expiresIn: '7d', algorithm: 'HS256' }\n);\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Authentication with JWT and Google OAuth2 in CronGoal."
+          },
+          "pt-BR": {
+            "usage": "Autenticação com JWT e Google OAuth2 no CronGoal."
+          }
+        }
+      },
+      {
+        "id": "snowflake",
+        "name": "Snowflake",
+        "context": "projects",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "sql",
+          "python",
+          "geospatial",
+          "google-cloud"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "snowpark.py",
+          "code": "import snowflake.snowpark.functions as F\n\ndf = session.table(\"water_observations\")\ndf = df.filter(F.col(\"turbidity\").is_not_null())\ndf.write.mode(\"overwrite\").save_as_table(\"features_lake\")\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "waterscript"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Data ingestion and geospatial features with Snowpark for WaterScript."
+          },
+          "pt-BR": {
+            "usage": "Ingestão de dados e atributos geoespaciais com Snowpark no WaterScript."
+          }
+        }
+      },
+      {
+        "id": "airflow",
+        "name": "Apache Airflow",
+        "context": "learning",
+        "category": "data",
+        "categories": [
+          "data",
+          "certifications"
+        ],
+        "synapses": [
+          "python",
+          "pyspark",
+          "databricks",
+          "google-cloud"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "dag_telemetry.py",
+          "code": "from airflow.decorators import dag, task\n\n@dag(schedule=\"@daily\", start_date=datetime(2025, 1, 1), catchup=False)\ndef lakehouse_refresh():\n    @task\n    def sync_bronze(): ...\n    sync_bronze()\n"
+        },
+        "highlights": [
+          {
+            "kind": "certification",
+            "id": "airflow-3-fundamentals"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Studying workflow orchestration, with the Airflow 3 Fundamentals credential."
+          },
+          "pt-BR": {
+            "usage": "Estudando orquestração de workflows, com a credencial Airflow 3 Fundamentals."
+          }
+        }
+      },
+      {
+        "id": "google-cloud",
+        "name": "Google Cloud",
+        "context": "learning",
+        "category": "system",
+        "categories": [
+          "system",
+          "data",
+          "certifications"
+        ],
+        "synapses": [
+          "docker",
+          "airflow",
+          "snowflake",
+          "python"
+        ],
+        "snippet": {
+          "language": "yaml",
+          "file": "cloudbuild.yaml",
+          "code": "steps:\n  - name: 'gcr.io/cloud-builders/docker'\n    args: ['build', '-t', 'gcr.io/$PROJECT_ID/pipeline', '.']\nimages:\n  - 'gcr.io/$PROJECT_ID/pipeline'\n"
+        },
+        "highlights": [
+          {
+            "kind": "certification",
+            "id": "google-cloud-ace"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Cloud engineering fundamentals, verified by the Associate Cloud Engineer certification."
+          },
+          "pt-BR": {
+            "usage": "Fundamentos de engenharia de nuvem, validados pela certificação Associate Cloud Engineer."
+          }
+        }
+      },
+      {
+        "id": "geospatial",
+        "name": "Geospatial modeling",
+        "context": "learning",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "python",
+          "snowflake",
+          "sql",
+          "google-cloud"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "geo_model.py",
+          "code": "import geopandas as gpd\n\ngdf = gpd.read_file(\"water_basins.geojson\")\ngdf[\"turbidity_index\"] = (gdf[\"b3\"] - gdf[\"b2\"]) / (gdf[\"b3\"] + gdf[\"b2\"])\ngdf.to_parquet(\"silver_basins.parquet\")\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "waterscript"
+          },
+          {
+            "kind": "project",
+            "id": "airmood"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Satellite imagery and climate data turned into features for water-quality models."
+          },
+          "pt-BR": {
+            "name": "Modelagem geoespacial",
+            "usage": "Imagens de satélite e dados climáticos transformados em atributos para modelos de qualidade da água."
+          }
+        }
+      }
+    ],
+    "ui": {
+      "content": {
+        "en": {
+          "eyebrow": "Skills & tools",
+          "carouselLabel": "Skills and tools",
+          "previousSkill": "Previous skill",
+          "nextSkill": "Next skill",
+          "interactionHint": "Drag the arc, use the arrow keys or pick a skill",
+          "categoriesLabel": "Filter by category",
+          "contextsLabel": "Jump to a context",
+          "usageLabel": "How I use it",
+          "highlightLabel": "Featured",
+          "otherProjectsLabel": "Other projects with this skill",
+          "synapsesLabel": "Connected stack",
+          "terminalLabel": "Live code",
+          "openDetails": "See details",
+          "closeDetails": "Close details",
+          "relatedSkills": "Related skills",
+          "emptyCategoryNotice": "No tools found for this category.",
+          "resetCategoryButton": "Show all tools",
+          "kinds": {
+            "project": "Project",
+            "experience": "Professional experience",
+            "certification": "Certification"
+          },
+          "blocks": {
+            "problem": "The problem",
+            "contribution": "My contribution",
+            "context": "Context",
+            "summary": "Overview",
+            "moreFromRole": "More from this role",
+            "topic": "Topic"
+          },
+          "flowLabel": "How it fits together",
+          "links": {
+            "repository": "Repository",
+            "website": "Live website",
+            "organization": "Organization on GitHub",
+            "credential": "Verify credential",
+            "linkedin": "See on LinkedIn"
+          }
+        },
+        "pt-BR": {
+          "eyebrow": "Habilidades e ferramentas",
+          "carouselLabel": "Habilidades e ferramentas",
+          "previousSkill": "Habilidade anterior",
+          "nextSkill": "Próxima habilidade",
+          "interactionHint": "Arraste o arco, use as setas do teclado ou escolha uma habilidade",
+          "categoriesLabel": "Filtrar por categoria",
+          "contextsLabel": "Ir para um contexto",
+          "usageLabel": "Como eu uso",
+          "highlightLabel": "Destaque",
+          "otherProjectsLabel": "Outros projetos com esta ferramenta",
+          "synapsesLabel": "Stack conectado",
+          "terminalLabel": "Código em ação",
+          "openDetails": "Ver detalhes",
+          "closeDetails": "Fechar detalhes",
+          "relatedSkills": "Habilidades relacionadas",
+          "emptyCategoryNotice": "Nenhuma ferramenta encontrada para esta categoria.",
+          "resetCategoryButton": "Ver todas as ferramentas",
+          "kinds": {
+            "project": "Projeto",
+            "experience": "Experiência profissional",
+            "certification": "Certificação"
+          },
+          "blocks": {
+            "problem": "O problema",
+            "contribution": "Minha contribuição",
+            "context": "Contexto",
+            "summary": "Visão geral",
+            "moreFromRole": "Mais deste cargo",
+            "topic": "Tema"
+          },
+          "flowLabel": "Como as peças se conectam",
+          "links": {
+            "repository": "Repositório",
+            "website": "Site no ar",
+            "organization": "Organização no GitHub",
+            "credential": "Verificar credencial",
+            "linkedin": "Ver no LinkedIn"
+          }
+        }
+      }
+    }
+  },
+  "education": [
+    {
+      "id": "univates-software-engineering",
+      "institution": "Univates",
+      "startYear": 2025,
+      "expectedEndDate": "2028-12",
+      "status": "in-progress",
+      "content": {
+        "en": {
+          "degree": "Bachelor’s in Software Engineering",
+          "period": "2025 — December 2028 (expected)",
+          "description": "At Univates, I connect my software engineering studies with backend development, data engineering and collaborative projects."
+        },
+        "pt-BR": {
+          "degree": "Bacharelado em Engenharia de Software",
+          "period": "2025 — dezembro de 2028 (previsão)",
+          "description": "Na Univates, conecto os estudos de Engenharia de Software com desenvolvimento backend, engenharia de dados e projetos em equipe."
+        }
+      }
+    }
+  ],
+  "courses": [
+    {
+      "id": "ccna-coursework",
+      "type": "coursework",
+      "content": {
+        "en": {
+          "name": "CCNA 1 & CCNA 2 coursework",
+          "provider": "Cisco Networking Academy"
+        },
+        "pt-BR": {
+          "name": "Formação CCNA 1 e CCNA 2",
+          "provider": "Cisco Networking Academy"
+        }
+      }
+    },
+    {
+      "id": "linux-fundamentals",
+      "type": "course",
+      "content": {
+        "en": {
+          "name": "Linux Fundamentals",
+          "provider": "Red Hat Training"
+        },
+        "pt-BR": {
+          "name": "Linux Fundamentals",
+          "provider": "Red Hat Training"
+        }
+      }
+    },
+    {
+      "id": "sql-advanced",
+      "type": "skills-assessment",
+      "content": {
+        "en": {
+          "name": "SQL (Advanced)",
+          "provider": "HackerRank · skills assessment"
+        },
+        "pt-BR": {
+          "name": "SQL (Advanced)",
+          "provider": "HackerRank · avaliação de habilidades"
+        }
+      }
+    },
+    {
+      "id": "databricks-certified-data-engineer",
+      "type": "exam-prep",
+      "content": {
+        "en": {
+          "name": "Databricks Certified Data Engineer",
+          "provider": "Databricks Academy · exam preparation"
+        },
+        "pt-BR": {
+          "name": "Databricks Certified Data Engineer",
+          "provider": "Databricks Academy · preparação para o exame"
+        }
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "id": "google-cloud-ace",
+      "name": "Associate Cloud Engineer",
+      "issuer": "Google Cloud",
+      "image": "/assets/images/badge-google-ace.webp",
+      "credentialUrl": "https://www.credly.com/badges/f91cbf24-cb3f-4923-a725-e0de7c89ba12/public_url",
+      "technologies": [
+        "Google Cloud",
+        "Docker",
+        "Linux"
+      ],
+      "content": {
+        "en": {
+          "topic": "Cloud engineering · Google Cloud"
+        },
+        "pt-BR": {
+          "topic": "Engenharia de nuvem · Google Cloud"
+        }
+      }
+    },
+    {
+      "id": "airflow-3-fundamentals",
+      "name": "Apache Airflow 3 Fundamentals",
+      "issuer": "Astronomer",
+      "image": "/assets/images/badge-airflow.webp",
+      "credentialUrl": "https://www.credly.com/badges/27f5f400-6d68-4086-b073-ec5a7c9e550e/public_url",
+      "technologies": [
+        "Apache Airflow",
+        "Python"
+      ],
+      "content": {
+        "en": {
+          "topic": "Workflow orchestration · Apache Airflow 3"
+        },
+        "pt-BR": {
+          "topic": "Orquestração de workflows · Apache Airflow 3"
+        }
+      }
+    }
+  ],
+  "resumes": [
+    {
+      "id": "data-en",
+      "discipline": "data",
+      "locale": "en",
+      "format": "pdf",
+      "src": "/assets/resumes/cv_data_eng_mateus_en.pdf",
+      "content": {
+        "en": {
+          "title": "Data engineering",
+          "tagline": "Data Engineer | Databricks | Applied AI",
+          "description": "Pipelines, Databricks, platform automation and applied AI.",
+          "summary": "Data Engineer with production experience in the Databricks ecosystem, working daily with PySpark, SQL, Delta Lake, Unity Catalog, and Asset Bundles. Builds and maintains batch pipelines, platform automation, and applied AI solutions. Has worked across 20+ Databricks jobs, migrated an approximately 20-notebook pipeline to Lakeflow Pipelines/DLT reducing runtime from about 30 to 8 minutes, and reduced LLM output cost by 75% in a production pipeline."
+        },
+        "pt-BR": {
+          "title": "Engenharia de dados",
+          "tagline": "Engenheiro de Dados | Databricks | IA Aplicada",
+          "description": "Pipelines, Databricks, automação de plataforma e IA aplicada.",
+          "summary": "Engenheiro de Dados com experiência de produção no ecossistema Databricks, atuando diariamente com PySpark, SQL, Delta Lake, Unity Catalog e Asset Bundles. Constrói e mantém pipelines batch, automações de plataforma e soluções de IA aplicada. Atuou em mais de 20 jobs Databricks, migrou um pipeline de cerca de 20 notebooks para Lakeflow Pipelines/DLT reduzindo o tempo de cerca de 30 para 8 minutos, e reduziu em 75% o custo de saída de LLM em pipeline de produção."
+        }
+      }
+    },
+    {
+      "id": "data-pt-BR",
+      "discipline": "data",
+      "locale": "pt-BR",
+      "format": "pdf",
+      "src": "/assets/resumes/cv_data_eng_mateus_pt.pdf",
+      "content": {
+        "en": {
+          "title": "Data engineering",
+          "tagline": "Data Engineer | Databricks | Applied AI",
+          "description": "Pipelines, Databricks, platform automation and applied AI.",
+          "summary": "Data Engineer with production experience in the Databricks ecosystem, working daily with PySpark, SQL, Delta Lake, Unity Catalog, and Asset Bundles. Builds and maintains batch pipelines, platform automation, and applied AI solutions. Has worked across 20+ Databricks jobs, migrated an approximately 20-notebook pipeline to Lakeflow Pipelines/DLT reducing runtime from about 30 to 8 minutes, and reduced LLM output cost by 75% in a production pipeline."
+        },
+        "pt-BR": {
+          "title": "Engenharia de dados",
+          "tagline": "Engenheiro de Dados | Databricks | IA Aplicada",
+          "description": "Pipelines, Databricks, automação de plataforma e IA aplicada.",
+          "summary": "Engenheiro de Dados com experiência de produção no ecossistema Databricks, atuando diariamente com PySpark, SQL, Delta Lake, Unity Catalog e Asset Bundles. Constrói e mantém pipelines batch, automações de plataforma e soluções de IA aplicada. Atuou em mais de 20 jobs Databricks, migrou um pipeline de cerca de 20 notebooks para Lakeflow Pipelines/DLT reduzindo o tempo de cerca de 30 para 8 minutos, e reduziu em 75% o custo de saída de LLM em pipeline de produção."
+        }
+      }
+    },
+    {
+      "id": "software-en",
+      "discipline": "software",
+      "locale": "en",
+      "format": "pdf",
+      "src": "/assets/resumes/cv_software_mateus_en.pdf",
+      "content": {
+        "en": {
+          "title": "Software engineering",
+          "tagline": "Software Engineer | Backend | Python & TypeScript",
+          "description": "Backend systems, APIs, integrations and software projects.",
+          "summary": "Backend-focused Software Engineer with professional experience in Python, Flask, Pydantic, and data/IoT system integration. Built and deployed a containerized RFID ingestion service, internal automation tooling with the Databricks SDK, and LLM integrations. Through projects, develops Node.js/TypeScript APIs with Express, PostgreSQL, Prisma, Zod, JWT/OAuth2, and API security practices."
+        },
+        "pt-BR": {
+          "title": "Engenharia de software",
+          "tagline": "Engenheiro de Software | Backend | Python & TypeScript",
+          "description": "Sistemas backend, APIs, integrações e projetos de software.",
+          "summary": "Engenheiro de Software com foco em backend e experiência profissional em Python, Flask, Pydantic e integração de sistemas de dados e IoT. Desenvolveu e realizou deploy de serviço containerizado para ingestão RFID, ferramentas internas com Databricks SDK e integrações de LLM. Em projetos, constrói APIs Node.js/TypeScript com Express, PostgreSQL, Prisma, Zod, JWT/OAuth2 e práticas de segurança de APIs."
+        }
+      }
+    },
+    {
+      "id": "software-pt-BR",
+      "discipline": "software",
+      "locale": "pt-BR",
+      "format": "pdf",
+      "src": "/assets/resumes/cv_software_mateus_pt.pdf",
+      "content": {
+        "en": {
+          "title": "Software engineering",
+          "tagline": "Software Engineer | Backend | Python & TypeScript",
+          "description": "Backend systems, APIs, integrations and software projects.",
+          "summary": "Backend-focused Software Engineer with professional experience in Python, Flask, Pydantic, and data/IoT system integration. Built and deployed a containerized RFID ingestion service, internal automation tooling with the Databricks SDK, and LLM integrations. Through projects, develops Node.js/TypeScript APIs with Express, PostgreSQL, Prisma, Zod, JWT/OAuth2, and API security practices."
+        },
+        "pt-BR": {
+          "title": "Engenharia de software",
+          "tagline": "Engenheiro de Software | Backend | Python & TypeScript",
+          "description": "Sistemas backend, APIs, integrações e projetos de software.",
+          "summary": "Engenheiro de Software com foco em backend e experiência profissional em Python, Flask, Pydantic e integração de sistemas de dados e IoT. Desenvolveu e realizou deploy de serviço containerizado para ingestão RFID, ferramentas internas com Databricks SDK e integrações de LLM. Em projetos, constrói APIs Node.js/TypeScript com Express, PostgreSQL, Prisma, Zod, JWT/OAuth2 e práticas de segurança de APIs."
+        }
+      }
+    }
+  ],
+  "contact": {
+    "defaultIntentId": "opportunity",
+    "intents": [
+      {
+        "id": "opportunity",
+        "icon": "briefcase",
+        "content": {
+          "en": {
+            "label": "Opportunity",
+            "subject": "Job opportunity",
+            "body": "Hi Mateus! I came across your portfolio and would love to chat about a role in data/software engineering. Would you be open to a quick call?"
+          },
+          "pt-BR": {
+            "label": "Oportunidade",
+            "subject": "Oportunidade profissional",
+            "body": "Olá, Mateus! Vi seu portfólio e gostaria de conversar sobre uma oportunidade na área de dados/software. Podemos marcar um bate-papo rápido?"
+          }
+        }
+      },
+      {
+        "id": "project",
+        "icon": "code",
+        "content": {
+          "en": {
+            "label": "Project",
+            "subject": "Project / collaboration inquiry",
+            "body": "Hi Mateus! I have a project/technical challenge in mind and would like to discuss scope, architecture and your availability."
+          },
+          "pt-BR": {
+            "label": "Projeto",
+            "subject": "Proposta de projeto / parceria",
+            "body": "Olá, Mateus! Tenho um projeto/desafio técnico em mente e gostaria de conversar sobre escopo, arquitetura e sua disponibilidade."
+          }
+        }
+      },
+      {
+        "id": "data",
+        "icon": "layers",
+        "content": {
+          "en": {
+            "label": "Data & AI",
+            "subject": "Data pipelines & Applied AI inquiry",
+            "body": "Hi Mateus! I saw your background in data engineering and applied AI and would love to discuss a challenge in this space."
+          },
+          "pt-BR": {
+            "label": "Dados & IA",
+            "subject": "Conversa sobre Dados, Pipelines & IA",
+            "body": "Olá, Mateus! Vi sua experiência com engenharia de dados e IA aplicada e gostaria de trocar uma ideia sobre uma demanda nessa área."
+          }
+        }
+      },
+      {
+        "id": "general",
+        "icon": "message",
+        "content": {
+          "en": {
+            "label": "General",
+            "subject": "Hello from your portfolio",
+            "body": "Hi Mateus! Just explored your portfolio, really enjoyed your work and wanted to connect."
+          },
+          "pt-BR": {
+            "label": "Contato geral",
+            "subject": "Contato pelo portfólio",
+            "body": "Olá, Mateus! Passei pelo seu portfólio, curti bastante o seu trabalho e queria conectar."
+          }
+        }
+      }
+    ],
+    "ui": {
+      "content": {
+        "en": {
+          "copyEmailAria": "Copy email address",
+          "copyEmailButton": "Copy",
+          "copiedEmailButton": "Copied!",
+          "errorEmailButton": "Error",
+          "copiedEmailSr": "Email copied to clipboard.",
+          "socialsAria": "Social profiles and résumé",
+          "resumePill": "Résumé",
+          "backToTop": "Back to top",
+          "composerHeader": "Quick message · choose a topic",
+          "resetTemplate": "Reset template",
+          "topicGroupAria": "Contact topic",
+          "senderLabel": "Your name or company (optional)",
+          "senderPlaceholder": "e.g. Alex · Acme Corp",
+          "senderSignaturePrefix": "From",
+          "messageLabel": "Message (ready to send or customize)",
+          "sendEmailButton": "Send via email",
+          "copyDraftButton": "Copy text",
+          "copiedDraftButton": "Draft copied!",
+          "copiedDraftSr": "Message copied to clipboard."
+        },
+        "pt-BR": {
+          "copyEmailAria": "Copiar endereço de e-mail",
+          "copyEmailButton": "Copiar",
+          "copiedEmailButton": "Copiado!",
+          "errorEmailButton": "Erro",
+          "copiedEmailSr": "E-mail copiado para a área de transferência.",
+          "socialsAria": "Redes e currículo",
+          "resumePill": "Currículo",
+          "backToTop": "Voltar ao topo",
+          "composerHeader": "Mensagem rápida · escolha o assunto",
+          "resetTemplate": "Restaurar modelo",
+          "topicGroupAria": "Tipo de contato",
+          "senderLabel": "Seu nome ou empresa (opcional)",
+          "senderPlaceholder": "Ex.: Ana · Empresa X",
+          "senderSignaturePrefix": "Enviado por",
+          "messageLabel": "Mensagem (já pronta ou personalize)",
+          "sendEmailButton": "Enviar por e-mail",
+          "copyDraftButton": "Copiar texto",
+          "copiedDraftButton": "Texto copiado!",
+          "copiedDraftSr": "Mensagem copiada para a área de transferência."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "navigation": {
+    "content": {
+      "en": {
+        "label": "Main navigation",
+        "skills": "Skills",
+        "projects": "Projects",
+        "experience": "Experience",
+        "about": "About",
+        "education": "Education",
+        "resumes": "Résumé",
+        "contact": "Let’s talk"
+      },
+      "pt-BR": {
+        "label": "Navegação principal",
+        "skills": "Habilidades",
+        "projects": "Projetos",
+        "experience": "Experiência",
+        "about": "Sobre",
+        "education": "Educação",
+        "resumes": "Currículo",
+        "contact": "Vamos conversar"
+      }
+    }
+  },
+  "sections": {
+    "projects": {
+      "content": {
+        "en": {
+          "title": "Selected work",
+          "introduction": "Different problems. The same curiosity to understand, build and improve.",
+          "viewAll": "View all on GitHub",
+          "githubUrl": "https://github.com/matbdev"
+        },
+        "pt-BR": {
+          "title": "Projetos em destaque",
+          "introduction": "Problemas diferentes. A mesma curiosidade para entender, construir e melhorar.",
+          "viewAll": "Ver todos no GitHub",
+          "githubUrl": "https://github.com/matbdev"
+        }
+      }
+    },
+    "skills": {
+      "content": {
+        "en": {
+          "title": "Tools, in context",
+          "introduction": "Every skill here is tied to real work. Pick one to see where it made a difference."
+        },
+        "pt-BR": {
+          "title": "Ferramentas, com contexto",
+          "introduction": "Cada habilidade aqui está ligada a um trabalho real. Escolha uma para ver onde ela fez diferença."
+        }
+      }
+    },
+    "experience": {
+      "content": {
+        "en": {
+          "title": "Built through practice.",
+          "introduction": "From industrial processes to software and data, learning by solving real problems."
+        },
+        "pt-BR": {
+          "title": "Construído na prática.",
+          "introduction": "De processos industriais a software e dados, aprendendo ao resolver problemas reais."
+        }
+      }
+    },
+    "learning": {
+      "content": {
+        "en": {
+          "title": "Learning, with intention.",
+          "introduction": "Academic education, verifiable credentials and continued study."
+        },
+        "pt-BR": {
+          "title": "Aprendizado com propósito.",
+          "introduction": "Formação acadêmica, credenciais verificáveis e estudos complementares."
+        }
+      }
+    },
+    "resumes": {
+      "content": {
+        "en": {
+          "title": "The right résumé for the conversation",
+          "introduction": "Choose a focus and a language. Both versions tell the same story, through a different lens.",
+          "note": "The document language is independent of the website language."
+        },
+        "pt-BR": {
+          "title": "O currículo certo para a conversa",
+          "introduction": "Escolha uma área e um idioma. As duas versões contam a mesma trajetória, com enfoques diferentes.",
+          "note": "O idioma do documento é independente do idioma do site."
+        }
+      }
+    },
+    "contact": {
+      "content": {
+        "en": {
+          "title": "Let’s build something useful",
+          "introduction": "Have a role, a project or an interesting problem in mind? I’d be glad to hear about it."
+        },
+        "pt-BR": {
+          "title": "Vamos construir algo útil",
+          "introduction": "Tem uma oportunidade, um projeto ou um problema interessante em mente? Vou gostar de conversar."
+        }
+      }
+    }
+  }
+}

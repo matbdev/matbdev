@@ -1,0 +1,42 @@
+# ==============================================================================
+# Module: courses.yml
+# Source: data/portfolio.json -> courses
+# ==============================================================================
+
+courses:
+  - id: ccna-coursework
+    type: coursework
+    content:
+      en:
+        name: CCNA 1 & CCNA 2 coursework
+        provider: Cisco Networking Academy
+      pt-BR:
+        name: Formação CCNA 1 e CCNA 2
+        provider: Cisco Networking Academy
+  - id: linux-fundamentals
+    type: course
+    content:
+      en:
+        name: Linux Fundamentals
+        provider: Red Hat Training
+      pt-BR:
+        name: Linux Fundamentals
+        provider: Red Hat Training
+  - id: sql-advanced
+    type: skills-assessment
+    content:
+      en:
+        name: SQL (Advanced)
+        provider: HackerRank · skills assessment
+      pt-BR:
+        name: SQL (Advanced)
+        provider: HackerRank · avaliação de habilidades
+  - id: databricks-certified-data-engineer
+    type: exam-prep
+    content:
+      en:
+        name: Databricks Certified Data Engineer
+        provider: Databricks Academy · exam preparation
+      pt-BR:
+        name: Databricks Certified Data Engineer
+        provider: Databricks Academy · preparação para o exame

@@ -1,0 +1,107 @@
+# ==============================================================================
+# Module: profile.yml
+# Source: data/portfolio.json -> profile
+# ==============================================================================
+
+profile:
+  name: Mateus Carniel Brambilla
+  shortName: Mateus Brambilla
+  handle: matbdev
+  role: Data & Software Engineer
+  email: mateus@matbdev.com
+  socials:
+    - name: GitHub
+      icon: github
+      href: https://github.com/matbdev
+    - name: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/mateus-carniel-brambilla/
+    - name: Credly
+      icon: award
+      href: https://www.credly.com/users/mateus-carniel-brambilla.0c10944d
+    - name: Instagram
+      icon: instagram
+      href: https://www.instagram.com/mateuscbrambilla/
+  portrait:
+    src: /assets/images/mateus-enhanced.webp
+    originalSrc: /assets/images/mateus-github.jpg
+    width: 1254
+    height: 1254
+    enhanced: true
+    alt:
+      en: Mateus Carniel Brambilla — enhanced version of his GitHub portrait
+      pt-BR: Mateus Carniel Brambilla — versão aprimorada do retrato do GitHub
+    caption:
+      en: GitHub · enhanced
+      pt-BR: GitHub · aprimorada
+  languages:
+    - code: pt-BR
+      level: native
+    - code: en
+      level: B2
+  content:
+    en:
+      readme:
+        languageLink: Ler em português
+        portfolioLink: Explore my portfolio
+        experienceHeading: Experience
+        projectsHeading: Selected projects
+        toolsHeading: Tools in context
+        educationHeading: Education
+        credentialsHeading: Certifications
+        aboutHeading: Beyond work
+        contactHeading: Contact
+        repositoryLink: Portfolio source and development guide
+      location: Rio Grande do Sul, Brazil
+      introduction: I’m a developer working across data engineering, backend systems
+        and applied AI. Turning complex problems into useful, reliable solutions.
+      currentRole: Developer at Tramontina
+      educationSummary: Software Engineering · Univates
+      aboutTitle: Curiosity is the common thread.
+      biography:
+        - I’m Mateus, a developer based in Rio Grande do Sul, Brazil, and a Software
+          Engineering student at Univates, with graduation expected in December 2028.
+        - 'I enjoy working where software meets data: understanding a problem, connecting
+          the pieces and making the result useful. My interests also extend to cloud
+          infrastructure, open source and Earth observation.'
+        - Away from the keyboard, I like LEGO Architecture, games and learning how
+          things fit together.
+      interests:
+        - Open source
+        - Cloud & infrastructure
+        - Earth observation
+        - LEGO Architecture
+      skillsNote: Professional practice, project experience and topics I’m developing.
+    pt-BR:
+      readme:
+        languageLink: Read in English
+        portfolioLink: Conheça meu portfólio
+        experienceHeading: Experiência
+        projectsHeading: Projetos em destaque
+        toolsHeading: Ferramentas em contexto
+        educationHeading: Formação
+        credentialsHeading: Certificações
+        aboutHeading: Além do trabalho
+        contactHeading: Contato
+        repositoryLink: Código do portfólio e guia de desenvolvimento
+      location: Rio Grande do Sul, Brasil
+      introduction: Sou desenvolvedor e atuo com engenharia de dados, sistemas backend
+        e IA aplicada. Transformando problemas complexos em soluções úteis e confiáveis.
+      currentRole: Desenvolvedor na Tramontina
+      educationSummary: Engenharia de Software · Univates
+      aboutTitle: A curiosidade conecta tudo.
+      biography:
+        - Sou Mateus, desenvolvedor no Rio Grande do Sul e estudante de Engenharia
+          de Software na Univates, com conclusão prevista para dezembro de 2028.
+        - 'Gosto de trabalhar onde software e dados se encontram: entender um problema,
+          conectar as peças e tornar o resultado útil. Também me interesso por infraestrutura
+          em nuvem, código aberto e observação da Terra.'
+        - Fora do teclado, gosto de LEGO Architecture, jogos e de descobrir como as
+          coisas se encaixam.
+      interests:
+        - Código aberto
+        - Nuvem e infraestrutura
+        - Observação da Terra
+        - LEGO Architecture
+      skillsNote: Prática profissional, experiência em projetos e temas que estou
+        desenvolvendo.

@@ -1,0 +1,89 @@
+# ==============================================================================
+# Module: experience.yml
+# Source: data/portfolio.json -> experience
+# ==============================================================================
+
+experience:
+  - id: developer
+    company: Tramontina Multi S.A.
+    startDate: 2025-11
+    endDate: null
+    current: true
+    order: 1
+    technologies:
+      - Python
+      - PySpark
+      - SQL
+      - Databricks
+      - Delta Lake
+      - Unity Catalog
+      - Flask
+      - Docker
+    content:
+      en:
+        title: Developer · Backend & Data Engineering
+        period: Nov 2025 — Present
+        summary: Production data pipelines, backend integrations and tooling for the
+          Databricks ecosystem.
+        details:
+          - id: data-pipelines
+            title: Data pipelines
+            text: Built and maintained 20+ batch jobs with PySpark, SQL, Delta Lake
+              and Unity Catalog. Migrated an approximately 20-notebook pipeline to
+              serverless Lakeflow/DLT, reducing runtime from about 30 to 8 minutes.
+          - id: backend-iot
+            title: Backend & IoT
+            text: Built and deployed a Flask/Pydantic service to process RFID readings,
+              apply business rules and update MongoDB and SQL Server, running in Docker
+              on a VM.
+          - id: platform-ai
+            title: Platform & applied AI
+            text: Built Python tooling for versioning and promoting Genie metadata.
+              Reduced LLM output cost by 75% in a cataloging pipeline and added primary/fallback
+              model routing.
+        note: Selected contributions from my current role.
+      pt-BR:
+        title: Desenvolvedor · Backend e Engenharia de Dados
+        period: Nov 2025 — Atual
+        summary: Pipelines de dados em produção, integrações backend e ferramentas
+          para o ecossistema Databricks.
+        details:
+          - id: data-pipelines
+            title: Pipelines de dados
+            text: Construção e manutenção de mais de 20 jobs batch com PySpark, SQL,
+              Delta Lake e Unity Catalog. Migração de um pipeline de aproximadamente
+              20 notebooks para Lakeflow/DLT serverless, reduzindo a execução de cerca
+              de 30 para 8 minutos.
+          - id: backend-iot
+            title: Backend e IoT
+            text: Desenvolvimento e deploy de um serviço Flask/Pydantic para processar
+              leituras RFID, aplicar regras de negócio e atualizar MongoDB e SQL Server,
+              executando em Docker em uma VM.
+          - id: platform-ai
+            title: Plataforma e IA aplicada
+            text: Desenvolvimento de ferramentas Python para versionar e promover
+              metadados do Genie. Redução de 75% no custo de saída de LLM em um pipeline
+              de catalogação e implementação de modelos principal e fallback.
+        note: Algumas contribuições no meu cargo atual.
+  - id: trainee
+    company: Tramontina Multi S.A.
+    startDate: 2025-04
+    endDate: 2025-11
+    current: false
+    order: 2
+    content:
+      en:
+        title: Industrial Processes Trainee
+        period: Apr — Nov 2025
+        summary: Practical foundations in Python, PySpark, Databricks and industrial
+          data.
+        description: Worked with notebooks, Bronze/Silver data layers, analysis and
+          Git. Explored Prophet and LSTM time-series proofs of concept during the
+          transition to a development role.
+      pt-BR:
+        title: Aprendiz de Processos Industriais
+        period: Abr — Nov 2025
+        summary: Fundamentos práticos em Python, PySpark, Databricks e dados industriais.
+        description: Trabalho com notebooks, camadas Bronze/Silver, análise de dados
+          e Git. Exploração de provas de conceito com Prophet e LSTM para séries temporais
+          durante a transição para desenvolvimento.

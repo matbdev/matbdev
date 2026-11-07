@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfólio · Componentes Vue"
+  short_description: "Componentes, composables e estilos do portfólio"
+  default_prompt: "Use $portfolio-vue-components para refatorar os componentes Vue preservando contratos, estilos e interações."

@@ -1,0 +1,117 @@
+{
+  "contact": {
+    "defaultIntentId": "opportunity",
+    "intents": [
+      {
+        "id": "opportunity",
+        "icon": "briefcase",
+        "content": {
+          "en": {
+            "label": "Opportunity",
+            "subject": "Job opportunity",
+            "body": "Hi Mateus! I came across your portfolio and would love to chat about a role in data/software engineering. Would you be open to a quick call?"
+          },
+          "pt-BR": {
+            "label": "Oportunidade",
+            "subject": "Oportunidade profissional",
+            "body": "Olá, Mateus! Vi seu portfólio e gostaria de conversar sobre uma oportunidade na área de dados/software. Podemos marcar um bate-papo rápido?"
+          }
+        }
+      },
+      {
+        "id": "project",
+        "icon": "code",
+        "content": {
+          "en": {
+            "label": "Project",
+            "subject": "Project / collaboration inquiry",
+            "body": "Hi Mateus! I have a project/technical challenge in mind and would like to discuss scope, architecture and your availability."
+          },
+          "pt-BR": {
+            "label": "Projeto",
+            "subject": "Proposta de projeto / parceria",
+            "body": "Olá, Mateus! Tenho um projeto/desafio técnico em mente e gostaria de conversar sobre escopo, arquitetura e sua disponibilidade."
+          }
+        }
+      },
+      {
+        "id": "data",
+        "icon": "layers",
+        "content": {
+          "en": {
+            "label": "Data & AI",
+            "subject": "Data pipelines & Applied AI inquiry",
+            "body": "Hi Mateus! I saw your background in data engineering and applied AI and would love to discuss a challenge in this space."
+          },
+          "pt-BR": {
+            "label": "Dados & IA",
+            "subject": "Conversa sobre Dados, Pipelines & IA",
+            "body": "Olá, Mateus! Vi sua experiência com engenharia de dados e IA aplicada e gostaria de trocar uma ideia sobre uma demanda nessa área."
+          }
+        }
+      },
+      {
+        "id": "general",
+        "icon": "message",
+        "content": {
+          "en": {
+            "label": "General",
+            "subject": "Hello from your portfolio",
+            "body": "Hi Mateus! Just explored your portfolio, really enjoyed your work and wanted to connect."
+          },
+          "pt-BR": {
+            "label": "Contato geral",
+            "subject": "Contato pelo portfólio",
+            "body": "Olá, Mateus! Passei pelo seu portfólio, curti bastante o seu trabalho e queria conectar."
+          }
+        }
+      }
+    ],
+    "ui": {
+      "content": {
+        "en": {
+          "copyEmailAria": "Copy email address",
+          "copyEmailButton": "Copy",
+          "copiedEmailButton": "Copied!",
+          "errorEmailButton": "Error",
+          "copiedEmailSr": "Email copied to clipboard.",
+          "socialsAria": "Social profiles and résumé",
+          "resumePill": "Résumé",
+          "backToTop": "Back to top",
+          "composerHeader": "Quick message · choose a topic",
+          "resetTemplate": "Reset template",
+          "topicGroupAria": "Contact topic",
+          "senderLabel": "Your name or company (optional)",
+          "senderPlaceholder": "e.g. Alex · Acme Corp",
+          "senderSignaturePrefix": "From",
+          "messageLabel": "Message (ready to send or customize)",
+          "sendEmailButton": "Send via email",
+          "copyDraftButton": "Copy text",
+          "copiedDraftButton": "Draft copied!",
+          "copiedDraftSr": "Message copied to clipboard."
+        },
+        "pt-BR": {
+          "copyEmailAria": "Copiar endereço de e-mail",
+          "copyEmailButton": "Copiar",
+          "copiedEmailButton": "Copiado!",
+          "errorEmailButton": "Erro",
+          "copiedEmailSr": "E-mail copiado para a área de transferência.",
+          "socialsAria": "Redes e currículo",
+          "resumePill": "Currículo",
+          "backToTop": "Voltar ao topo",
+          "composerHeader": "Mensagem rápida · escolha o assunto",
+          "resetTemplate": "Restaurar modelo",
+          "topicGroupAria": "Tipo de contato",
+          "senderLabel": "Seu nome ou empresa (opcional)",
+          "senderPlaceholder": "Ex.: Ana · Empresa X",
+          "senderSignaturePrefix": "Enviado por",
+          "messageLabel": "Mensagem (já pronta ou personalize)",
+          "sendEmailButton": "Enviar por e-mail",
+          "copyDraftButton": "Copiar texto",
+          "copiedDraftButton": "Texto copiado!",
+          "copiedDraftSr": "Mensagem copiada para a área de transferência."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfólio · Conteúdo bilíngue"
+  short_description: "Conteúdo YAML, idiomas, assets e highlights"
+  default_prompt: "Use $portfolio-content para atualizar os dados bilíngues do portfólio e conferir referências e saídas geradas."

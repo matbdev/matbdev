@@ -1,0 +1,138 @@
+{
+  "ui": {
+    "content": {
+      "en": {
+        "discipline": "Focus area",
+        "data": "Data engineering",
+        "dataSubtitle": "Pipelines, Databricks & applied AI",
+        "software": "Software engineering",
+        "softwareSubtitle": "Backend systems, APIs & architecture",
+        "language": "Document language",
+        "previewAction": "View full résumé",
+        "downloadAction": "Download résumé (PDF)",
+        "copyAction": "Copy as Markdown",
+        "copiedSuccess": "Résumé copied in Markdown!",
+        "closeModal": "Close preview",
+        "summaryHeading": "Professional Profile",
+        "experienceHeading": "Professional Experience",
+        "projectsHeading": "Featured Projects",
+        "skillsHeading": "Technical Skills",
+        "educationHeading": "Academic Background",
+        "certificationsHeading": "Certifications & Training",
+        "present": "Present",
+        "expected": "Expected",
+        "verified": "Verify Credential",
+        "englishLevel": "English B2"
+      },
+      "pt-BR": {
+        "discipline": "Área de foco",
+        "data": "Engenharia de dados",
+        "dataSubtitle": "Pipelines, Databricks e IA aplicada",
+        "software": "Engenharia de software",
+        "softwareSubtitle": "Sistemas backend, APIs e arquitetura",
+        "language": "Idioma do documento",
+        "previewAction": "Visualizar currículo",
+        "downloadAction": "Baixar currículo (PDF)",
+        "copyAction": "Copiar em Markdown",
+        "copiedSuccess": "Currículo copiado em Markdown!",
+        "closeModal": "Fechar visualização",
+        "summaryHeading": "Perfil Profissional",
+        "experienceHeading": "Experiência Profissional",
+        "projectsHeading": "Projetos em Destaque",
+        "skillsHeading": "Competências Técnicas",
+        "educationHeading": "Formação Acadêmica",
+        "certificationsHeading": "Certificações e Treinamentos",
+        "present": "Atual",
+        "expected": "Previsão",
+        "verified": "Verificar Credencial",
+        "englishLevel": "Inglês B2"
+      }
+    }
+  },
+  "resumes": [
+    {
+      "id": "data-en",
+      "discipline": "data",
+      "locale": "en",
+      "format": "pdf",
+      "src": "/assets/resumes/cv_data_eng_mateus_en.pdf",
+      "content": {
+        "en": {
+          "title": "Data engineering",
+          "tagline": "Data Engineer | Databricks | Applied AI",
+          "description": "Pipelines, Databricks, platform automation and applied AI.",
+          "summary": "Data Engineer with production experience in the Databricks ecosystem, working daily with PySpark, SQL, Delta Lake, Unity Catalog, and Asset Bundles. Builds and maintains batch pipelines, platform automation, and applied AI solutions. Has worked across 20+ Databricks jobs, migrated an approximately 20-notebook pipeline to Lakeflow Pipelines/DLT reducing runtime from about 30 to 8 minutes, and reduced LLM output cost by 75% in a production pipeline."
+        },
+        "pt-BR": {
+          "title": "Engenharia de dados",
+          "tagline": "Engenheiro de Dados | Databricks | IA Aplicada",
+          "description": "Pipelines, Databricks, automação de plataforma e IA aplicada.",
+          "summary": "Engenheiro de Dados com experiência de produção no ecossistema Databricks, atuando diariamente com PySpark, SQL, Delta Lake, Unity Catalog e Asset Bundles. Constrói e mantém pipelines batch, automações de plataforma e soluções de IA aplicada. Atuou em mais de 20 jobs Databricks, migrou um pipeline de cerca de 20 notebooks para Lakeflow Pipelines/DLT reduzindo o tempo de cerca de 30 para 8 minutos, e reduziu em 75% o custo de saída de LLM em pipeline de produção."
+        }
+      }
+    },
+    {
+      "id": "data-pt-BR",
+      "discipline": "data",
+      "locale": "pt-BR",
+      "format": "pdf",
+      "src": "/assets/resumes/cv_data_eng_mateus_pt.pdf",
+      "content": {
+        "en": {
+          "title": "Data engineering",
+          "tagline": "Data Engineer | Databricks | Applied AI",
+          "description": "Pipelines, Databricks, platform automation and applied AI.",
+          "summary": "Data Engineer with production experience in the Databricks ecosystem, working daily with PySpark, SQL, Delta Lake, Unity Catalog, and Asset Bundles. Builds and maintains batch pipelines, platform automation, and applied AI solutions. Has worked across 20+ Databricks jobs, migrated an approximately 20-notebook pipeline to Lakeflow Pipelines/DLT reducing runtime from about 30 to 8 minutes, and reduced LLM output cost by 75% in a production pipeline."
+        },
+        "pt-BR": {
+          "title": "Engenharia de dados",
+          "tagline": "Engenheiro de Dados | Databricks | IA Aplicada",
+          "description": "Pipelines, Databricks, automação de plataforma e IA aplicada.",
+          "summary": "Engenheiro de Dados com experiência de produção no ecossistema Databricks, atuando diariamente com PySpark, SQL, Delta Lake, Unity Catalog e Asset Bundles. Constrói e mantém pipelines batch, automações de plataforma e soluções de IA aplicada. Atuou em mais de 20 jobs Databricks, migrou um pipeline de cerca de 20 notebooks para Lakeflow Pipelines/DLT reduzindo o tempo de cerca de 30 para 8 minutos, e reduziu em 75% o custo de saída de LLM em pipeline de produção."
+        }
+      }
+    },
+    {
+      "id": "software-en",
+      "discipline": "software",
+      "locale": "en",
+      "format": "pdf",
+      "src": "/assets/resumes/cv_software_mateus_en.pdf",
+      "content": {
+        "en": {
+          "title": "Software engineering",
+          "tagline": "Software Engineer | Backend | Python & TypeScript",
+          "description": "Backend systems, APIs, integrations and software projects.",
+          "summary": "Backend-focused Software Engineer with professional experience in Python, Flask, Pydantic, and data/IoT system integration. Built and deployed a containerized RFID ingestion service, internal automation tooling with the Databricks SDK, and LLM integrations. Through projects, develops Node.js/TypeScript APIs with Express, PostgreSQL, Prisma, Zod, JWT/OAuth2, and API security practices."
+        },
+        "pt-BR": {
+          "title": "Engenharia de software",
+          "tagline": "Engenheiro de Software | Backend | Python & TypeScript",
+          "description": "Sistemas backend, APIs, integrações e projetos de software.",
+          "summary": "Engenheiro de Software com foco em backend e experiência profissional em Python, Flask, Pydantic e integração de sistemas de dados e IoT. Desenvolveu e realizou deploy de serviço containerizado para ingestão RFID, ferramentas internas com Databricks SDK e integrações de LLM. Em projetos, constrói APIs Node.js/TypeScript com Express, PostgreSQL, Prisma, Zod, JWT/OAuth2 e práticas de segurança de APIs."
+        }
+      }
+    },
+    {
+      "id": "software-pt-BR",
+      "discipline": "software",
+      "locale": "pt-BR",
+      "format": "pdf",
+      "src": "/assets/resumes/cv_software_mateus_pt.pdf",
+      "content": {
+        "en": {
+          "title": "Software engineering",
+          "tagline": "Software Engineer | Backend | Python & TypeScript",
+          "description": "Backend systems, APIs, integrations and software projects.",
+          "summary": "Backend-focused Software Engineer with professional experience in Python, Flask, Pydantic, and data/IoT system integration. Built and deployed a containerized RFID ingestion service, internal automation tooling with the Databricks SDK, and LLM integrations. Through projects, develops Node.js/TypeScript APIs with Express, PostgreSQL, Prisma, Zod, JWT/OAuth2, and API security practices."
+        },
+        "pt-BR": {
+          "title": "Engenharia de software",
+          "tagline": "Engenheiro de Software | Backend | Python & TypeScript",
+          "description": "Sistemas backend, APIs, integrações e projetos de software.",
+          "summary": "Engenheiro de Software com foco em backend e experiência profissional em Python, Flask, Pydantic e integração de sistemas de dados e IoT. Desenvolveu e realizou deploy de serviço containerizado para ingestão RFID, ferramentas internas com Databricks SDK e integrações de LLM. Em projetos, constrói APIs Node.js/TypeScript com Express, PostgreSQL, Prisma, Zod, JWT/OAuth2 e práticas de segurança de APIs."
+        }
+      }
+    }
+  ]
+}

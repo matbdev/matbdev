@@ -1,0 +1,23 @@
+{
+  "education": [
+    {
+      "id": "univates-software-engineering",
+      "institution": "Univates",
+      "startYear": 2025,
+      "expectedEndDate": "2028-12",
+      "status": "in-progress",
+      "content": {
+        "en": {
+          "degree": "Bachelor’s in Software Engineering",
+          "period": "2025 — December 2028 (expected)",
+          "description": "At Univates, I connect my software engineering studies with backend development, data engineering and collaborative projects."
+        },
+        "pt-BR": {
+          "degree": "Bacharelado em Engenharia de Software",
+          "period": "2025 — dezembro de 2028 (previsão)",
+          "description": "Na Univates, conecto os estudos de Engenharia de Software com desenvolvimento backend, engenharia de dados e projetos em equipe."
+        }
+      }
+    }
+  ]
+}

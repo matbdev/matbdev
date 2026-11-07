@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-29",
+  "defaultLocale": "en",
+  "locales": [
+    "en",
+    "pt-BR"
+  ],
+  "assetsBaseUrl": "/",
+  "url": "https://matbdev.com",
+  "seo": {
+    "image": "/og-preview.png",
+    "content": {
+      "en": {
+        "title": "Mateus Carniel Brambilla — Data & Software Engineer",
+        "description": "Software, data engineering and applied AI. Explore the work, experience and projects of Mateus Carniel Brambilla, based in Brazil.",
+        "imageAlt": "Portfolio of Mateus Carniel Brambilla, Data & Software Engineer."
+      },
+      "pt-BR": {
+        "title": "Mateus Carniel Brambilla — Engenheiro de Dados e Software",
+        "description": "Engenharia de software, dados e IA aplicada. Explore a trajetória, projetos e experiência de Mateus Carniel Brambilla, no Brasil.",
+        "imageAlt": "Portfólio de Mateus Carniel Brambilla, engenheiro de dados e software."
+      }
+    }
+  }
+}

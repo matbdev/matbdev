@@ -1,0 +1,33 @@
+# ==============================================================================
+# Module: certifications.yml
+# Source: data/portfolio.json -> certifications
+# ==============================================================================
+
+certifications:
+  - id: google-cloud-ace
+    name: Associate Cloud Engineer
+    issuer: Google Cloud
+    image: /assets/images/badge-google-ace.webp
+    credentialUrl: https://www.credly.com/badges/f91cbf24-cb3f-4923-a725-e0de7c89ba12/public_url
+    technologies:
+      - Google Cloud
+      - Docker
+      - Linux
+    content:
+      en:
+        topic: Cloud engineering · Google Cloud
+      pt-BR:
+        topic: Engenharia de nuvem · Google Cloud
+  - id: airflow-3-fundamentals
+    name: Apache Airflow 3 Fundamentals
+    issuer: Astronomer
+    image: /assets/images/badge-airflow.webp
+    credentialUrl: https://www.credly.com/badges/27f5f400-6d68-4086-b073-ec5a7c9e550e/public_url
+    technologies:
+      - Apache Airflow
+      - Python
+    content:
+      en:
+        topic: Workflow orchestration · Apache Airflow 3
+      pt-BR:
+        topic: Orquestração de workflows · Apache Airflow 3

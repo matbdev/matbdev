@@ -1,0 +1,20 @@
+# ==============================================================================
+# Module: organizations.yml
+# Source: data/portfolio.json -> organizations
+# ==============================================================================
+
+organizations:
+  - id: deadlock
+    name: Deadlock
+    links:
+      github: https://github.com/univates-deadlock
+      portfolio: https://deadlock.matbdev.com
+    content:
+      en:
+        title: Built with Deadlock
+        description: I structured our GitHub organization and team portfolio to connect
+          repositories, people and the project’s entry points.
+      pt-BR:
+        title: Desenvolvido com a Deadlock
+        description: Estruturei nossa organização no GitHub e o portfólio da equipe
+          para conectar repositórios, pessoas e os pontos de acesso ao projeto.

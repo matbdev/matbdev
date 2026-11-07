@@ -1,0 +1,59 @@
+// Localized warm-amber cursor spotlight on solid Darkroom architectural surfaces
+@mixin amber-spot($fill-radius: 90px, $rim-radius: 100px) {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    background: radial-gradient(
+      #{$fill-radius} circle at var(--mx, 50%) var(--my, 50%),
+      rgba(255, 176, 96, 0.22) 0%,
+      rgba(255, 196, 112, 0.07) 52%,
+      transparent 100%
+    );
+    transition: opacity 180ms ease;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    padding: 1px;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    background: radial-gradient(
+      #{$rim-radius} circle at var(--mx, 50%) var(--my, 50%),
+      rgba(255, 220, 152, 0.85) 0%,
+      rgba(255, 176, 96, 0.38) 50%,
+      transparent 100%
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    transition: opacity 180ms ease;
+  }
+
+  &:hover:not(:disabled)::before,
+  &:hover:not(:disabled)::after,
+  &:focus-visible::before,
+  &:focus-visible::after {
+    opacity: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &::before,
+    &::after {
+      transition: none;
+    }
+  }
+}

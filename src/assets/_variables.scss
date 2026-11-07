@@ -1,0 +1,60 @@
+// Design System Variables (matbdev)
+// SCSS variables mapping to CSS custom properties
+
+// Colors
+$color-bg: var(--color-bg);
+$color-surface: var(--color-surface);
+$color-ink: var(--color-ink);
+$color-text: var(--color-text);
+$color-muted: var(--color-muted);
+$color-line: var(--color-line);
+$color-accent: var(--color-accent);
+$color-accent-soft: var(--color-accent-soft);
+$color-forest: var(--color-forest);
+$color-dark-text: var(--color-dark-text);
+$color-dark-muted: var(--color-dark-muted);
+$color-interaction: var(--color-interaction);
+$color-interaction-soft: var(--color-interaction-soft);
+$color-interaction-border: var(--color-interaction-border);
+$color-focus: var(--color-focus);
+
+// Typography
+$font-sans: var(--font-sans);
+$text-xs: var(--text-xs);
+$text-sm: var(--text-sm);
+$text-base: var(--text-base);
+$text-md: var(--text-md);
+$text-lg: var(--text-lg);
+$text-xl: var(--text-xl);
+$text-heading: var(--text-heading);
+$text-display: var(--text-display);
+
+// Spacing
+$space-1: var(--space-1);
+$space-2: var(--space-2);
+$space-3: var(--space-3);
+$space-4: var(--space-4);
+$space-5: var(--space-5);
+$space-6: var(--space-6);
+$space-8: var(--space-8);
+$space-10: var(--space-10);
+$space-12: var(--space-12);
+$space-16: var(--space-16);
+$space-20: var(--space-20);
+$space-24: var(--space-24);
+$space-section: var(--space-section);
+$space-section-gap: var(--space-section-gap);
+
+// Border Radius
+$radius-sm: var(--radius-sm);
+$radius-md: var(--radius-md);
+$radius-lg: var(--radius-lg);
+$radius-pill: var(--radius-pill);
+
+// Shadows & Transitions & Layout
+$shadow-glass: var(--shadow-glass);
+$shadow-plane: var(--shadow-plane);
+$transition-fast: var(--transition-fast);
+$transition-slow: var(--transition-slow);
+$layout-max: var(--layout-max);
+$layout-gutter: var(--layout-gutter);

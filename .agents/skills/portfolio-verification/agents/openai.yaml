@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfólio · Verificação"
+  short_description: "Build, testes e revisão das mudanças do portfólio"
+  default_prompt: "Use $portfolio-verification para validar as mudanças e relatar os checks executados e suas limitações."

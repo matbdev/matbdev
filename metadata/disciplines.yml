@@ -1,0 +1,44 @@
+# ==============================================================================
+# Module: disciplines.yml
+# Source: data/portfolio.json -> disciplines
+# ==============================================================================
+
+disciplines:
+  - id: data
+    technologies:
+      - PySpark
+      - SQL
+      - Databricks
+      - Delta Lake
+    projectCategory: data
+    resumeDiscipline: data
+    content:
+      en:
+        label: Data engineering
+        title: Pipelines, context & applied AI.
+        description: Production work with Databricks and data pipelines, plus geospatial
+          projects.
+      pt-BR:
+        label: Engenharia de dados
+        title: Pipelines, contexto e IA aplicada.
+        description: Atuação em produção com Databricks e pipelines, além de projetos
+          geoespaciais.
+  - id: software
+    alias: web
+    technologies:
+      - Python
+      - Flask
+      - TypeScript
+      - Docker
+    projectCategory: software
+    resumeDiscipline: software
+    content:
+      en:
+        label: Software engineering
+        title: Backend, APIs & delivery.
+        description: Business rules, system integrations and containerized applications.
+      pt-BR:
+        label: Engenharia de software
+        title: Backend, APIs e entrega.
+        description: Regras de negócio, integrações entre sistemas e aplicações em
+          containers.

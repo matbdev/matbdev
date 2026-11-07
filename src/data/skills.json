@@ -1,0 +1,890 @@
+{
+  "skills": {
+    "categories": [
+      {
+        "id": "all",
+        "content": {
+          "en": {
+            "label": "All tools"
+          },
+          "pt-BR": {
+            "label": "Todas"
+          }
+        }
+      },
+      {
+        "id": "data",
+        "content": {
+          "en": {
+            "label": "Data & AI"
+          },
+          "pt-BR": {
+            "label": "Dados & IA"
+          }
+        }
+      },
+      {
+        "id": "system",
+        "content": {
+          "en": {
+            "label": "Backend"
+          },
+          "pt-BR": {
+            "label": "Backend"
+          }
+        }
+      },
+      {
+        "id": "web",
+        "content": {
+          "en": {
+            "label": "Web"
+          },
+          "pt-BR": {
+            "label": "Web"
+          }
+        }
+      },
+      {
+        "id": "certifications",
+        "content": {
+          "en": {
+            "label": "Certifications"
+          },
+          "pt-BR": {
+            "label": "Certificações"
+          }
+        }
+      }
+    ],
+    "contexts": [
+      {
+        "id": "professional",
+        "icon": "briefcase",
+        "content": {
+          "en": {
+            "label": "Professional experience"
+          },
+          "pt-BR": {
+            "label": "Experiência profissional"
+          }
+        }
+      },
+      {
+        "id": "projects",
+        "icon": "folder",
+        "content": {
+          "en": {
+            "label": "Project experience"
+          },
+          "pt-BR": {
+            "label": "Experiência em projetos"
+          }
+        }
+      },
+      {
+        "id": "learning",
+        "icon": "sprout",
+        "content": {
+          "en": {
+            "label": "Exploring & learning",
+            "description": "Apache Airflow 3, geospatial modeling, agent orchestration"
+          },
+          "pt-BR": {
+            "label": "Explorando e estudando",
+            "description": "Apache Airflow 3, modelagem geoespacial, orquestração de agentes"
+          }
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "python",
+        "name": "Python",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data",
+          "system"
+        ],
+        "synapses": [
+          "pyspark",
+          "sql",
+          "docker",
+          "airflow"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "pipeline.py",
+          "code": "from pydantic import BaseModel, Field\n\nclass TelemetryEvent(BaseModel):\n    device_id: str\n    timestamp: int = Field(gt=0)\n    metrics: dict[str, float]\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "airmood"
+          },
+          {
+            "kind": "project",
+            "id": "waterscript"
+          },
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "backend-iot"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "My main language — production data pipelines, a Flask service at work and the AirMood assistant."
+          },
+          "pt-BR": {
+            "usage": "Minha linguagem principal — pipelines de dados em produção, um serviço Flask no trabalho e o assistente AirMood."
+          }
+        }
+      },
+      {
+        "id": "pyspark",
+        "name": "PySpark",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "delta-lake",
+          "databricks",
+          "sql",
+          "airflow"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "lakehouse_etl.py",
+          "code": "(df.writeStream\n   .format(\"delta\")\n   .outputMode(\"append\")\n   .option(\"checkpointLocation\", \"/_chk/events\")\n   .toTable(\"bronze.raw_telemetry\"))\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Production batch jobs on Databricks, built and maintained day to day."
+          },
+          "pt-BR": {
+            "usage": "Jobs batch em produção no Databricks, construídos e mantidos no dia a dia."
+          }
+        }
+      },
+      {
+        "id": "sql",
+        "name": "SQL",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data",
+          "system"
+        ],
+        "synapses": [
+          "postgresql",
+          "snowflake",
+          "pyspark",
+          "databricks"
+        ],
+        "snippet": {
+          "language": "sql",
+          "file": "analytics.sql",
+          "code": "WITH ranked AS (\n  SELECT *, ROW_NUMBER() OVER(\n    PARTITION BY user_id ORDER BY created_at DESC\n  ) AS rank_idx FROM telemetry_events\n)\nSELECT * FROM ranked WHERE rank_idx = 1;\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Transformations across production pipelines, plus the HackerRank SQL (Advanced) skills assessment."
+          },
+          "pt-BR": {
+            "usage": "Transformações em pipelines de produção, além da avaliação SQL (Advanced) do HackerRank."
+          }
+        }
+      },
+      {
+        "id": "databricks",
+        "name": "Databricks",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "pyspark",
+          "delta-lake",
+          "unity-catalog",
+          "airflow"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "dlt_pipeline.py",
+          "code": "import dlt\n\n@dlt.table(comment=\"Silver cleaned sensor records\")\n@dlt.expect_or_drop(\"valid_timestamp\", \"ts IS NOT NULL\")\ndef silver_sensors():\n    return dlt.read_stream(\"bronze_sensors\")\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "platform-ai"
+          },
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Lakeflow/DLT serverless pipelines and Python tooling for Genie metadata."
+          },
+          "pt-BR": {
+            "usage": "Pipelines Lakeflow/DLT serverless e ferramentas Python para metadados do Genie."
+          }
+        }
+      },
+      {
+        "id": "delta-lake",
+        "name": "Delta Lake",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "databricks",
+          "pyspark",
+          "unity-catalog",
+          "snowflake"
+        ],
+        "snippet": {
+          "language": "sql",
+          "file": "maintenance.sql",
+          "code": "OPTIMIZE gold.user_kpis\nZORDER BY (organization_id, report_date);\n\nVACUUM gold.user_kpis RETAIN 168 HOURS;\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Table format behind the 20+ batch jobs I build and maintain."
+          },
+          "pt-BR": {
+            "usage": "Formato de tabela por trás dos mais de 20 jobs batch que construo e mantenho."
+          }
+        }
+      },
+      {
+        "id": "unity-catalog",
+        "name": "Unity Catalog",
+        "context": "professional",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "databricks",
+          "delta-lake",
+          "sql",
+          "google-cloud"
+        ],
+        "snippet": {
+          "language": "sql",
+          "file": "governance.sql",
+          "code": "CREATE CATALOG IF NOT EXISTS prod_lakehouse;\nGRANT USE CATALOG ON CATALOG prod_lakehouse TO `data-engineers`;\nGRANT SELECT ON SCHEMA prod_lakehouse.gold TO `analysts`;\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "data-pipelines"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Governance and cataloging for the tables used in production pipelines."
+          },
+          "pt-BR": {
+            "usage": "Governança e catálogo das tabelas usadas nos pipelines em produção."
+          }
+        }
+      },
+      {
+        "id": "flask",
+        "name": "Flask",
+        "context": "professional",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "python",
+          "docker",
+          "caddy",
+          "postgresql"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "api.py",
+          "code": "@app.post(\"/api/v1/telemetry\")\ndef ingest_telemetry():\n    payload = IngestSchema.model_validate(request.get_json())\n    event_bus.publish(payload)\n    return jsonify(status=\"queued\"), 202\n"
+        },
+        "highlights": [
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "backend-iot"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "A Flask/Pydantic service that processes RFID readings and applies business rules in production."
+          },
+          "pt-BR": {
+            "usage": "Serviço Flask/Pydantic que processa leituras RFID e aplica regras de negócio em produção."
+          }
+        }
+      },
+      {
+        "id": "docker",
+        "name": "Docker",
+        "context": "professional",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "python",
+          "caddy",
+          "typescript",
+          "postgresql"
+        ],
+        "snippet": {
+          "language": "dockerfile",
+          "file": "Dockerfile",
+          "code": "FROM python:3.12-slim AS runtime\nWORKDIR /app\nCOPY --from=builder /wheels /wheels\nRUN pip install --no-index --find-links=/wheels service\nCMD [\"uvicorn\", \"app.main:api\", \"--host\", \"0.0.0.0\"]\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "techpro"
+          },
+          {
+            "kind": "project",
+            "id": "deadlock-portal"
+          },
+          {
+            "kind": "experience",
+            "id": "developer",
+            "detailId": "backend-iot"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Containerized delivery for TechPro, Deadlock Portal and a Flask service running on a VM."
+          },
+          "pt-BR": {
+            "usage": "Entrega containerizada na TechPro, Deadlock Portal e um serviço Flask rodando em uma VM."
+          }
+        }
+      },
+      {
+        "id": "typescript",
+        "name": "TypeScript",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "nodejs",
+          "express",
+          "prisma",
+          "docker"
+        ],
+        "snippet": {
+          "language": "typescript",
+          "file": "result.ts",
+          "code": "export type Result<T, E = Error> =\n  | { ok: true; value: T }\n  | { ok: false; error: E };\n\nexport const ok = <T>(val: T): Result<T> => ({ ok: true, value: val });\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          },
+          {
+            "kind": "project",
+            "id": "deadlock-portal"
+          },
+          {
+            "kind": "project",
+            "id": "techpro"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "The layered CronGoal backend, the Deadlock team portal and TechPro."
+          },
+          "pt-BR": {
+            "usage": "O backend em camadas do CronGoal, o portal da equipe Deadlock e TechPro."
+          }
+        }
+      },
+      {
+        "id": "caddy",
+        "name": "Caddy",
+        "context": "projects",
+        "category": "web",
+        "categories": [
+          "web",
+          "system"
+        ],
+        "synapses": [
+          "docker",
+          "typescript",
+          "flask"
+        ],
+        "snippet": {
+          "language": "caddyfile",
+          "file": "Caddyfile",
+          "code": "app.mateusbrambilla.dev {\n  encode zstd gzip\n  reverse_proxy api:8080 {\n    header_up Host {host}\n  }\n}\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "deadlock-portal"
+          },
+          {
+            "kind": "project",
+            "id": "techpro"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Reverse proxy, automatic SSL certificates and subdomain routing for web services."
+          },
+          "pt-BR": {
+            "usage": "Proxy reverso, certificados SSL automáticos e roteamento de subdomínios nos portais web."
+          }
+        }
+      },
+      {
+        "id": "nodejs",
+        "name": "Node.js",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "typescript",
+          "express",
+          "prisma",
+          "jwt-oauth2"
+        ],
+        "snippet": {
+          "language": "typescript",
+          "file": "server.ts",
+          "code": "import { createServer } from 'node:http';\nimport { app } from './app';\n\nconst server = createServer(app);\nserver.listen(3000, () => console.log('Ready on :3000'));\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Runtime behind the CronGoal REST API."
+          },
+          "pt-BR": {
+            "usage": "Runtime por trás da API REST do CronGoal."
+          }
+        }
+      },
+      {
+        "id": "express",
+        "name": "Express",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system",
+          "web"
+        ],
+        "synapses": [
+          "typescript",
+          "prisma",
+          "jwt-oauth2",
+          "nodejs"
+        ],
+        "snippet": {
+          "language": "typescript",
+          "file": "routes.ts",
+          "code": "router.use('/goals', authMiddleware, goalController.router);\nrouter.use(errorHandler({ log: process.env.NODE_ENV !== 'production' }));\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "REST API with security middleware, Zod validation and role-based access."
+          },
+          "pt-BR": {
+            "usage": "API REST com middlewares de segurança, validação com Zod e papéis de acesso."
+          }
+        }
+      },
+      {
+        "id": "postgresql",
+        "name": "PostgreSQL",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system",
+          "data"
+        ],
+        "synapses": [
+          "prisma",
+          "sql",
+          "docker",
+          "typescript"
+        ],
+        "snippet": {
+          "language": "sql",
+          "file": "schema.sql",
+          "code": "CREATE TABLE goals (\n  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n  user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,\n  title VARCHAR(120) NOT NULL,\n  created_at TIMESTAMPTZ DEFAULT NOW()\n);\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Relational storage for CronGoal, modeled through Prisma."
+          },
+          "pt-BR": {
+            "usage": "Armazenamento relacional do CronGoal, modelado com Prisma."
+          }
+        }
+      },
+      {
+        "id": "prisma",
+        "name": "Prisma",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system"
+        ],
+        "synapses": [
+          "postgresql",
+          "typescript",
+          "nodejs",
+          "express"
+        ],
+        "snippet": {
+          "language": "prisma",
+          "file": "schema.prisma",
+          "code": "model Goal {\n  id        String   @id @default(uuid())\n  title     String\n  author    User     @relation(fields: [userId], references: [id])\n  userId    String\n  createdAt DateTime @default(now())\n}\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "ORM and schema layer for the CronGoal database."
+          },
+          "pt-BR": {
+            "usage": "ORM e camada de schema do banco do CronGoal."
+          }
+        }
+      },
+      {
+        "id": "jwt-oauth2",
+        "name": "JWT/OAuth2",
+        "context": "projects",
+        "category": "system",
+        "categories": [
+          "system"
+        ],
+        "synapses": [
+          "express",
+          "typescript",
+          "postgresql",
+          "nodejs"
+        ],
+        "snippet": {
+          "language": "typescript",
+          "file": "auth.ts",
+          "code": "const token = jwt.sign(\n  { sub: user.id, email: user.email, role: user.role },\n  process.env.JWT_SECRET!,\n  { expiresIn: '7d', algorithm: 'HS256' }\n);\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "crongoal"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Authentication with JWT and Google OAuth2 in CronGoal."
+          },
+          "pt-BR": {
+            "usage": "Autenticação com JWT e Google OAuth2 no CronGoal."
+          }
+        }
+      },
+      {
+        "id": "snowflake",
+        "name": "Snowflake",
+        "context": "projects",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "sql",
+          "python",
+          "geospatial",
+          "google-cloud"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "snowpark.py",
+          "code": "import snowflake.snowpark.functions as F\n\ndf = session.table(\"water_observations\")\ndf = df.filter(F.col(\"turbidity\").is_not_null())\ndf.write.mode(\"overwrite\").save_as_table(\"features_lake\")\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "waterscript"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Data ingestion and geospatial features with Snowpark for WaterScript."
+          },
+          "pt-BR": {
+            "usage": "Ingestão de dados e atributos geoespaciais com Snowpark no WaterScript."
+          }
+        }
+      },
+      {
+        "id": "airflow",
+        "name": "Apache Airflow",
+        "context": "learning",
+        "category": "data",
+        "categories": [
+          "data",
+          "certifications"
+        ],
+        "synapses": [
+          "python",
+          "pyspark",
+          "databricks",
+          "google-cloud"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "dag_telemetry.py",
+          "code": "from airflow.decorators import dag, task\n\n@dag(schedule=\"@daily\", start_date=datetime(2025, 1, 1), catchup=False)\ndef lakehouse_refresh():\n    @task\n    def sync_bronze(): ...\n    sync_bronze()\n"
+        },
+        "highlights": [
+          {
+            "kind": "certification",
+            "id": "airflow-3-fundamentals"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Studying workflow orchestration, with the Airflow 3 Fundamentals credential."
+          },
+          "pt-BR": {
+            "usage": "Estudando orquestração de workflows, com a credencial Airflow 3 Fundamentals."
+          }
+        }
+      },
+      {
+        "id": "google-cloud",
+        "name": "Google Cloud",
+        "context": "learning",
+        "category": "system",
+        "categories": [
+          "system",
+          "data",
+          "certifications"
+        ],
+        "synapses": [
+          "docker",
+          "airflow",
+          "snowflake",
+          "python"
+        ],
+        "snippet": {
+          "language": "yaml",
+          "file": "cloudbuild.yaml",
+          "code": "steps:\n  - name: 'gcr.io/cloud-builders/docker'\n    args: ['build', '-t', 'gcr.io/$PROJECT_ID/pipeline', '.']\nimages:\n  - 'gcr.io/$PROJECT_ID/pipeline'\n"
+        },
+        "highlights": [
+          {
+            "kind": "certification",
+            "id": "google-cloud-ace"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Cloud engineering fundamentals, verified by the Associate Cloud Engineer certification."
+          },
+          "pt-BR": {
+            "usage": "Fundamentos de engenharia de nuvem, validados pela certificação Associate Cloud Engineer."
+          }
+        }
+      },
+      {
+        "id": "geospatial",
+        "name": "Geospatial modeling",
+        "context": "learning",
+        "category": "data",
+        "categories": [
+          "data"
+        ],
+        "synapses": [
+          "python",
+          "snowflake",
+          "sql",
+          "google-cloud"
+        ],
+        "snippet": {
+          "language": "python",
+          "file": "geo_model.py",
+          "code": "import geopandas as gpd\n\ngdf = gpd.read_file(\"water_basins.geojson\")\ngdf[\"turbidity_index\"] = (gdf[\"b3\"] - gdf[\"b2\"]) / (gdf[\"b3\"] + gdf[\"b2\"])\ngdf.to_parquet(\"silver_basins.parquet\")\n"
+        },
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "waterscript"
+          },
+          {
+            "kind": "project",
+            "id": "airmood"
+          }
+        ],
+        "content": {
+          "en": {
+            "usage": "Satellite imagery and climate data turned into features for water-quality models."
+          },
+          "pt-BR": {
+            "name": "Modelagem geoespacial",
+            "usage": "Imagens de satélite e dados climáticos transformados em atributos para modelos de qualidade da água."
+          }
+        }
+      }
+    ],
+    "ui": {
+      "content": {
+        "en": {
+          "eyebrow": "Skills & tools",
+          "carouselLabel": "Skills and tools",
+          "previousSkill": "Previous skill",
+          "nextSkill": "Next skill",
+          "interactionHint": "Drag the arc, use the arrow keys or pick a skill",
+          "categoriesLabel": "Filter by category",
+          "contextsLabel": "Jump to a context",
+          "usageLabel": "How I use it",
+          "highlightLabel": "Featured",
+          "otherProjectsLabel": "Other projects with this skill",
+          "synapsesLabel": "Connected stack",
+          "terminalLabel": "Live code",
+          "openDetails": "See details",
+          "closeDetails": "Close details",
+          "relatedSkills": "Related skills",
+          "emptyCategoryNotice": "No tools found for this category.",
+          "resetCategoryButton": "Show all tools",
+          "kinds": {
+            "project": "Project",
+            "experience": "Professional experience",
+            "certification": "Certification"
+          },
+          "blocks": {
+            "problem": "The problem",
+            "contribution": "My contribution",
+            "context": "Context",
+            "summary": "Overview",
+            "moreFromRole": "More from this role",
+            "topic": "Topic"
+          },
+          "flowLabel": "How it fits together",
+          "links": {
+            "repository": "Repository",
+            "website": "Live website",
+            "organization": "Organization on GitHub",
+            "credential": "Verify credential",
+            "linkedin": "See on LinkedIn"
+          }
+        },
+        "pt-BR": {
+          "eyebrow": "Habilidades e ferramentas",
+          "carouselLabel": "Habilidades e ferramentas",
+          "previousSkill": "Habilidade anterior",
+          "nextSkill": "Próxima habilidade",
+          "interactionHint": "Arraste o arco, use as setas do teclado ou escolha uma habilidade",
+          "categoriesLabel": "Filtrar por categoria",
+          "contextsLabel": "Ir para um contexto",
+          "usageLabel": "Como eu uso",
+          "highlightLabel": "Destaque",
+          "otherProjectsLabel": "Outros projetos com esta ferramenta",
+          "synapsesLabel": "Stack conectado",
+          "terminalLabel": "Código em ação",
+          "openDetails": "Ver detalhes",
+          "closeDetails": "Fechar detalhes",
+          "relatedSkills": "Habilidades relacionadas",
+          "emptyCategoryNotice": "Nenhuma ferramenta encontrada para esta categoria.",
+          "resetCategoryButton": "Ver todas as ferramentas",
+          "kinds": {
+            "project": "Projeto",
+            "experience": "Experiência profissional",
+            "certification": "Certificação"
+          },
+          "blocks": {
+            "problem": "O problema",
+            "contribution": "Minha contribuição",
+            "context": "Contexto",
+            "summary": "Visão geral",
+            "moreFromRole": "Mais deste cargo",
+            "topic": "Tema"
+          },
+          "flowLabel": "Como as peças se conectam",
+          "links": {
+            "repository": "Repositório",
+            "website": "Site no ar",
+            "organization": "Organização no GitHub",
+            "credential": "Verificar credencial",
+            "linkedin": "Ver no LinkedIn"
+          }
+        }
+      }
+    }
+  }
+}

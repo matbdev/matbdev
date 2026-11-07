@@ -1,0 +1,315 @@
+{
+  "projects": [
+    {
+      "id": "crongoal",
+      "categories": [
+        "software",
+        "system"
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Prisma",
+        "JWT/OAuth2"
+      ],
+      "featured": true,
+      "highlight": true,
+      "order": 1,
+      "links": {
+        "repository": "https://github.com/matbdev/dai-crongoal-backend"
+      },
+      "media": {
+        "type": "image",
+        "src": "/assets/images/crongoal-dashboard.webp",
+        "width": 1804,
+        "height": 970,
+        "alt": {
+          "en": "Actual CronGoal dashboard screenshot from the project repository",
+          "pt-BR": "Captura real do dashboard CronGoal disponível no repositório"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "CronGoal",
+          "subtitle": "A backend for getting things done.",
+          "context": "Personal / academic project",
+          "badge": "Backend engineering",
+          "description": "A productivity API with authentication, authorization and a layered TypeScript backend.",
+          "problem": "Support a productivity application with consistent API validation and access control.",
+          "contribution": "Implemented an Express API with PostgreSQL/Prisma, JWT and Google OAuth2, Zod validation, role-based access and security middleware.",
+          "detailContext": "Personal and academic project focused on backend engineering.",
+          "diagram": [
+            "REST API",
+            "Services",
+            "PostgreSQL"
+          ]
+        },
+        "pt-BR": {
+          "title": "CronGoal",
+          "subtitle": "Um backend para tirar planos do papel.",
+          "context": "Projeto pessoal / acadêmico",
+          "badge": "Engenharia de backend",
+          "description": "Uma API de produtividade com autenticação, autorização e backend TypeScript organizado em camadas.",
+          "problem": "Sustentar uma aplicação de produtividade com validação consistente e controle de acesso.",
+          "contribution": "Implementei uma API Express com PostgreSQL/Prisma, JWT e Google OAuth2, validação com Zod, papéis de acesso e middlewares de segurança.",
+          "detailContext": "Projeto pessoal e acadêmico com foco em engenharia de backend.",
+          "diagram": [
+            "API REST",
+            "Serviços",
+            "PostgreSQL"
+          ]
+        }
+      }
+    },
+    {
+      "id": "airmood",
+      "categories": [
+        "data",
+        "ai"
+      ],
+      "technologies": [
+        "Python",
+        "Streamlit",
+        "NASA Earthdata",
+        "Geospatial"
+      ],
+      "featured": true,
+      "highlight": true,
+      "order": 2,
+      "links": {
+        "repository": "https://github.com/matbdev/nasa-space-apps-airmood"
+      },
+      "media": {
+        "type": "concept",
+        "variant": "airmood-identity",
+        "label": {
+          "en": "Conceptual project identity",
+          "pt-BR": "Identidade conceitual do projeto"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "AirMood",
+          "subtitle": "Earth observation, closer to people.",
+          "context": "NASA Space Apps Challenge · 2025",
+          "badge": "Local winner · Global Nominee",
+          "description": "A voice-enabled assistant connecting air quality, weather and satellite data to everyday decisions.",
+          "problem": "Make complex environmental data easier to access and interpret.",
+          "contribution": "Developed the application end to end and led Tropa do Booleano. Integrated NASA Earthdata/TEMPO and weather data in a Python application with a voice interface.",
+          "detailContext": "Hackathon project. Local winner in Lajeado and Global Nominee in 2025.",
+          "diagram": [
+            "Earthdata",
+            "AirMood",
+            "People"
+          ]
+        },
+        "pt-BR": {
+          "title": "AirMood",
+          "subtitle": "Observação da Terra, mais perto das pessoas.",
+          "context": "NASA Space Apps Challenge · 2025",
+          "badge": "Campeão local · Global Nominee",
+          "description": "Um assistente com interface de voz que conecta qualidade do ar, clima e dados de satélite a decisões do dia a dia.",
+          "problem": "Tornar dados ambientais complexos mais acessíveis e fáceis de interpretar.",
+          "contribution": "Desenvolvi a aplicação de ponta a ponta e liderei a Tropa do Booleano. Integrei NASA Earthdata/TEMPO e dados meteorológicos em uma aplicação Python com interface de voz.",
+          "detailContext": "Projeto de hackathon. Campeão local em Lajeado e Global Nominee em 2025.",
+          "diagram": [
+            "Earthdata",
+            "AirMood",
+            "Pessoas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "waterscript",
+      "categories": [
+        "data",
+        "ai"
+      ],
+      "technologies": [
+        "Python",
+        "Snowflake",
+        "XGBoost",
+        "Geospatial"
+      ],
+      "featured": true,
+      "highlight": true,
+      "order": 3,
+      "links": {
+        "repository": "https://github.com/matbdev/waterscript-ey-data-science-challenge"
+      },
+      "media": {
+        "type": "concept",
+        "variant": "water-flow",
+        "sources": [
+          "Landsat",
+          "TerraClimate"
+        ],
+        "label": {
+          "en": "Conceptual workflow",
+          "pt-BR": "Fluxo conceitual"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "WaterScript",
+          "subtitle": "A broader picture of water quality.",
+          "context": "EY AI & Data Challenge · 2026",
+          "badge": "Data & machine learning project",
+          "description": "A multimodal pipeline combining water samples, Landsat imagery and climate data for water-quality modeling.",
+          "problem": "Predict water-quality parameters at locations outside the training regions.",
+          "contribution": "Built data ingestion and geospatial features with Python and Snowpark, then explored XGBoost/Optuna modeling with location-based GroupKFold validation.",
+          "detailContext": "Built for the EY AI & Data Challenge 2026, exploring geospatial data engineering and modeling.",
+          "diagram": [
+            "Landsat + climate",
+            "Features",
+            "Model"
+          ]
+        },
+        "pt-BR": {
+          "title": "WaterScript",
+          "subtitle": "Uma visão mais ampla da qualidade da água.",
+          "context": "EY AI & Data Challenge · 2026",
+          "badge": "Projeto de dados e machine learning",
+          "description": "Pipeline multimodal que combina amostras de água, imagens Landsat e dados climáticos para modelar qualidade da água.",
+          "problem": "Prever parâmetros da qualidade da água em locais fora das regiões de treinamento.",
+          "contribution": "Construí a ingestão e os atributos geoespaciais com Python e Snowpark e explorei modelos XGBoost/Optuna com validação GroupKFold por localização.",
+          "detailContext": "Desenvolvido para o EY AI & Data Challenge 2026, explorando engenharia de dados geoespaciais e modelagem.",
+          "diagram": [
+            "Landsat + clima",
+            "Atributos",
+            "Modelo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "techpro",
+      "categories": [
+        "software",
+        "system",
+        "web"
+      ],
+      "technologies": [
+        "Docker",
+        "TypeScript",
+        "Caddy",
+        "GitHub Actions"
+      ],
+      "featured": true,
+      "highlight": false,
+      "order": 4,
+      "links": {
+        "repository": "https://github.com/univates-deadlock/techpro-app"
+      },
+      "organizationId": "deadlock",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/deadlock-techpro-website.webp",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "en": "Actual TechPro institutional website screenshot from the Deadlock portfolio repository",
+          "pt-BR": "Captura real do site institucional TechPro, disponível no repositório do portfólio da Deadlock"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "TechPro",
+          "subtitle": "Software for a real service workflow.",
+          "context": "Univates · Team Deadlock · 2026",
+          "badge": "Collaborative academic project",
+          "description": "A collaborative ecosystem for TechPro: an internal system, an institutional website and a portfolio for the Deadlock team.",
+          "problem": "Bring the client’s operational needs into a navigable web application.",
+          "contribution": "I structured the Deadlock GitHub organization and team portal, and contributed deployment, Docker containerization, central Caddy routing, permissions and automated tests. The delivery spans the application, institutional website and team portfolio.",
+          "detailContext": "Academic project for a real client, built collaboratively with the Deadlock team.",
+          "diagram": [
+            "GitHub Actions",
+            "Docker",
+            "Caddy"
+          ]
+        },
+        "pt-BR": {
+          "title": "TechPro",
+          "subtitle": "Software para um fluxo real de serviços.",
+          "context": "Univates · Equipe Deadlock · 2026",
+          "badge": "Projeto acadêmico em equipe",
+          "description": "Um ecossistema colaborativo para a TechPro: sistema interno, site institucional e portfólio da equipe Deadlock.",
+          "problem": "Transformar necessidades operacionais do cliente em uma aplicação web navegável.",
+          "contribution": "Estruturei a organização Deadlock no GitHub e o portal da equipe, além de contribuir com deploy, containerização Docker, roteamento pelo Caddy central, permissões e testes automatizados. A entrega conecta aplicação, site institucional e portfólio da equipe.",
+          "detailContext": "Projeto acadêmico para um cliente real, desenvolvido em colaboração com a equipe Deadlock.",
+          "diagram": [
+            "GitHub Actions",
+            "Docker",
+            "Caddy"
+          ]
+        }
+      }
+    },
+    {
+      "id": "deadlock-portal",
+      "categories": [
+        "software",
+        "web"
+      ],
+      "technologies": [
+        "TypeScript",
+        "Docker",
+        "Caddy",
+        "GitHub Actions"
+      ],
+      "featured": true,
+      "highlight": false,
+      "order": 5,
+      "links": {
+        "repository": "https://github.com/univates-deadlock/deadlock-portal",
+        "website": "https://deadlock.matbdev.com"
+      },
+      "organizationId": "deadlock",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/deadlock-techpro-website.webp",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "en": "Deadlock team portal screenshot",
+          "pt-BR": "Captura de tela do portal da equipe Deadlock"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "Deadlock Portal",
+          "subtitle": "Team portal and project showcase.",
+          "context": "Univates · Team Deadlock · 2026",
+          "badge": "Collaborative web portal",
+          "description": "An entry point and showcase for the Deadlock team, integrating projects, members and documentation.",
+          "problem": "Centralize team projects and streamline navigation between services and repositories.",
+          "contribution": "Structured the Deadlock GitHub organization, team portal architecture, deployment pipeline and domain routing.",
+          "detailContext": "Collaborative team portal connecting the group's repositories and client deliveries.",
+          "diagram": [
+            "Repositories",
+            "Caddy Routing",
+            "Team Portal"
+          ]
+        },
+        "pt-BR": {
+          "title": "Deadlock Portal",
+          "subtitle": "Portal da equipe e vitrine de projetos.",
+          "context": "Univates · Equipe Deadlock · 2026",
+          "badge": "Portal web colaborativo",
+          "description": "Ponto de entrada e vitrine para a equipe Deadlock, integrando projetos, membros e documentação.",
+          "problem": "Centralizar os projetos da equipe e facilitar a navegação entre serviços e repositórios.",
+          "contribution": "Estruturei a organização Deadlock no GitHub, arquitetura do portal da equipe, pipeline de deploy e roteamento de domínio.",
+          "detailContext": "Portal colaborativo da equipe conectando os repositórios do grupo e entregas aos clientes.",
+          "diagram": [
+            "Repositórios",
+            "Roteamento Caddy",
+            "Portal da Equipe"
+          ]
+        }
+      }
+    }
+  ]
+}
