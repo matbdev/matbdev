@@ -4,6 +4,7 @@ import { ArrowUpRight, Award, Check, Copy, FileText, Mail } from 'lucide-vue-nex
 import contactData from '@/data/contact.json'
 import profileData from '@/data/profile.json'
 import sectionsData from '@/data/sections.json'
+import { onSpotMove } from '@/composables/useAmberSpotlight'
 import { isPt } from '@/state/locale'
 
 interface RawSocial {
@@ -70,6 +71,7 @@ onUnmounted(() => {
           target="_blank"
           rel="noopener noreferrer"
           class="footer-info__email-link"
+          @pointermove="onSpotMove"
         >
           <span class="footer-info__email-left">
             <Mail class="footer-info__email-icon" aria-hidden="true" />
@@ -83,6 +85,7 @@ onUnmounted(() => {
           class="footer-info__copy-btn"
           :class="{ 'is-copied': emailCopyState === 'copied' }"
           :aria-label="uiCopy.copyEmailAria"
+          @pointermove="onSpotMove"
           @click="copyEmail"
         >
           <Check
@@ -175,6 +178,8 @@ onUnmounted(() => {
 </template>
 
 <style scoped lang="scss">
+@use '@/assets/spotlight' as *;
+
 .footer-info {
   display: flex;
   flex-direction: column;
@@ -220,6 +225,8 @@ onUnmounted(() => {
   }
 
   &__email-link {
+    @include amber-spot(120px, 132px);
+
     flex: 1;
     min-width: 0;
     display: flex;
@@ -280,6 +287,8 @@ onUnmounted(() => {
   }
 
   &__copy-btn {
+    @include amber-spot(90px, 102px);
+
     display: inline-flex;
     align-items: center;
     justify-content: center;

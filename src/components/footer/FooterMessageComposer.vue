@@ -13,6 +13,7 @@ import {
 } from 'lucide-vue-next'
 import contactData from '@/data/contact.json'
 import profileData from '@/data/profile.json'
+import { onSpotMove } from '@/composables/useAmberSpotlight'
 import { isPt } from '@/state/locale'
 
 interface RawIntentContent {
@@ -170,6 +171,7 @@ onUnmounted(() => {
         type="button"
         class="composer__intent-btn"
         :aria-pressed="selectedIntent === preset.id"
+        @pointermove="onSpotMove"
         @click="selectIntent(preset.id)"
       >
         <Briefcase
@@ -238,6 +240,7 @@ onUnmounted(() => {
         type="button"
         class="composer__copy-draft"
         :class="{ 'is-copied': draftCopyState === 'copied' }"
+        @pointermove="onSpotMove"
         @click="copyDraft"
       >
         <Check v-if="draftCopyState === 'copied'" class="composer__draft-icon" aria-hidden="true" />
@@ -262,6 +265,8 @@ onUnmounted(() => {
 </template>
 
 <style scoped lang="scss">
+@use '@/assets/spotlight' as *;
+
 .composer {
   display: flex;
   flex-direction: column;
@@ -321,6 +326,8 @@ onUnmounted(() => {
   }
 
   &__intent-btn {
+    @include amber-spot(90px, 102px);
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -484,6 +491,8 @@ onUnmounted(() => {
   }
 
   &__copy-draft {
+    @include amber-spot(100px, 112px);
+
     display: inline-flex;
     align-items: center;
     justify-content: center;

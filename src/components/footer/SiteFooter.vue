@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { onSpotMove } from '@/composables/useAmberSpotlight'
 import FooterBottomBar from './FooterBottomBar.vue'
 import FooterContactInfo from './FooterContactInfo.vue'
 import FooterHorizonStrip from './FooterHorizonStrip.vue'
@@ -10,7 +9,6 @@ const footerRef = ref<HTMLElement | null>(null)
 const horizonRef = ref<InstanceType<typeof FooterHorizonStrip> | null>(null)
 
 function onFooterPointerMove(event: PointerEvent) {
-  onSpotMove(event)
   if (event.pointerType === 'touch') return
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
   const el = footerRef.value
@@ -43,10 +41,7 @@ function onFooterPointerMove(event: PointerEvent) {
 </template>
 
 <style scoped lang="scss">
-@use '@/assets/spotlight' as *;
-
 .site-footer {
-  @include amber-spot(260px, 280px);
   background-color: #0d0f12;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
