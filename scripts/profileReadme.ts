@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import type portfolio from '../src/data/portfolio.json'
+import type portfolio from '../data/portfolio.json'
 
 export type ProfileReadmeData = typeof portfolio
 export type ProfileReadmeLocale = 'en' | 'pt-BR'
@@ -16,10 +16,6 @@ function inline(text: string) {
     .replace(/[\\`*_[\]]/g, '\\$&')
 }
 
-function attribute(text: string) {
-  return inline(text).replace(/"/g, '&quot;')
-}
-
 function link(text: string, url: string) {
   return `[${inline(text)}](${url.replace(/\(/g, '%28').replace(/\)/g, '%29')})`
 }
@@ -30,16 +26,10 @@ export function renderProfileReadme(data: ProfileReadmeData, locale: ProfileRead
   const copy = content.readme
   const otherLocale = locale === 'en' ? 'pt-BR' : 'en'
   const portfolioUrl = `${data.url}/${locale}/`
-  const mascot = profile.readmeMascot
   const lines = [
     '<!-- Generated from metadata/*.yml by npm run build:data. Do not edit manually. -->',
     '',
     link(copy.languageLink, readmeFiles[otherLocale]),
-    '',
-    '<picture>',
-    `  <source media="(prefers-reduced-motion: no-preference)" srcset="${attribute(mascot.animatedSrc)}">`,
-    `  <img align="right" src="${attribute(mascot.staticSrc)}" width="${mascot.width}" height="${mascot.height}" alt="${attribute(copy.mascotAlt)}">`,
-    '</picture>',
     '',
     `# ${inline(profile.name)}`,
     '',
@@ -136,7 +126,7 @@ export function renderProfileReadme(data: ProfileReadmeData, locale: ProfileRead
     '',
     '---',
     '',
-    link(copy.repositoryLink, 'PORTFOLIO-README.md'),
+    link(copy.repositoryLink, `PORTFOLIO-${readmeFiles[locale]}`),
     '',
   )
   return lines.join('\n')
@@ -145,7 +135,7 @@ export function renderProfileReadme(data: ProfileReadmeData, locale: ProfileRead
 export async function generateProfileReadmes(root: string): Promise<void> {
   // Read after YAML conversion so this invocation always uses the current source data.
   const data = JSON.parse(
-    await readFile(resolve(root, 'src/data/portfolio.json'), 'utf8'),
+    await readFile(resolve(root, 'data/portfolio.json'), 'utf8'),
   ) as ProfileReadmeData
   for (const locale of ['pt-BR', 'en'] as const) {
     await writeFile(resolve(root, readmeFiles[locale]), renderProfileReadme(data, locale))

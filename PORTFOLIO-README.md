@@ -38,9 +38,6 @@ Depois de editar os YAMLs, execute `npm run build:data` e inclua os READMEs atua
 commit. `npm test` verifica se os arquivos continuam sincronizados. O gerador não publica nem
 faz commits automaticamente. Os READMEs de perfil não devem ser editados manualmente.
 
-O cabeçalho inclui o Tux animado do portfólio, com alternativa estática para movimento reduzido.
-Veja a [origem dos assets e os comandos de geração](docs/profile-mascot.md).
-
 ## Currículos e assets
 
 Edite `metadata/resumes.yml` para ajustar o conteúdo das duas áreas, as traduções,
@@ -51,7 +48,7 @@ Os arquivos para publicação ficam em `dist/assets/resumes/`.
 
 Os arquivos-fonte ficam em `src/assets/`. O Vite empacota imagens, ícones e fontes
 importados pelo site. `src/assets/static/` contém os arquivos com URL fixa, como o
-favicon, a imagem de compartilhamento e o mascote do perfil do GitHub.
+favicon e a imagem de compartilhamento.
 
 ## SEO e leitura por agentes
 
@@ -68,7 +65,7 @@ nos módulos YAML correspondentes. Nunca edite os artefatos gerados manualmente.
 ## Publicação
 
 O diretório de trabalho do provedor deve ser a raiz do repositório, o comando de build deve ser
-`npm run build` e o diretório publicado deve ser `dist` (anteriormente `web/dist`). O servidor
+`npm run build` e o diretório publicado deve ser `dist`. O servidor
 estático deve resolver `/en/` para `/en/index.html` e `/pt-BR/` para `/pt-BR/index.html`,
 preservando seus arquivos distintos. Evite uma regra que substitua todas as rotas pelo
 `index.html` da raiz. Configure respostas 404 reais para URLs inexistentes.

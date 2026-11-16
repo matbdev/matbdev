@@ -260,15 +260,13 @@ export async function convertAllYamlToJson(): Promise<void> {
   }
 
   const portfolioJsonStr = JSON.stringify(consolidatedPortfolio, null, 2) + '\n'
-  const srcPortfolioPath = path.join(SRC_DATA_DIR, 'portfolio.json')
   const rootPortfolioPath = path.join(ROOT_DATA_DIR, 'portfolio.json')
 
-  await fs.writeFile(srcPortfolioPath, portfolioJsonStr, 'utf8')
   await fs.writeFile(rootPortfolioPath, portfolioJsonStr, 'utf8')
 
   const portfolioSize = Buffer.byteLength(portfolioJsonStr, 'utf8')
   console.log(
-    `  \x1b[35m★\x1b[0m Consolidated portfolio \x1b[90m→\x1b[0m src/data/portfolio.json & data/portfolio.json \x1b[90m(${formatBytes(portfolioSize)})\x1b[0m`,
+    `  \x1b[35m★\x1b[0m Consolidated portfolio \x1b[90m→\x1b[0m data/portfolio.json \x1b[90m(${formatBytes(portfolioSize)})\x1b[0m`,
   )
 
   await generateProfileReadmes(WEB_ROOT)

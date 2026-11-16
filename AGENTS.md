@@ -17,6 +17,7 @@ Leia também o `AGENTS.md` da pasta alterada. As instruções específicas compl
 | `src/state/locale.ts` | Locale global, URL, persistência e metadados do documento |
 | `metadata/*.yml` | Conteúdo autoral, referências e traduções |
 | `scripts/parseYml.ts` | Conversão YAML → JSON e resolução de projetos das disciplinas |
+| `scripts/resumePdf.ts`, `scripts/resumePdfPlugin.ts` | Geração dos PDFs a partir do modelo de currículo |
 | `scripts/profileReadme.ts` | Geração dos READMEs do perfil a partir dos mesmos metadados |
 | `src/data/*.json`, `data/portfolio.json`, `dist/`, `README.md`, `README-en.md` | Saídas geradas; não editar manualmente |
 | `src/data/*.ts`, `src/data/skills/` | Adaptação dos dados, assets e view models localizados |
@@ -55,11 +56,11 @@ Use o Node indicado em `package.json` (`^22.18.0 || >=24.12.0`) e npm com `packa
 | Comando | Efeito |
 | --- | --- |
 | `npm run dev` | Regenera dados no predev e inicia o Vite |
-| `npm run build:data` | Converte os 13 módulos YAML e escreve JSONs individuais, consolidados e READMEs do perfil |
+| `npm run build:data` | Converte os 13 módulos YAML e escreve JSONs individuais, o consolidado e os READMEs do perfil |
 | `npm test` | Executa `tests/*.test.ts` com Node; não monta SFCs ou navegador |
 | `npm run type-check` | Verifica TypeScript/Vue e escreve cache em `node_modules/.tmp/` |
 | `npm run lint:check` | Oxlint e ESLint sem correção e sem cache ESLint |
-| `npm run build` | Regenera dados, verifica tipos e gera `dist/` |
+| `npm run build` | Regenera dados, verifica tipos e gera o site e os PDFs em `dist/` |
 | `npm run preview` | Serve o build existente para inspeção |
 
 `npm run lint` aplica correções; `npm run format` reescreve `src/`. Use `npx --no-install prettier --write <arquivos-alterados>` para formatação pontual. `build-only` gera o cliente, o bundle SSR e as páginas estáticas bilíngues; não regenera YAML nem verifica tipos.

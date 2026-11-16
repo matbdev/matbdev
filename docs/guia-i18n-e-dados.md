@@ -7,13 +7,12 @@ Este guia descreve o que está implementado. Comandos são executados a partir d
 ```text
 metadata/*.yml
   → scripts/parseYml.ts
-  → src/data/*.json + src/data/portfolio.json + data/portfolio.json
-  → scripts/profileReadme.ts → README.md + README-en.md
-  → adaptadores TypeScript em src/data/
-  → componentes Vue
+  → src/data/*.json → adaptadores TypeScript → componentes Vue
+                    → modelo de currículo → prévia, Markdown e PDFs
+  → data/portfolio.json → READMEs de perfil e conteúdo pré-renderizado
 ```
 
-`npm run build:data` converte os módulos. Os hooks de `npm run dev` e `npm run build` executam a mesma geração. Após editar YAML com o servidor já aberto, execute a conversão novamente: o projeto não tem watcher próprio dos metadados.
+`npm run build:data` converte os módulos. Os hooks de `npm run dev` e `npm run build` executam a mesma geração. Após editar YAML, reinicie `npm run dev` para regenerar os dados e os PDFs servidos pelo Vite.
 
 Os adaptadores [heroProfile.ts](../src/data/heroProfile.ts) e [skillsShowcase.ts](../src/data/skills/skillsShowcase.ts) oferecem dados prontos para a interface. Os componentes de apresentação recebem props, sem procurar registros ou decidir traduções.
 
@@ -24,9 +23,10 @@ Os adaptadores [heroProfile.ts](../src/data/heroProfile.ts) e [skillsShowcase.ts
 A inicialização considera, nesta ordem:
 
 1. Parâmetro `?lang=` da URL.
-2. Preferência `matbdev.locale` no localStorage.
-3. Idioma português do navegador.
-4. `defaultLocale` de `metadata/site.yml`, com `en` quando ausente.
+2. Idioma no caminho `/en/` ou `/pt-BR/`.
+3. Preferência `matbdev.locale` no localStorage.
+4. Idioma português do navegador.
+5. `defaultLocale` de `metadata/site.yml`, com `en` quando ausente.
 
 `setLocale()` atualiza o estado, tenta persistir a preferência e ajustar a URL, e atualiza idioma do documento, título, descrição e metadados sociais. O seletor do header já utiliza esse estado. Não crie outro `ref` global de idioma por seção.
 
@@ -65,4 +65,10 @@ Projetos renderizam imagens `cover`, certificações usam `contain`; sem asset r
 
 Para alterar conteúdo: edite o YAML de origem, preserve os dois idiomas e IDs, execute `npm run build:data`, revise as saídas e confira a interface em EN/PT. `npm test` cobre lógica de seleção/localização de detalhes e tokenização, e `npm run build` valida tipos e empacotamento. Nenhum deles comprova traduções, referências completas ou aparência.
 
-Uma futura CLI deve editar os YAMLs e reutilizar a geração atual. Preservar comentários pode justificar `YAML.parseDocument()`. Filtros de `enabled`, `targets`, geração de PDFs e variantes de currículo só devem ser tratados como recursos existentes quando seus consumidores forem implementados; hoje `enabled` é aplicado especificamente aos itens de skills e os currículos são arquivos previamente produzidos.
+## Currículos
+
+Edite [`metadata/resumes.yml`](../metadata/resumes.yml) para alterar os textos e a
+seleção de experiências, habilidades, projetos e premiações. Contato, formação e
+credenciais vêm dos módulos correspondentes. A prévia, a exportação Markdown e os
+quatro PDFs usam o mesmo modelo, com versões de Dados e Software em inglês e
+português. `npm run build` grava os downloads em `dist/assets/resumes/`.
