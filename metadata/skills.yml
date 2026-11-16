@@ -332,6 +332,25 @@ skills:
           usage: Entrega containerizada na TechPro, Deadlock Portal e um serviço Flask rodando em uma VM.
 
     # --- Project experience ---------------------------------------------------
+
+    - id: ai-assisted-development
+      name: AI-assisted development
+      context: projects
+      category: data
+      categories:
+        - data
+        - system
+        - web
+      highlights:
+        - kind: project
+          id: agent-skills
+      content:
+        en:
+          name: AI-assisted development
+          usage: I use Codex, Claude Code and Google Antigravity to develop software with AI. I define repository guidance in AGENTS.md and CLAUDE.md, create reusable skills and delegate scoped tasks to agents. I use spec-driven development (SDD) to define expected behavior and test-driven development (TDD) to verify it, then review the resulting code.
+        pt-BR:
+          name: Desenvolvimento assistido por IA
+          usage: Uso Codex, Claude Code e Google Antigravity no desenvolvimento de software. Defino instruções do repositório em AGENTS.md e CLAUDE.md, crio skills reutilizáveis e delego tarefas com escopo definido a agentes. Uso desenvolvimento guiado por especificações (SDD) para definir o comportamento esperado e desenvolvimento guiado por testes (TDD) para verificá-lo, além de revisar o código resultante.
     - id: typescript
       name: TypeScript
       context: projects

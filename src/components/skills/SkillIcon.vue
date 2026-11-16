@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { CodeXml } from 'lucide-vue-next'
+import aiAssistedIcon from '@/assets/tool-icons/ai-assisted-development.webp?no-inline'
 import airflowIcon from '@/assets/tool-icons/airflow.webp?no-inline'
 import caddyIcon from '@/assets/tool-icons/caddy.webp?no-inline'
 import databricksIcon from '@/assets/tool-icons/databricks.webp?no-inline'
@@ -31,6 +32,7 @@ const props = withDefaults(
 )
 
 const artwork = {
+  'ai-assisted-development': aiAssistedIcon,
   airflow: airflowIcon,
   caddy: caddyIcon,
   databricks: databricksIcon,

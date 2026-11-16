@@ -50,6 +50,20 @@ ui:
       verified: Verificar Credencial
       englishLevel: Inglês B2
 
+sharedSkills:
+  - en:
+      group: AI-assisted development
+      items:
+        - Codex, Claude Code and Google Antigravity
+        - Repository guidance (AGENTS.md / CLAUDE.md), reusable skills and agents
+        - Spec-driven development (SDD) and test-driven development (TDD)
+    pt-BR:
+      group: Desenvolvimento assistido por IA
+      items:
+        - Codex, Claude Code e Google Antigravity
+        - Instruções de repositório (AGENTS.md / CLAUDE.md), skills reutilizáveis e agentes
+        - Desenvolvimento guiado por especificações (SDD) e por testes (TDD)
+
 resumes:
   - id: data-en
     discipline: data

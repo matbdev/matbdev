@@ -10,6 +10,7 @@ Monochrome Flask, Express and Prisma artwork uses the existing light foreground 
 
 | Image | Upstream artwork |
 | --- | --- |
+| `ai-assisted-development.webp` | Original terminal and sparkle illustration for this portfolio |
 | `python.webp` | [Source](https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg) |
 | `pyspark.webp` | [Source](https://raw.githubusercontent.com/devicons/devicon/master/icons/apachespark/apachespark-original.svg) |
 | `flask.webp` | [Source](https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg) |

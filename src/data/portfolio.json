@@ -635,6 +635,62 @@
           ]
         }
       }
+    },
+    {
+      "id": "agent-skills",
+      "categories": [
+        "software"
+      ],
+      "technologies": [
+        "Agent Skills",
+        "Python"
+      ],
+      "featured": false,
+      "highlight": false,
+      "order": 6,
+      "links": {
+        "repository": "https://github.com/matbdev/agent-skills"
+      },
+      "media": {
+        "type": "concept",
+        "variant": "flow",
+        "label": {
+          "en": "Reusable skills for coding agents",
+          "pt-BR": "Skills reutilizáveis para agentes de código"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "Agent Skills",
+          "subtitle": "Reusable engineering guidance for coding agents.",
+          "context": "Personal project",
+          "badge": "AI development tooling",
+          "description": "A registry of reusable skills for TypeScript REST APIs, Next.js and vanilla web interfaces.",
+          "problem": "Make engineering guidance reusable across repositories and coding agents.",
+          "contribution": "Authored agent skills and organized them in a registry with a Python installer for Codex, Claude Code and Google Antigravity.",
+          "detailContext": "Shared skills capture repeatable practices while each consuming repository defines its own project conventions.",
+          "diagram": [
+            "Skill registry",
+            "Python installer",
+            "Project repository"
+          ]
+        },
+        "pt-BR": {
+          "title": "Agent Skills",
+          "subtitle": "Orientações de engenharia reutilizáveis por agentes de código.",
+          "context": "Projeto pessoal",
+          "badge": "Ferramentas de desenvolvimento com IA",
+          "description": "Repositório de skills reutilizáveis para APIs REST em TypeScript, Next.js e interfaces web sem framework.",
+          "problem": "Reutilizar orientações de engenharia entre repositórios e agentes de código.",
+          "contribution": "Escrevi skills e as organizei em um repositório com instalador em Python para Codex, Claude Code e Google Antigravity.",
+          "detailContext": "As skills registram práticas reutilizáveis e cada repositório que as utiliza define suas próprias convenções.",
+          "diagram": [
+            "Repositório de skills",
+            "Instalador em Python",
+            "Repositório do projeto"
+          ]
+        }
+      }
     }
   ],
   "experience": [
@@ -1128,6 +1184,33 @@
           },
           "pt-BR": {
             "usage": "Entrega containerizada na TechPro, Deadlock Portal e um serviço Flask rodando em uma VM."
+          }
+        }
+      },
+      {
+        "id": "ai-assisted-development",
+        "name": "AI-assisted development",
+        "context": "projects",
+        "category": "data",
+        "categories": [
+          "data",
+          "system",
+          "web"
+        ],
+        "highlights": [
+          {
+            "kind": "project",
+            "id": "agent-skills"
+          }
+        ],
+        "content": {
+          "en": {
+            "name": "AI-assisted development",
+            "usage": "I use Codex, Claude Code and Google Antigravity to develop software with AI. I define repository guidance in AGENTS.md and CLAUDE.md, create reusable skills and delegate scoped tasks to agents. I use spec-driven development (SDD) to define expected behavior and test-driven development (TDD) to verify it, then review the resulting code."
+          },
+          "pt-BR": {
+            "name": "Desenvolvimento assistido por IA",
+            "usage": "Uso Codex, Claude Code e Google Antigravity no desenvolvimento de software. Defino instruções do repositório em AGENTS.md e CLAUDE.md, crio skills reutilizáveis e delego tarefas com escopo definido a agentes. Uso desenvolvimento guiado por especificações (SDD) para definir o comportamento esperado e desenvolvimento guiado por testes (TDD) para verificá-lo, além de revisar o código resultante."
           }
         }
       },

@@ -72,8 +72,8 @@ Python · Snowflake · XGBoost · Geospatial
 Prática profissional, experiência em projetos e temas que estou desenvolvendo.
 
 - **Experiência profissional:** Python · PySpark · SQL · Databricks · Delta Lake · Unity Catalog · Flask · Docker
-- **Experiência em projetos:** TypeScript · Caddy · Node.js · Express · PostgreSQL · Prisma · JWT/OAuth2 · Snowflake
-- **Explorando e estudando:** Apache Airflow · Google Cloud · Geospatial modeling
+- **Experiência em projetos:** Desenvolvimento assistido por IA · TypeScript · Caddy · Node.js · Express · PostgreSQL · Prisma · JWT/OAuth2 · Snowflake
+- **Explorando e estudando:** Apache Airflow · Google Cloud · Modelagem geoespacial
 
 ## Formação
 

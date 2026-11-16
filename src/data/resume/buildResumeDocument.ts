@@ -130,6 +130,7 @@ interface RawResumesModule {
     }
   }
   resumes: RawResumeEntry[]
+  sharedSkills?: Array<Record<ResumeLocale, ResumeSkillGroup>>
 }
 
 const rawProfile = (profileData as { profile: RawProfile }).profile
@@ -342,6 +343,10 @@ export function buildResumeDocument(
             items: ['Google Cloud (ACE)', 'Databricks SDK', 'Linux', 'Git/GitLab', 'CI/CD'],
           },
         ]
+
+  for (const group of rawResumesModule.sharedSkills ?? []) {
+    skills.push(group[locale])
+  }
 
   // 6. Build Education
   const education: ResumeEducationItem[] = rawEducation.map((edu) => {
