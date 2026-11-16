@@ -7,11 +7,6 @@ profile:
   name: Mateus Carniel Brambilla
   shortName: Mateus Brambilla
   handle: matbdev
-  readmeMascot:
-    animatedSrc: src/assets/static/assets/profile/tux-idle.gif
-    staticSrc: src/assets/static/assets/profile/tux-static.png
-    width: 80
-    height: 96
   role: Data & Software Engineer
   heroSocials: [GitHub, LinkedIn, Credly]
   heroTechnologies: [Python, SQL, TypeScript, Databricks]
@@ -58,7 +53,6 @@ profile:
         overviewTitle: Two areas, connected.
         overviewDescription: Explore the tools and projects behind each part of my work.
       readme:
-        mascotAlt: Tux, the portfolio penguin
         languageLink: Ler em português
         portfolioLink: Explore my portfolio
         experienceHeading: Experience
@@ -97,7 +91,6 @@ profile:
         overviewTitle: Duas áreas, conectadas.
         overviewDescription: Explore as ferramentas e projetos por trás de cada parte do meu trabalho.
       readme:
-        mascotAlt: Tux, o pinguim do portfólio
         languageLink: Read in English
         portfolioLink: Conheça meu portfólio
         experienceHeading: Experiência

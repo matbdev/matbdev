@@ -22,7 +22,7 @@ Antes de concluir uma alteração de código, rode `npm test`, `npm run lint:che
 
 - `npm run lint:check` usa Oxlint e ESLint sem `--fix` e sem cache ESLint. Para arquivos específicos: `npx --no-install oxlint <arquivos>` e `npx --no-install eslint <arquivos> --no-cache`.
 - `npm run lint` **corrige arquivos**; `npm run format` reescreve `src/`. Não use esses comandos para uma revisão somente leitura.
-- `npm run build` e `npm run dev` regeneram dados em hooks; `build:data` escreve todos os módulos e consolidados. `type-check` escreve cache em `node_modules/.tmp/`; build escreve `dist/`. Para zero escrita estrita, limite-se aos linters acima e leitura de arquivos, informando checks não executados.
+- `npm run build` e `npm run dev` regeneram dados em hooks; `build:data` escreve os módulos e o consolidado. `type-check` escreve cache em `node_modules/.tmp/`; build escreve `dist/`. Para zero escrita estrita, limite-se aos linters acima e leitura de arquivos, informando checks não executados.
 - `npm test` usa Node nativo, cobre estado/filtros, atualização de locale e tokenização de snippets. Não monta SFCs, não testa CSS, foco, imagens ou navegador. Tipos dos testes também são verificados por `tsconfig.tests.json`.
 - Não há dependência de testes de browser no projeto. Use o navegador disponível no ambiente; se indisponível, informe os cenários pendentes, sem afirmar validação visual.
 

@@ -38,9 +38,6 @@ After editing YAML, run `npm run build:data` and include the updated READMEs in 
 `npm test` checks that these files remain synchronized. The generator does not publish or create
 commits automatically. Do not edit the profile READMEs manually.
 
-The header includes the portfolio’s animated Tux, with a static alternative for reduced motion.
-See the [asset sources and generation commands](docs/profile-mascot.md) (in Portuguese).
-
 ## Résumés and assets
 
 Edit `metadata/resumes.yml` for the two résumé tracks, their translations, selected
@@ -51,7 +48,7 @@ at their existing download URLs. Production files are written to `dist/assets/re
 
 Source assets live in `src/assets/`. Vite bundles imported images, icons and fonts.
 `src/assets/static/` holds assets published at fixed URLs, including the favicon,
-social preview and GitHub profile mascot.
+social preview.
 
 ## SEO and agent discovery
 
@@ -68,7 +65,7 @@ remain in their corresponding YAML modules. Never edit generated artifacts manua
 ## Deployment
 
 Set your hosting provider’s working directory to the repository root, the build command to
-`npm run build`, and the publish directory to `dist` (previously `web/dist`). The static server
+`npm run build`, and the publish directory to `dist`. The static server
 must resolve `/en/` to `/en/index.html` and `/pt-BR/` to `/pt-BR/index.html`, preserving their
 separate files. Avoid a rule that replaces every route with the root `index.html`.
 Configure real HTTP 404 responses for nonexistent URLs.

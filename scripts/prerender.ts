@@ -10,7 +10,7 @@ import {
   structuredData,
 } from '../src/data/seo.ts'
 import type { SeoLocale } from '../src/data/seo.ts'
-import portfolio from '../src/data/portfolio.json' with { type: 'json' }
+import portfolio from '../data/portfolio.json' with { type: 'json' }
 
 const root = resolve(import.meta.dirname, '..')
 const dist = resolve(root, 'dist')

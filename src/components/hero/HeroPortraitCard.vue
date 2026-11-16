@@ -6,7 +6,7 @@ import profileData from '@/data/profile.json'
 import { heroProfile } from '@/data/heroProfile'
 import HeroFocusConsole from './HeroFocusConsole.vue'
 import HeroPerchedPenguin from './HeroPerchedPenguin.vue'
-import { useCardTiltAndGlass } from './useCardTiltAndGlass'
+import { useCardTiltAndGlass } from '@/composables/useCardTiltAndGlass'
 
 const { portrait } = profileData.profile
 const portraitSrc = resolveImageAsset(portrait.src)
