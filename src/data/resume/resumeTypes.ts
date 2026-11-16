@@ -36,11 +36,13 @@ export interface ResumeProjectItem {
   description: string
   technologies: string[]
   repositoryUrl?: string
+  highlights?: ResumeExperienceHighlight[]
 }
 
 export interface ResumeSkillGroup {
   group: string
   items: string[]
+  separator?: string
 }
 
 export interface ResumeEducationItem {
@@ -76,7 +78,8 @@ export interface ResumeDocument {
   education: ResumeEducationItem[]
   certifications: ResumeCertificationItem[]
   courses: ResumeCourseItem[]
-  staticPdfUrl: string
+  awards: ResumeExperienceHighlight[]
+  pdfUrl: string
 }
 
 export interface ResumeUI {
@@ -97,6 +100,10 @@ export interface ResumeUI {
   skillsHeading: string
   educationHeading: string
   certificationsHeading: string
+  awardsHeading: string
+  repositoryLabel: string
+  technologiesLabel: string
+  documentLabel: string
   present: string
   expected: string
   verified: string

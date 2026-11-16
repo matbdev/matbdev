@@ -3,8 +3,8 @@
 [Ler em português](README.md)
 
 <picture>
-  <source media="(prefers-reduced-motion: no-preference)" srcset="public/assets/profile/tux-idle.gif">
-  <img align="right" src="public/assets/profile/tux-static.png" width="80" height="96" alt="Tux, the portfolio penguin">
+  <source media="(prefers-reduced-motion: no-preference)" srcset="src/assets/static/assets/profile/tux-idle.gif">
+  <img align="right" src="src/assets/static/assets/profile/tux-static.png" width="80" height="96" alt="Tux, the portfolio penguin">
 </picture>
 
 # Mateus Carniel Brambilla

@@ -16,7 +16,7 @@ interface RawSocial {
 const rawProfile =
   (profileData as { profile?: typeof profileData.profile }).profile ?? profileData.profile
 
-const email = rawProfile.email || 'mateus@matbdev.com'
+const email = rawProfile.email
 const socials = (rawProfile.socials || []) as RawSocial[]
 
 const contactCopy = computed(() => {

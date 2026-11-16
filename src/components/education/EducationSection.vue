@@ -43,19 +43,10 @@ function closeModal() {
   selectedType.value = null
 }
 
-const degree = computed<EducationDegreeViewModel>(() => {
+const degree = computed<EducationDegreeViewModel | undefined>(() => {
   const loc = currentLocale.value === 'pt-BR' ? 'pt-BR' : 'en'
   const first = educationData.education[0]
-  if (!first) {
-    return {
-      id: 'univates',
-      institution: 'Univates',
-      degree: 'Software Engineering',
-      period: '2025 — 2028',
-      status: 'in-progress',
-      description: '',
-    }
-  }
+  if (!first) return undefined
 
   const content = first.content[loc] ?? first.content.en
   return {
@@ -103,7 +94,7 @@ const courses = computed<CourseViewModel[]>(() => {
 
 const credlyProfileUrl = computed(() => {
   const credly = profileData.profile.socials.find((s) => s.name === 'Credly')
-  return credly ? credly.href : 'https://www.credly.com/users/mateus-carniel-brambilla.0c10944d'
+  return credly?.href
 })
 
 const credlyLabel = computed(() => (isPt.value ? 'Perfil no Credly' : 'Credly profile'))
@@ -138,6 +129,7 @@ const academicHeading = computed(() => (isPt.value ? 'Formação acadêmica' : '
             <h3 class="education-section__col-title">{{ academicHeading }}</h3>
           </div>
           <EducationDegreeCard
+            v-if="degree"
             :degree="degree"
             class="education-section__degree-card"
             @select="openDegreeModal"
@@ -154,6 +146,7 @@ const academicHeading = computed(() => (isPt.value ? 'Formação acadêmica' : '
             </div>
 
             <a
+              v-if="credlyProfileUrl"
               :href="credlyProfileUrl"
               target="_blank"
               rel="noreferrer noopener"

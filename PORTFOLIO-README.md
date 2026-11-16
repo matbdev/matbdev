@@ -41,6 +41,18 @@ faz commits automaticamente. Os READMEs de perfil não devem ser editados manual
 O cabeçalho inclui o Tux animado do portfólio, com alternativa estática para movimento reduzido.
 Veja a [origem dos assets e os comandos de geração](docs/profile-mascot.md).
 
+## Currículos e assets
+
+Edite `metadata/resumes.yml` para ajustar o conteúdo das duas áreas, as traduções,
+os projetos selecionados, as habilidades e as premiações. Contato, formação e
+certificações vêm dos seus próprios YAMLs. A prévia, o Markdown e os PDFs usam o
+mesmo modelo. `npm run dev` e `npm run build` geram os quatro PDFs nos URLs existentes.
+Os arquivos para publicação ficam em `dist/assets/resumes/`.
+
+Os arquivos-fonte ficam em `src/assets/`. O Vite empacota imagens, ícones e fontes
+importados pelo site. `src/assets/static/` contém os arquivos com URL fixa, como o
+favicon, a imagem de compartilhamento e o mascote do perfil do GitHub.
+
 ## SEO e leitura por agentes
 
 - `/en/` e `/pt-BR/` têm HTML completo antes de executar JavaScript. `/` apresenta a versão padrão em inglês, com canonical para `/en/`.

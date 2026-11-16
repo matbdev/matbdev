@@ -34,7 +34,7 @@ interface RawIntentItem {
 const rawProfile =
   (profileData as { profile?: typeof profileData.profile }).profile ?? profileData.profile
 
-const email = rawProfile.email || 'mateus@matbdev.com'
+const email = rawProfile.email
 const intents = (contactData.contact.intents || []) as RawIntentItem[]
 const defaultIntentId = contactData.contact.defaultIntentId || intents[0]?.id || 'opportunity'
 

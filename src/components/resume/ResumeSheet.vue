@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ArrowUpRight } from 'lucide-vue-next'
+import { formatResumeSkillGroup } from '@/data/resume/buildResumeDocument'
 import type { ResumeDocument, ResumeUI } from '@/data/resume/resumeTypes'
 
 defineProps<{
@@ -9,7 +10,7 @@ defineProps<{
 </script>
 
 <template>
-  <article class="resume-sheet" aria-label="Curriculum Vitae">
+  <article class="resume-sheet" :aria-label="ui.documentLabel">
     <!-- Header -->
     <header class="resume-sheet__header">
       <h2 class="resume-sheet__name">{{ document.header.name }}</h2>
@@ -103,14 +104,31 @@ defineProps<{
               rel="noopener noreferrer"
               class="resume-sheet__link resume-sheet__link--repo"
             >
-              <span>Repository</span>
+              <span>{{ ui.repositoryLabel }}</span>
               <ArrowUpRight class="resume-sheet__arrow print-hide" aria-hidden="true" />
             </a>
           </div>
 
           <p class="resume-sheet__body">{{ proj.description }}</p>
 
-          <div class="resume-sheet__tags" aria-label="Technologies used">
+          <ul v-if="proj.highlights?.length" class="resume-sheet__highlights">
+            <li
+              v-for="(highlight, index) in proj.highlights"
+              :key="index"
+              class="resume-sheet__highlight"
+            >
+              <strong v-if="highlight.label" class="resume-sheet__highlight-label"
+                >{{ highlight.label }}:</strong
+              >
+              <span class="resume-sheet__highlight-text">{{ highlight.text }}</span>
+            </li>
+          </ul>
+
+          <div
+            v-if="proj.technologies.length"
+            class="resume-sheet__tags"
+            :aria-label="ui.technologiesLabel"
+          >
             <span v-for="tech in proj.technologies" :key="tech" class="resume-sheet__tag">
               {{ tech }}
             </span>
@@ -129,14 +147,14 @@ defineProps<{
       <div class="resume-sheet__skills-grid">
         <div v-for="group in document.skills" :key="group.group" class="resume-sheet__skill-group">
           <strong class="resume-sheet__skill-title">{{ group.group }}</strong>
-          <p class="resume-sheet__skill-list">{{ group.items.join(', ') }}</p>
+          <p class="resume-sheet__skill-list">{{ formatResumeSkillGroup(group) }}</p>
         </div>
       </div>
     </section>
 
     <!-- Academic Background & Training -->
     <section
-      v-if="document.education.length > 0 || document.certifications.length > 0"
+      v-if="document.education.length || document.certifications.length || document.courses.length"
       class="resume-sheet__section resume-sheet__section--education resume-sheet__section--split"
     >
       <!-- Education -->
@@ -185,6 +203,17 @@ defineProps<{
           </li>
         </ul>
       </div>
+    </section>
+    <section v-if="document.awards.length" class="resume-sheet__section">
+      <h3 class="resume-sheet__section-title">{{ ui.awardsHeading }}</h3>
+      <ul class="resume-sheet__highlights">
+        <li v-for="(award, index) in document.awards" :key="index" class="resume-sheet__highlight">
+          <strong v-if="award.label" class="resume-sheet__highlight-label"
+            >{{ award.label }}:</strong
+          >
+          <span class="resume-sheet__highlight-text">{{ award.text }}</span>
+        </li>
+      </ul>
     </section>
   </article>
 </template>

@@ -19,6 +19,10 @@
         "skillsHeading": "Technical Skills",
         "educationHeading": "Academic Background",
         "certificationsHeading": "Certifications & Training",
+        "awardsHeading": "Awards and Recognitions",
+        "repositoryLabel": "Repository",
+        "technologiesLabel": "Technologies",
+        "documentLabel": "Curriculum vitae",
         "present": "Present",
         "expected": "Expected",
         "verified": "Verify Credential",
@@ -42,6 +46,10 @@
         "skillsHeading": "Competências Técnicas",
         "educationHeading": "Formação Acadêmica",
         "certificationsHeading": "Certificações e Treinamentos",
+        "awardsHeading": "Prêmios e Reconhecimentos",
+        "repositoryLabel": "Repositório",
+        "technologiesLabel": "Tecnologias",
+        "documentLabel": "Currículo",
         "present": "Atual",
         "expected": "Previsão",
         "verified": "Verificar Credencial",
@@ -53,6 +61,7 @@
     {
       "en": {
         "group": "AI-assisted development",
+        "separator": ". ",
         "items": [
           "Codex, Claude Code and Google Antigravity",
           "Repository guidance (AGENTS.md / CLAUDE.md), reusable skills and agents",
@@ -61,6 +70,7 @@
       },
       "pt-BR": {
         "group": "Desenvolvimento assistido por IA",
+        "separator": ". ",
         "items": [
           "Codex, Claude Code e Google Antigravity",
           "Instruções de repositório (AGENTS.md / CLAUDE.md), skills reutilizáveis e agentes",
@@ -69,6 +79,523 @@
       }
     }
   ],
+  "settings": {
+    "socials": [
+      "LinkedIn",
+      "GitHub",
+      "Credly"
+    ],
+    "certificationIds": [
+      "google-cloud-ace",
+      "airflow-3-fundamentals"
+    ],
+    "courseIds": [
+      "ccna-coursework",
+      "linux-fundamentals",
+      "sql-advanced"
+    ]
+  },
+  "variants": {
+    "data": {
+      "experience": [
+        {
+          "id": "developer",
+          "content": {
+            "en": {
+              "role": "Developer (Data Engineering & Backend)",
+              "highlights": [
+                {
+                  "label": "Data Engineering & Databricks",
+                  "text": "Built and maintained 20+ batch jobs with PySpark, SQL, Delta Lake, and Unity Catalog, contributing to the evolution of production pipelines and tables in Databricks."
+                },
+                {
+                  "label": "Lakeflow Pipelines / DLT",
+                  "text": "Independently migrated an approximately 20-notebook pipeline to serverless Lakeflow Pipelines/DLT, reducing runtime from about 30 to 8 minutes."
+                },
+                {
+                  "label": "Platform Tooling & GitOps",
+                  "text": "Built a Python library with the Databricks SDK to export Genie Spaces as human-readable, parameterized metadata, normalize generated identifiers, and version/promote configurations across workspaces through GitLab."
+                },
+                {
+                  "label": "AI Governance",
+                  "text": "Created approximately 8 Metric Views in Unity Catalog to constrain Genie Spaces to pre-defined metrics and dimensions, providing standardized queries and governed context for agents."
+                },
+                {
+                  "label": "Applied AI",
+                  "text": "Reduced LLM output cost by 75% in a cataloging pipeline by optimizing model context/metadata and moving to a more efficient model; later implemented a primary/fallback strategy through Databricks AI Gateway with exponential backoff and jitter."
+                }
+              ]
+            },
+            "pt-BR": {
+              "role": "Desenvolvedor (Data Engineering & Backend)",
+              "highlights": [
+                {
+                  "label": "Data Engineering & Databricks",
+                  "text": "Construí e mantive mais de 20 jobs batch com PySpark, SQL, Delta Lake e Unity Catalog, atuando na evolução de pipelines e tabelas em ambientes Databricks."
+                },
+                {
+                  "label": "Lakeflow Pipelines / DLT",
+                  "text": "Migrei integralmente um pipeline de aproximadamente 20 notebooks para Lakeflow Pipelines/DLT em serverless, reduzindo o runtime de cerca de 30 para 8 minutos."
+                },
+                {
+                  "label": "Platform Tooling & GitOps",
+                  "text": "Desenvolvi uma biblioteca Python com Databricks SDK para exportar Genie Spaces como metadados legíveis e parametrizáveis, normalizar identificadores gerados automaticamente e versionar/promover configurações entre workspaces via GitLab."
+                },
+                {
+                  "label": "Governança para IA",
+                  "text": "Criei cerca de 8 Metric Views no Unity Catalog para restringir o contexto de Genie Spaces a métricas e dimensões pré-definidas, fornecendo consultas padronizadas e contexto governado aos agentes."
+                },
+                {
+                  "label": "Applied AI",
+                  "text": "Reduzi em 75% o custo de output de um pipeline de catalogação ao otimizar os metadados enviados ao modelo e migrar para uma alternativa mais eficiente; posteriormente implementei estratégia de modelo primário/fallback no Databricks AI Gateway com exponential backoff e jitter."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "trainee",
+          "content": {
+            "en": {
+              "highlights": [
+                {
+                  "label": "Data Engineering Foundations",
+                  "text": "Deepened practical experience with PySpark, Databricks, data analysis, and Git while working with notebooks and Bronze/Silver architectures during the transition into the current role."
+                },
+                {
+                  "label": "Data Science",
+                  "text": "Developed time-series PoCs with Prophet and LSTM for demand forecasting."
+                },
+                {
+                  "label": "Engineering Practices",
+                  "text": "Gained experience with version control, code review, and CI/CD workflows based on the GitLab templates used by the team."
+                }
+              ]
+            },
+            "pt-BR": {
+              "highlights": [
+                {
+                  "label": "Formação em Engenharia de Dados",
+                  "text": "Aprofundei PySpark, Databricks, análise de dados e Git, trabalhando com notebooks e arquiteturas Bronze/Silver durante a transição para a função atual."
+                },
+                {
+                  "label": "Data Science",
+                  "text": "Desenvolvi PoCs de séries temporais com Prophet e LSTM para previsão de demanda."
+                },
+                {
+                  "label": "Práticas de Engenharia",
+                  "text": "Ganhei experiência com versionamento, code review e fluxos de CI/CD baseados nos templates GitLab utilizados pela equipe."
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "projects": [
+        {
+          "id": "waterscript",
+          "content": {
+            "en": {
+              "name": "WaterScript — EY AI & Data Challenge 2026",
+              "description": "Built a multimodal data pipeline with Python and Snowflake/Snowpark, integrating Landsat imagery through STAC and TerraClimate data, with geospatial feature engineering and XGBoost/Optuna modeling using GroupKFold validation."
+            },
+            "pt-BR": {
+              "name": "WaterScript — EY AI & Data Challenge 2026",
+              "description": "Pipeline multimodal com Python e Snowflake/Snowpark, integrando imagens Landsat via STAC e dados TerraClimate; inclui feature engineering geoespacial e modelagem com XGBoost/Optuna e validação GroupKFold."
+            }
+          }
+        },
+        {
+          "id": "agent-orchestrator",
+          "content": {
+            "en": {
+              "name": "Multi-Agent Orchestrator (PoC)",
+              "description": "Built a supervisor for routing requests between specialized Genie Spaces, exploring domain separation and agent composition within the Databricks ecosystem."
+            },
+            "pt-BR": {
+              "name": "Orquestrador Multi-Agente (PoC)",
+              "description": "Desenvolvi um supervisor para roteamento de consultas entre Genie Spaces especialistas, explorando separação de domínios e composição de agentes no ecossistema Databricks."
+            }
+          }
+        }
+      ],
+      "skills": {
+        "en": [
+          {
+            "group": "Data Engineering",
+            "items": [
+              "Python",
+              "PySpark",
+              "SQL",
+              "Delta Lake",
+              "Databricks (Lakeflow Pipelines/DLT, Unity Catalog, Metric Views, SQL Warehouse)",
+              "Apache Airflow 3",
+              "Medallion Architecture",
+              "Dimensional Modeling"
+            ]
+          },
+          {
+            "group": "Applied AI & Platform",
+            "items": [
+              "Databricks Genie",
+              "Databricks SDK",
+              "MLflow",
+              "LangChain",
+              "LLM APIs",
+              "Databricks AI Gateway",
+              "GitOps"
+            ]
+          },
+          {
+            "group": "Backend & Databases",
+            "items": [
+              "Flask",
+              "FastAPI",
+              "Pydantic",
+              "SQLAlchemy",
+              "PostgreSQL",
+              "SQL Server",
+              "MongoDB"
+            ]
+          },
+          {
+            "group": "DevOps & Tooling",
+            "items": [
+              "Databricks Asset Bundles",
+              "Jobs/Workflows",
+              "Git/GitLab",
+              "Docker",
+              "Linux; Google Cloud Associate Cloud Engineer certified"
+            ]
+          }
+        ],
+        "pt-BR": [
+          {
+            "group": "Data Engineering",
+            "items": [
+              "Python",
+              "PySpark",
+              "SQL",
+              "Delta Lake",
+              "Databricks (Lakeflow Pipelines/DLT, Unity Catalog, Metric Views, SQL Warehouse)",
+              "Apache Airflow 3",
+              "Arquitetura Medalhão",
+              "Modelagem Dimensional"
+            ]
+          },
+          {
+            "group": "Applied AI & Platform",
+            "items": [
+              "Databricks Genie",
+              "Databricks SDK",
+              "MLflow",
+              "LangChain",
+              "LLM APIs",
+              "Databricks AI Gateway",
+              "GitOps"
+            ]
+          },
+          {
+            "group": "Backend & Bancos",
+            "items": [
+              "Flask",
+              "FastAPI",
+              "Pydantic",
+              "SQLAlchemy",
+              "PostgreSQL",
+              "SQL Server",
+              "MongoDB"
+            ]
+          },
+          {
+            "group": "DevOps & Tooling",
+            "items": [
+              "Databricks Asset Bundles",
+              "Jobs/Workflows",
+              "Git/GitLab",
+              "Docker",
+              "Linux; Google Cloud Associate Cloud Engineer certificado"
+            ]
+          }
+        ]
+      }
+    },
+    "software": {
+      "experience": [
+        {
+          "id": "developer",
+          "content": {
+            "en": {
+              "role": "Developer (Backend & Data Engineering)",
+              "highlights": [
+                {
+                  "label": "Backend & IoT",
+                  "text": "Built and deployed a Flask/Pydantic service that receives RFID readings from a Zebra FX9600, applies business rules, and performs upserts into MongoDB and SQL Server; the application runs in Docker on a VM."
+                },
+                {
+                  "label": "Platform Tooling",
+                  "text": "Built an internal Python library with the Databricks SDK to export, parameterize, version, and promote Genie Space metadata across workspaces, enabling Git-based management."
+                },
+                {
+                  "label": "AI Integration",
+                  "text": "Optimized an LLM-based cataloging pipeline, reducing output cost by 75%, and implemented a primary/fallback model strategy through Databricks AI Gateway with exponential backoff and jitter."
+                },
+                {
+                  "label": "Backend Automation",
+                  "text": "Built a Python automation that collects web and PDF menu content, structures the data, uses an LLM for recommendations, and sends the result to the team through a webhook."
+                }
+              ]
+            },
+            "pt-BR": {
+              "role": "Desenvolvedor (Backend & Data Engineering)",
+              "highlights": [
+                {
+                  "label": "Backend & IoT",
+                  "text": "Desenvolvi e coloquei em produção um serviço Flask/Pydantic que recebe leituras de um leitor Zebra FX9600, aplica regras de negócio e realiza upserts em MongoDB e SQL Server; a aplicação executa containerizada em Docker em uma VM."
+                },
+                {
+                  "label": "Platform Tooling",
+                  "text": "Desenvolvi uma biblioteca interna em Python com Databricks SDK para exportar, parametrizar, versionar e promover metadados de Genie Spaces entre workspaces, permitindo seu gerenciamento via Git."
+                },
+                {
+                  "label": "Integração de IA",
+                  "text": "Otimizei um pipeline de catalogação baseado em LLM reduzindo em 75% o custo de output e implementei estratégia de modelo primário/fallback no Databricks AI Gateway com exponential backoff e jitter."
+                },
+                {
+                  "label": "Automação Backend",
+                  "text": "Desenvolvi uma automação em Python que coleta cardápios web e PDF, estrutura o conteúdo, utiliza LLM para recomendação e envia o resultado ao time por webhook."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "trainee",
+          "content": {
+            "en": {
+              "highlights": [
+                {
+                  "label": "Technical Foundations",
+                  "text": "Deepened Python, PySpark, Databricks, data analysis, Git, and software development fundamentals during the transition into the current role."
+                }
+              ]
+            },
+            "pt-BR": {
+              "highlights": [
+                {
+                  "label": "Formação Técnica",
+                  "text": "Aprofundei Python, PySpark, Databricks, análise de dados, Git e fundamentos de desenvolvimento durante a transição para a função atual."
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "projects": [
+        {
+          "id": "crongoal",
+          "content": {
+            "en": {
+              "name": "CronGoal — Backend API (Personal/Academic Project)",
+              "description": "Node.js/TypeScript and Express 5 API for a productivity application, using PostgreSQL/Prisma with separation across routes, controllers, and services.",
+              "highlights": [
+                {
+                  "label": "Backend Engineering",
+                  "text": "Implemented local/JWT authentication and Google OAuth2 with Passport.js, Zod validation, RBAC, Prisma ORM, object storage, and Helmet, CORS, and Rate Limiting middleware."
+                }
+              ]
+            },
+            "pt-BR": {
+              "name": "CronGoal — Backend API (Projeto Pessoal/Acadêmico)",
+              "description": "API em Node.js/TypeScript e Express 5 para uma aplicação de produtividade, com PostgreSQL/Prisma e separação em routes, controllers e services.",
+              "highlights": [
+                {
+                  "label": "Engenharia de Backend",
+                  "text": "Implementei autenticação local/JWT e Google OAuth2 com Passport.js, validação com Zod, RBAC, Prisma ORM, object storage e middlewares de Helmet, CORS e Rate Limiting."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "olx-scraper",
+          "content": {
+            "en": {
+              "name": "OLX Scraper (in development)",
+              "description": "Python/FastAPI service for collecting and structurally processing listings, used as a hands-on backend and automation project."
+            },
+            "pt-BR": {
+              "name": "OLX Scraper (em desenvolvimento)",
+              "description": "Serviço em Python/FastAPI para coleta e processamento estruturado de anúncios, utilizado como projeto prático de backend e automação."
+            }
+          }
+        },
+        {
+          "id": "agent-orchestrator",
+          "content": {
+            "en": {
+              "name": "Agent Orchestrator (PoC)",
+              "description": "Built a supervisor for dynamically routing requests across specialized AI services in the Databricks ecosystem."
+            },
+            "pt-BR": {
+              "name": "Orquestrador de Agentes (PoC)",
+              "description": "Desenvolvi um supervisor para roteamento dinâmico de requisições entre serviços de IA especializados no ecossistema Databricks."
+            }
+          }
+        }
+      ],
+      "skills": {
+        "en": [
+          {
+            "group": "Languages & Frameworks",
+            "items": [
+              "Python",
+              "Flask",
+              "FastAPI",
+              "TypeScript",
+              "Node.js",
+              "Express.js"
+            ]
+          },
+          {
+            "group": "Backend & APIs",
+            "items": [
+              "Pydantic",
+              "Zod",
+              "Prisma",
+              "SQLAlchemy",
+              "Passport.js",
+              "REST APIs",
+              "Webhooks"
+            ]
+          },
+          {
+            "group": "DevOps & Infrastructure",
+            "items": [
+              "Docker",
+              "Docker Compose",
+              "Git",
+              "GitHub Actions (fundamentals)",
+              "Apache Airflow 3",
+              "Linux",
+              "VMs; Google Cloud Associate Cloud Engineer certified"
+            ]
+          },
+          {
+            "group": "Data & Security",
+            "items": [
+              "PostgreSQL",
+              "SQL Server",
+              "MongoDB",
+              "JWT/OAuth2",
+              "Helmet",
+              "CORS",
+              "Rate Limiting"
+            ]
+          },
+          {
+            "group": "Engineering Practices",
+            "items": [
+              "Clean Architecture",
+              "SOLID",
+              "Code Review",
+              "layered architecture",
+              "structured logging"
+            ]
+          }
+        ],
+        "pt-BR": [
+          {
+            "group": "Linguagens & Frameworks",
+            "items": [
+              "Python",
+              "Flask",
+              "FastAPI",
+              "TypeScript",
+              "Node.js",
+              "Express.js"
+            ]
+          },
+          {
+            "group": "Backend & APIs",
+            "items": [
+              "Pydantic",
+              "Zod",
+              "Prisma",
+              "SQLAlchemy",
+              "Passport.js",
+              "REST APIs",
+              "Webhooks"
+            ]
+          },
+          {
+            "group": "DevOps & Infraestrutura",
+            "items": [
+              "Docker",
+              "Docker Compose",
+              "Git",
+              "GitHub Actions (fundamentos)",
+              "Apache Airflow 3",
+              "Linux",
+              "VMs; Google Cloud Associate Cloud Engineer certificado"
+            ]
+          },
+          {
+            "group": "Dados & Segurança",
+            "items": [
+              "PostgreSQL",
+              "SQL Server",
+              "MongoDB",
+              "JWT/OAuth2",
+              "Helmet",
+              "CORS",
+              "Rate Limiting"
+            ]
+          },
+          {
+            "group": "Práticas de Engenharia",
+            "items": [
+              "Clean Architecture",
+              "SOLID",
+              "Code Review",
+              "separação em camadas",
+              "logs estruturados"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "awards": {
+    "data": {
+      "en": [
+        {
+          "label": "Global Nominee — NASA Space Apps Challenge (2025)",
+          "text": "Winner of the local stage (Lajeado) and global nominee for the AirMood project (satellite data processing for public health)."
+        }
+      ],
+      "pt-BR": [
+        {
+          "label": "Global Nominee — NASA Space Apps Challenge (2025)",
+          "text": "Vencedor da etapa local (Lajeado) e indicado global pelo projeto AirMood (processamento de dados de satélite para saúde pública)."
+        }
+      ]
+    },
+    "software": {
+      "en": [
+        {
+          "label": "Global Nominee — NASA Space Apps Challenge (2025)",
+          "text": "Winner of the local stage (Lajeado) and global nominee for the AirMood project, which I developed end-to-end while leading the team."
+        }
+      ],
+      "pt-BR": [
+        {
+          "label": "Global Nominee — NASA Space Apps Challenge (2025)",
+          "text": "Vencedor da etapa local (Lajeado) e indicado global pelo projeto AirMood, desenvolvido e liderado integralmente por mim."
+        }
+      ]
+    }
+  },
   "resumes": [
     {
       "id": "data-en",

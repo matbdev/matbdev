@@ -8,7 +8,7 @@ defineProps<{
   locale: ResumeLocale
   ui: ResumeUI
   isCopied: boolean
-  staticPdfUrl: string
+  pdfUrl: string
   note?: string
 }>()
 
@@ -99,7 +99,7 @@ const emit = defineEmits<{
       <!-- Actions Bar -->
       <div class="resume-controls__actions">
         <!-- Primary Action: Direct PDF Download -->
-        <a :href="staticPdfUrl" download class="resume-controls__btn resume-controls__btn--primary">
+        <a :href="pdfUrl" download class="resume-controls__btn resume-controls__btn--primary">
           <Download class="resume-controls__action-icon" aria-hidden="true" />
           <span>{{ ui.downloadAction }}</span>
         </a>
