@@ -1,4 +1,6 @@
 const iconAliases = {
+  aiassisteddevelopment: 'ai-assisted-development',
+  desenvolvimentoassistidoporia: 'ai-assisted-development',
   python: 'python',
   pyspark: 'pyspark',
   spark: 'pyspark',

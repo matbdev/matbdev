@@ -310,6 +310,62 @@
           ]
         }
       }
+    },
+    {
+      "id": "agent-skills",
+      "categories": [
+        "software"
+      ],
+      "technologies": [
+        "Agent Skills",
+        "Python"
+      ],
+      "featured": false,
+      "highlight": false,
+      "order": 6,
+      "links": {
+        "repository": "https://github.com/matbdev/agent-skills"
+      },
+      "media": {
+        "type": "concept",
+        "variant": "flow",
+        "label": {
+          "en": "Reusable skills for coding agents",
+          "pt-BR": "Skills reutilizáveis para agentes de código"
+        }
+      },
+      "content": {
+        "en": {
+          "title": "Agent Skills",
+          "subtitle": "Reusable engineering guidance for coding agents.",
+          "context": "Personal project",
+          "badge": "AI development tooling",
+          "description": "A registry of reusable skills for TypeScript REST APIs, Next.js and vanilla web interfaces.",
+          "problem": "Make engineering guidance reusable across repositories and coding agents.",
+          "contribution": "Authored agent skills and organized them in a registry with a Python installer for Codex, Claude Code and Google Antigravity.",
+          "detailContext": "Shared skills capture repeatable practices while each consuming repository defines its own project conventions.",
+          "diagram": [
+            "Skill registry",
+            "Python installer",
+            "Project repository"
+          ]
+        },
+        "pt-BR": {
+          "title": "Agent Skills",
+          "subtitle": "Orientações de engenharia reutilizáveis por agentes de código.",
+          "context": "Projeto pessoal",
+          "badge": "Ferramentas de desenvolvimento com IA",
+          "description": "Repositório de skills reutilizáveis para APIs REST em TypeScript, Next.js e interfaces web sem framework.",
+          "problem": "Reutilizar orientações de engenharia entre repositórios e agentes de código.",
+          "contribution": "Escrevi skills e as organizei em um repositório com instalador em Python para Codex, Claude Code e Google Antigravity.",
+          "detailContext": "As skills registram práticas reutilizáveis e cada repositório que as utiliza define suas próprias convenções.",
+          "diagram": [
+            "Repositório de skills",
+            "Instalador em Python",
+            "Repositório do projeto"
+          ]
+        }
+      }
     }
   ]
 }

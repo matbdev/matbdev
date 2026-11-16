@@ -97,10 +97,13 @@ export function renderProfileReadme(data: ProfileReadmeData, locale: ProfileRead
     const tools = data.skills.items.filter(
       (tool) => tool.context === context.id && (!('enabled' in tool) || tool.enabled !== false),
     )
-    if (tools.length)
-      lines.push(
-        `- **${inline(context.content[locale].label)}:** ${tools.map((tool) => inline(tool.name)).join(' · ')}`,
-      )
+    if (tools.length) {
+      const names = tools.map((tool) => {
+        const localized = tool.content[locale]
+        return inline('name' in localized && localized.name ? localized.name : tool.name)
+      })
+      lines.push(`- **${inline(context.content[locale].label)}:** ${names.join(' · ')}`)
+    }
   }
   lines.push('', `## ${inline(copy.educationHeading)}`, '')
   for (const education of data.education) {
