@@ -23,6 +23,15 @@ const previewSkills = computed(() => {
   return allSkills.slice(0, 6)
 })
 
+const institutions = computed(() => {
+  const current = document.value
+  return {
+    employer: current.experience[0]?.company,
+    education: current.education[0]?.institution,
+    credentials: current.certifications.map((item) => item.issuer).join(' · '),
+  }
+})
+
 const sectionCopy = computed(() => {
   const content = sectionsData.sections.resumes.content
   return currentLocale.value === 'pt-BR' ? content['pt-BR'] : content.en
@@ -56,7 +65,7 @@ const cleanTitle = computed(() => sectionCopy.value.title.replace(/\.+$/, ''))
             v-model:locale="selectedLocale"
             :ui="controlsUi"
             :is-copied="isCopied"
-            :static-pdf-url="document.staticPdfUrl"
+            :pdf-url="document.pdfUrl"
             :note="sectionCopy.note"
             @preview="isModalOpen = true"
             @copy="copyMarkdown"
@@ -103,17 +112,29 @@ const cleanTitle = computed(() => sectionCopy.value.title.replace(/\.+$/, ''))
 
                 <!-- Highlights list with warm amber hover spotlight -->
                 <div class="resume-snapshot__pills">
-                  <div class="resume-snapshot__pill" @pointermove.stop="onSpotMove">
+                  <div
+                    v-if="institutions.employer"
+                    class="resume-snapshot__pill"
+                    @pointermove.stop="onSpotMove"
+                  >
                     <Briefcase class="resume-snapshot__pill-icon" aria-hidden="true" />
-                    <span>Tramontina Multi S.A.</span>
+                    <span>{{ institutions.employer }}</span>
                   </div>
-                  <div class="resume-snapshot__pill" @pointermove.stop="onSpotMove">
+                  <div
+                    v-if="institutions.education"
+                    class="resume-snapshot__pill"
+                    @pointermove.stop="onSpotMove"
+                  >
                     <GraduationCap class="resume-snapshot__pill-icon" aria-hidden="true" />
-                    <span>Univates · Engenharia de Software</span>
+                    <span>{{ institutions.education }}</span>
                   </div>
-                  <div class="resume-snapshot__pill" @pointermove.stop="onSpotMove">
+                  <div
+                    v-if="institutions.credentials"
+                    class="resume-snapshot__pill"
+                    @pointermove.stop="onSpotMove"
+                  >
                     <Award class="resume-snapshot__pill-icon" aria-hidden="true" />
-                    <span>Google Cloud (ACE) & Astronomer Airflow 3</span>
+                    <span>{{ institutions.credentials }}</span>
                   </div>
                 </div>
 

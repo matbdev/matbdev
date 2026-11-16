@@ -61,7 +61,7 @@ useModalDialog(
 
             <div class="resume-modal__actions">
               <a
-                :href="document.staticPdfUrl"
+                :href="document.pdfUrl"
                 download
                 class="resume-modal__btn resume-modal__btn--primary"
                 @pointermove="onSpotMove"

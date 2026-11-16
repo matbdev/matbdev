@@ -17,7 +17,7 @@ const sectionCopy = computed(() => {
 const cleanTitle = computed(() => sectionCopy.value.title.replace(/\.+$/, ''))
 
 const githubUrl = computed(() => {
-  return sectionCopy.value.githubUrl || 'https://github.com/matbdev'
+  return sectionCopy.value.githubUrl
 })
 
 const viewAllText = computed(() => {

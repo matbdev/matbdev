@@ -1,15 +1,21 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { MapPin } from 'lucide-vue-next'
-import portrait640Src from '@/assets/images/mateus-640.webp'
-import portrait1280Src from '@/assets/images/mateus-1280.webp'
-import portraitSrc from '@/assets/images/mateus.webp'
+import { resolveImageAsset } from '@/data/imageAssets'
+import profileData from '@/data/profile.json'
 import { heroProfile } from '@/data/heroProfile'
 import HeroFocusConsole from './HeroFocusConsole.vue'
 import HeroPerchedPenguin from './HeroPerchedPenguin.vue'
 import { useCardTiltAndGlass } from './useCardTiltAndGlass'
 
-const portraitSrcSet = `${portrait640Src} 640w, ${portrait1280Src} 1280w, ${portraitSrc} 1920w`
+const { portrait } = profileData.profile
+const portraitSrc = resolveImageAsset(portrait.src)
+const portraitSrcSet = [...portrait.sources, portrait]
+  .flatMap(({ src, width }) => {
+    const url = resolveImageAsset(src)
+    return url ? [`${url} ${width}w`] : []
+  })
+  .join(', ')
 
 const cardRef = ref<HTMLElement | null>(null)
 const penguinCompRef = ref<InstanceType<typeof HeroPerchedPenguin> | null>(null)
@@ -38,11 +44,7 @@ const { isTracking, onCardPointerMove, onCardPointerLeave } = useCardTiltAndGlas
       <div class="portrait-card__glass" aria-hidden="true" />
 
       <div class="portrait-card__content">
-        <HeroPerchedPenguin
-          ref="penguinCompRef"
-          :card-el="cardRef"
-          @pick-up="onCardPointerLeave"
-        />
+        <HeroPerchedPenguin ref="penguinCompRef" :card-el="cardRef" @pick-up="onCardPointerLeave" />
 
         <div class="portrait-card__meta">
           <span class="portrait-card__location">
@@ -54,12 +56,13 @@ const { isTracking, onCardPointerMove, onCardPointerLeave } = useCardTiltAndGlas
         <figure class="portrait-card__figure">
           <div class="portrait-card__frame">
             <img
+              v-if="portraitSrc"
               :src="portraitSrc"
               :srcset="portraitSrcSet"
               sizes="(max-width: 920px) 720px, 640px"
               :alt="heroProfile.portraitAlt"
-              width="1920"
-              height="1920"
+              :width="portrait.width"
+              :height="portrait.height"
               decoding="async"
               fetchpriority="high"
               class="portrait-card__img"

@@ -41,6 +41,18 @@ commits automatically. Do not edit the profile READMEs manually.
 The header includes the portfolio’s animated Tux, with a static alternative for reduced motion.
 See the [asset sources and generation commands](docs/profile-mascot.md) (in Portuguese).
 
+## Résumés and assets
+
+Edit `metadata/resumes.yml` for the two résumé tracks, their translations, selected
+projects, skills and awards. Contact, education and credentials are resolved from
+their individual YAML modules. The web preview, Markdown export and generated PDFs
+share the same document model. `npm run dev` and `npm run build` generate the four PDFs
+at their existing download URLs. Production files are written to `dist/assets/resumes/`.
+
+Source assets live in `src/assets/`. Vite bundles imported images, icons and fonts.
+`src/assets/static/` holds assets published at fixed URLs, including the favicon,
+social preview and GitHub profile mascot.
+
 ## SEO and agent discovery
 
 - `/en/` and `/pt-BR/` contain complete HTML before JavaScript runs. `/` serves the default English version, with a canonical URL pointing to `/en/`.

@@ -72,7 +72,8 @@ const sampleDocument: ResumeDocument = {
       provider: 'Cisco Networking Academy',
     },
   ],
-  staticPdfUrl: '/assets/resumes/cv_data_eng_mateus_en.pdf',
+  awards: [],
+  pdfUrl: '/assets/resumes/cv_data_eng_mateus_en.pdf',
 }
 
 test('resumeToMarkdown generates structured markdown with headers and links', () => {

@@ -1,56 +1,8 @@
+import { formatResumeSkillGroup, resolveResumeUI } from './buildResumeDocument.ts'
 import type { ResumeDocument, ResumeUI } from './resumeTypes.ts'
 
-const DEFAULT_UI: Record<'en' | 'pt-BR', ResumeUI> = {
-  en: {
-    discipline: 'Focus area',
-    data: 'Data engineering',
-    dataSubtitle: 'Pipelines, Databricks & applied AI',
-    software: 'Software engineering',
-    softwareSubtitle: 'Backend systems, APIs & architecture',
-    language: 'Document language',
-    previewAction: 'View full résumé',
-    downloadAction: 'Download résumé (PDF)',
-    copyAction: 'Copy as Markdown',
-    copiedSuccess: 'Résumé copied in Markdown!',
-    closeModal: 'Close preview',
-    summaryHeading: 'Professional Profile',
-    experienceHeading: 'Professional Experience',
-    projectsHeading: 'Featured Projects',
-    skillsHeading: 'Technical Skills',
-    educationHeading: 'Academic Background',
-    certificationsHeading: 'Certifications & Training',
-    present: 'Present',
-    expected: 'Expected',
-    verified: 'Verify Credential',
-    englishLevel: 'English B2',
-  },
-  'pt-BR': {
-    discipline: 'Área de foco',
-    data: 'Engenharia de dados',
-    dataSubtitle: 'Pipelines, Databricks e IA aplicada',
-    software: 'Engenharia de software',
-    softwareSubtitle: 'Sistemas backend, APIs e arquitetura',
-    language: 'Idioma do documento',
-    previewAction: 'Visualizar currículo',
-    downloadAction: 'Baixar currículo (PDF)',
-    copyAction: 'Copiar em Markdown',
-    copiedSuccess: 'Currículo copiado em Markdown!',
-    closeModal: 'Fechar visualização',
-    summaryHeading: 'Perfil Profissional',
-    experienceHeading: 'Experiência Profissional',
-    projectsHeading: 'Projetos em Destaque',
-    skillsHeading: 'Competências Técnicas',
-    educationHeading: 'Formação Acadêmica',
-    certificationsHeading: 'Certificações e Treinamentos',
-    present: 'Atual',
-    expected: 'Previsão',
-    verified: 'Verificar Credencial',
-    englishLevel: 'Inglês B2',
-  },
-}
-
 export function resumeToMarkdown(doc: ResumeDocument, customUi?: ResumeUI): string {
-  const ui = customUi ?? DEFAULT_UI[doc.locale] ?? DEFAULT_UI.en
+  const ui = customUi ?? resolveResumeUI(doc.locale)
   const lines: string[] = []
 
   // Header
@@ -96,11 +48,18 @@ export function resumeToMarkdown(doc: ResumeDocument, customUi?: ResumeUI): stri
   if (doc.projects.length > 0) {
     lines.push(`## ${ui.projectsHeading.toUpperCase()}`)
     for (const proj of doc.projects) {
-      const repo = proj.repositoryUrl ? ` ([Repository](${proj.repositoryUrl}))` : ''
+      const repo = proj.repositoryUrl ? ` ([${ui.repositoryLabel}](${proj.repositoryUrl}))` : ''
       const badge = proj.badge ? ` _(${proj.badge})_` : ''
       lines.push(`### ${proj.name}${badge}${repo}`)
       lines.push(proj.description)
-      lines.push(`**Technologies:** ${proj.technologies.join(', ')}`)
+      for (const highlight of proj.highlights ?? []) {
+        lines.push(
+          highlight.label ? `- **${highlight.label}:** ${highlight.text}` : `- ${highlight.text}`,
+        )
+      }
+      if (proj.technologies.length) {
+        lines.push(`**${ui.technologiesLabel}:** ${proj.technologies.join(', ')}`)
+      }
       lines.push('')
     }
   }
@@ -109,7 +68,7 @@ export function resumeToMarkdown(doc: ResumeDocument, customUi?: ResumeUI): stri
   if (doc.skills.length > 0) {
     lines.push(`## ${ui.skillsHeading.toUpperCase()}`)
     for (const group of doc.skills) {
-      lines.push(`- **${group.group}:** ${group.items.join(', ')}`)
+      lines.push(`- **${group.group}:** ${formatResumeSkillGroup(group)}`)
     }
     lines.push('')
   }
@@ -136,6 +95,14 @@ export function resumeToMarkdown(doc: ResumeDocument, customUi?: ResumeUI): stri
     }
     for (const course of doc.courses) {
       lines.push(`- **${course.name}** — ${course.provider}`)
+    }
+    lines.push('')
+  }
+
+  if (doc.awards.length) {
+    lines.push(`## ${ui.awardsHeading.toUpperCase()}`)
+    for (const award of doc.awards) {
+      lines.push(award.label ? `- **${award.label}:** ${award.text}` : `- ${award.text}`)
     }
     lines.push('')
   }
